@@ -58,12 +58,11 @@ export const proCards = (proData) => proData.map((pro) => {
     return <li className='cards_item' key={id+name+type+client+story+tools+hardskills+softskills}>
         <div className='procard'>
             <div className='card_image'>
-                <img src={isHosted ? '' : photos[0]} alt={name} />
+                <img src={require(`../../public/img/${photos[0]}`)} alt={name} />
             </div>
             <div className='card_content'>
                 <h3 class='card_title'>{name}</h3>
-                {/* <p class='card_text'></p> */}
-                <a class='btn card_btn' href={url} target='_blank' rel='noreferrer'>View Source</a>
+                <a class='btn card_btn' href={!isHosted ? url : require(`../../public/projs/${id}/${url}`)} target='_blank' rel='noreferrer'>View Source</a>
             </div>
         </div>
     </li>

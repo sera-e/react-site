@@ -2,8 +2,6 @@ import React, { Fragment } from 'react'
 import { compose } from 'redux'
 import { proCards } from '../utils'
 import { Nav, Footer } from '../Nav'
-// import Link from 'src/Routes/Link'
-// import api from '../../api'
 import $ from 'jquery'
 import './pro.css'
 

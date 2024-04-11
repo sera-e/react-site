@@ -33,9 +33,6 @@ class Router extends Component {
                     <Route path='/error(/*)'>
                         <Err />
                     </Route>
-                    <Route path='*'>
-                        <Err />
-                    </Route>
                 </Switch>
             </BrowserRouter>
         </div>
