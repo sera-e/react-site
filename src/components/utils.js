@@ -36,7 +36,7 @@ export const nav = () => {
     return navLinks.map((navLink) => {
         const { url, name } = navLink
 
-        return <li key={name}><a href={url}>{name}</a></li>
+        return <li key={name}><a href={`#${url}`}>{name}</a></li>
     })
 }
 

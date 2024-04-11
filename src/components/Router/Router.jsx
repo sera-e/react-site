@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { BrowserRouter, Switch } from 'react-router-dom'
+import { HashRouter, Switch } from 'react-router-dom'
 
 import Home from '../Home'
 import Info from '../Info'
@@ -13,7 +13,7 @@ class Router extends Component {
     render() {
 
         return <div key='page-router'>
-            <BrowserRouter>
+            <HashRouter>
                 <Switch>
                     <Route exact path='/'>
                         <Home />
@@ -27,14 +27,14 @@ class Router extends Component {
                     <Route path='/(portfolio)(/*)'>
                         <Pro />
                     </Route>
-                    <Route path='/*)'>
+                    <Route path='/(*)'>
                         <Err />
                     </Route>
-                    <Route path='/error(/*)'>
+                    <Route path='*'>
                         <Err />
                     </Route>
                 </Switch>
-            </BrowserRouter>
+            </HashRouter>
         </div>
     }
 }
