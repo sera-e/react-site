@@ -1,0 +1,135 @@
+nav {
+    transition: none;
+    z-index: 2;
+}
+
+@media (min-width: 40rem) {
+    nav {
+        text-align: center;
+    }
+}
+
+nav div {
+    transition: none;
+}
+
+@media (min-width: 40rem) {
+    nav button {
+        display: none;
+    }
+}
+
+nav ul {
+    display: none;
+}
+
+@media (min-width: 40rem) {
+    nav ul {
+        display: block;
+    }
+}
+
+nav ul li {
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+nav ul li a {
+    line-height: 4.6rem;
+    font-size: 1.6rem;
+    height: 4.6rem;
+    width: 12rem;
+}
+
+nav button.close {
+    display: none;
+}
+
+@media (min-width: 40rem) {
+    nav.top {
+        margin-top: 2rem;
+    }
+}
+
+nav.top.open {
+    min-height: 7rem;
+}
+
+@media (min-width: 40rem) {
+    nav.top.open {
+        min-height: auto;
+    }
+}
+
+nav.top.open button.menu {
+    display: none;
+}
+
+nav.top.open button.close {
+    display: block;
+}
+
+@media (min-width: 40rem) {
+    nav.top.open button.close {
+        display: none;
+    }
+}
+
+nav.top.open {
+    position: relative;
+}
+
+nav.top.open div {
+    background: rgba(17, 17, 68, 0.9);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+@media (min-width: 40rem) {
+    nav.top.open div {
+        height: auto;
+        background: none;
+    }
+}
+
+nav.top.open div ul,
+nav.top.open div li,
+nav.top.open div a {
+    transition: none;
+    display: block;
+    width: 100%;
+}
+
+@media (min-width: 40rem) {
+
+    nav.top.open div li,
+    nav.top.open div a {
+        display: inline-block;
+        width: 12rem;
+    }
+}
+
+nav.top.open div a {
+    padding-left: 2.4rem;
+}
+
+@media (min-width: 40rem) {
+    nav.top.open div a {
+        padding-left: 0;
+    }
+}
+
+nav,
+footer {
+    width: 100%;
+}
+
+footer {
+    text-align: right;
+    z-index: 3;
+    padding: 0.2rem 0.4rem;
+    bottom: 0;
+    color: rgba(255, 255, 255, 0.2);
+}

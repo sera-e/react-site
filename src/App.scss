@@ -1,0 +1,301 @@
+@import 'animate.css';
+@import './assets/fontawesome-pro-6.5.1-web/scss/fontawesome.scss';
+@import './assets/fontawesome-pro-6.5.1-web/scss/solid.scss';
+@import './assets/fontawesome-pro-6.5.1-web/scss/brands.scss';
+@import './assets/fontawesome-pro-6.5.1-web/scss/sharp-solid.scss';
+@import './assets/fontawesome-pro-6.5.1-web/scss/duotone.scss';
+@import './assets/fontawesome-pro-6.5.1-web/scss/duotone-icons.scss';
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, 
+q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, 
+tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* base styles */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  transition: 0.4s ease;
+  padding: 0;
+  margin: 0;
+}
+
+*:focus, *:after:focus, *:before:focus {
+  outline: none;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+html, body {
+  font-family: Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  position: relative;
+}
+
+@media all and (min-width: 120em) {
+
+  html, body {
+    font-size: 12px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, p, a, input, textarea, code {
+  font-family: 'Barlow', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: #CDE;
+}
+
+@media (min-width: 40rem) {
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #BCD;
+  }
+}
+
+h1 {
+  line-height: 4rem;
+  font-size: 3.2rem;
+}
+
+@media (max-width: 24rem) {
+  h1 {
+    line-height: 3.6rem;
+    font-size: 2.8rem;
+  }
+}
+
+h2 {
+  line-height: 3.6rem;
+  font-size: 2.8rem;
+}
+
+@media (max-width: 24rem) {
+  h2 {
+    line-height: 3.2rem;
+    font-size: 2.4rem;
+  }
+}
+
+h3 {
+  line-height: 3.2rem;
+  font-size: 2.2rem;
+}
+
+@media (max-width: 24rem) {
+  h3 {
+    line-height: 2.8rem;
+    font-size: 2rem;
+  }
+}
+
+h4 {
+  line-height: 2.8rem;
+  font-size: 2rem;
+}
+
+@media (max-width: 24rem) {
+  h4 {
+    line-height: 2.7rem;
+    font-size: 1.9rem;
+  }
+}
+
+h5 {
+  line-height: 2.7rem;
+  font-size: 1.9rem;
+}
+
+@media (max-width: 24rem) {
+  h5 {
+    line-height: 2.4rem;
+    font-size: 1.6rem;
+  }
+}
+
+h6 {
+  line-height: 2.4rem;
+  font-size: 1.6rem;
+}
+
+@media (max-width: 24rem) {
+  h6 {
+    line-height: 2.2rem;
+    font-size: 1.4rem;
+  }
+}
+
+hr {
+  border-bottom: 0.11rem solid #CDE;
+  border-color: #CDE;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  margin: 0 0 2.4rem 0;
+}
+
+@media (min-width: 40rem) {
+  hr {
+    border-bottom: 0.11rem solid #CDE;
+    margin: 0 0 3rem 0;
+  }
+}
+
+ul {
+  font-size: 0;
+}
+
+p, li, a, button {
+  line-height: normal;
+  font-size: 1.9rem;
+}
+
+p, li {
+  color: #CDE;
+}
+
+a, i, button {
+  background: none;
+  border: none;
+  color: #DCE;
+}
+
+a:hover, a:visited, a:active, a:focus,
+i:hover, i:visited, i:active, i:focus,
+button:hover, button:visited, button:active, button:focus {
+  color: #DEF;
+}
+
+@media (min-width: 40rem) {
+
+  a, i, button {
+    color: #ABC;
+  }
+
+  a:hover, a:visited, a:active, a:focus,
+  i:hover, i:visited, i:active, i:focus,
+  button:hover, button:visited, button:active, button:focus {
+    color: #CDE;
+  }
+}
+
+a, button {
+  transition: none;
+  border: 1px inset transparent;
+}
+
+a:hover, a:active, button:hover, button:active {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+a:focus, button:focus {
+  border: 1px inset WHITE;
+  outline: none;
+}
+
+a:active, button:active {
+  background: none;
+  border: 1px inset transparent;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: none;
+}
+
+i, button {
+  font-size: 2rem;
+  padding: 1.6rem;
+  height: 5rem;
+  width: 5rem;
+}
+
+@media (min-width: 40rem) {
+
+  i, button {
+    padding: 1rem;
+    height: 4rem;
+    width: 4rem;
+  }
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+button {
+  line-height: 0;
+  cursor: pointer;
+  margin: 1rem;
+  width: auto;
+}
+
+@media (min-width: 40rem) {
+  button {
+    padding: 1rem;
+    width: auto;
+  }
+}
+
+button i {
+  transition: 0.4s ease;
+  padding: 0;
+  margin: 0 1rem 0 0;
+  height: auto;
+  width: auto;
+}
+
+@media (min-width: 40rem) {
+  button i {
+    height: auto;
+    width: auto;
+  }
+}

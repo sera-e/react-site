@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+p, form {
+	margin:0 auto;
+}
+.track{
+	position: relative;
+	width: 320px;
+	height: 168px;
+	margin:0 auto;
+	border: 1px solid black;
+	overflow: hidden;	
+	background-color: darkgreen;
+}
+.startline, 
+.finishline {
+	position: absolute;
+	border-right: 1px dotted white;
+	height: 100%;
+	z-index:0;
+}
+.startline{
+	left:20px;
+	width: 1px;
+}
+.finishline{
+	right: 20px;	
+	width: 5px;
+	background-color: white;
+		
+}
+.line1,
+.line2,
+.line3,
+.line4,
+.line5{
+	position: absolute;
+	height: 1px;
+	border-bottom: 1px solid white;
+	width: 100%;
+	z-index: 0;
+	left:0;
+}
+.line1{
+	top: 27px;
+}
+.line2{
+	top: 55px;
+}
+.line3{
+	top: 83px;
+}
+.line4{
+	top: 111px;
+}
+.line5{
+	top: 139px;
+}
+
+#nugget01 {
+   position: absolute;
+	top: 2px;
+	left: 2px;
+}
+#nugget02 {
+   position: absolute;
+	top: 30px;
+	left: 2px;
+}
+#nugget03 {
+   position: absolute;
+	top: 58px;
+	left: 2px;
+}
+#nugget04 {
+    position: absolute;
+	top: 86px;
+	left: 2px;
+}
+#nugget05 {
+    position: absolute;
+	top: 114px;
+	left: 2px;
+}
+#nugget06 {
+   position: absolute;
+	top: 142px;
+	left: 2px;
+}
+
+#go {	
+ 	width : 100px;
+	height: 50px;
+  	padding:5px;
+	font-weight: bold;
+	font-size: 90%;
+	font-weight: lighter;
+}
+
+#reset {
+ 	width : 100px;
+	height: 50px;
+  	padding:5px;
+	font-weight: bold;
+	font-size: 90%;
+	font-weight: lighter;
+	margin-left:120px;
+}
+#centered h4{
+	position:relative;
+	left:40px;
+}
+#centered{
+	position:relative;
+	left:20px;
+}
