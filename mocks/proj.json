@@ -8,7 +8,7 @@
         "tools": "",
         "hardskills": "",
         "softskills": "",
-        "photos": ["/img/ddsos.jpg"],
+        "photos": ["ddsos.jpg"],
         "url": "https://www.instagram.com/p/C17Oi9qsz4Q/",
         "isHosted": false
     },
@@ -21,7 +21,7 @@
         "tools": "",
         "hardskills": "",
         "softskills": "",
-        "photos": ["/img/ddbb.jpg"],
+        "photos": ["ddbb.jpg"],
         "url": "https://www.instagram.com/reel/CztiVLzpsrD/",
         "isHosted": false
     },
@@ -34,7 +34,7 @@
         "tools": "",
         "hardskills": "",
         "softskills": "",
-        "photos": ["/img/parsp.png"],
+        "photos": ["parsp.png"],
         "url": "https://parsp.org/",
         "isHosted": false
     },
@@ -47,7 +47,7 @@
         "tools": "Visual Studio, Visual Studio Code, Adobe XD, Zoom",
         "hardskills": "ReactJS, Routing, Redux, Contracting, CSS, SASS",
         "softskills": "Web Design, Prototyping, Communication, Leadership, Teamwork, Quality Assurance",
-        "photos": ["/img/bhld.png"],
+        "photos": ["bhld.png"],
         "url": "https://wawamzn.benefithub.com/app/local-deals",
         "isHosted": false
     },
@@ -60,7 +60,7 @@
         "tools": "",
         "hardskills": "",
         "softskills": "",
-        "photos": ["/img/tpc-dali.png"],
+        "photos": ["tpc-dali.png"],
         "url": "https://www.instagram.com/p/CSco7kUJe7K",
         "isHosted": false
     },
@@ -73,7 +73,7 @@
         "tools": "",
         "hardskills": "",
         "softskills": "",
-        "photos": ["/img/bhsw.jpg"],
+        "photos": ["bhsw.jpg"],
         "url": "https://xd.adobe.com/view/86917e3a-ae6b-4a0d-7a7c-2e23cd9a9908-f0a0",
         "isHosted": false
     },
@@ -86,7 +86,7 @@
         "tools": "",
         "hardskills": "",
         "softskills": "",
-        "photos": ["/img/bhua.png"],
+        "photos": ["bhua.png"],
         "url": "https://mybenefithub.benefithub.com/welcome",
         "isHosted": false
     },
@@ -99,7 +99,7 @@
         "tools": "",
         "hardskills": "",
         "softskills": "",
-        "photos": ["/img/bhuk.png"],
+        "photos": ["bhuk.png"],
         "url": "https://benefithubcommonui.azurewebsites.net/",
         "isHosted": false
     },
@@ -112,7 +112,7 @@
         "tools": "",
         "hardskills": "",
         "softskills": "",
-        "photos": ["/img/bhrc.png"],
+        "photos": ["bhrc.png"],
         "url": "https://bbinsrelief.benefithub.com/app/home",
         "isHosted": false
     },
@@ -124,7 +124,7 @@
         "story": "",
         "tools": "",
         "hardskills": "",
-        "photos": ["/img/bhcl.png"],
+        "photos": ["bhcl.png"],
         "url": "https://xd.adobe.com/view/03a02f4f-785b-406a-79f4-d35b629f3ed3-7591/",
         "isHosted": false
     },
@@ -137,7 +137,7 @@
         "tools": "",
         "hardskills": "",
         "softskills": "",
-        "photos": ["/img/bhhm.png"],
+        "photos": ["bhhm.png"],
         "url": "https://wawamzn.benefithub.com/app/discounts/home",
         "isHosted": false
     },
@@ -150,7 +150,7 @@
         "tools": "",
         "hardskills": "",
         "softskills": "",
-        "photos": ["/img/bhmw.png"],
+        "photos": ["bhmw.png"],
         "url": "https://web.archive.org/web/20161004033929/http://benefithub.com/",
         "isHosted": false
     },
@@ -163,7 +163,7 @@
         "tools": "",
         "hardskills": "",
         "softskills": "",
-        "photos": ["/img/bhas.png"],
+        "photos": ["bhas.png"],
         "url": "https://xd.adobe.com/view/861d05d0-e58b-4ae6-8138-96226545f4d7-d34e",
         "isHosted": false
     },
@@ -176,7 +176,7 @@
         "tools": "",
         "hardskills": "",
         "softskills": "",
-        "photos": ["/img/nec.jpg"],
+        "photos": ["nec.jpg"],
         "url": "https://web.archive.org/web/20160327211606/https://www.newenglandcollegeonline.com/media/15321333/nec-undergraduate-programs-brochure.pdf",
         "isHosted": false
     },
@@ -189,9 +189,9 @@
         "tools": "",
         "hardskills": "",
         "softskills": "",
-        "photos": ["/img/aita.jpg"],
-        "url": "../assets/proj/pdf of banner photos",
-        "isHosted": false
+        "photos": ["aita.jpg"],
+        "url": "aita.pdf",
+        "isHosted": true
     },
     {
         "id": "bpi",
@@ -202,9 +202,9 @@
         "tools": "",
         "hardskills": "",
         "softskills": "",
-        "photos": ["/img/bpi.png"],
-        "url": "/projs/bpi/bpi.pdf",
-        "isHosted": false
+        "photos": ["bpi.png"],
+        "url": "bpi.pdf",
+        "isHosted": true
     },
     {
         "id": "dcn",
@@ -215,34 +215,8 @@
         "tools": "",
         "hardskills": "",
         "softskills": "",
-        "photos": ["/img/dcn.png"],
-        "url": "/projs/dcn/dcn.pdf",
-        "isHosted": false
-    },
-    {
-        "id": "ir",
-        "name": "Game App",
-        "type": "web",
-        "client": "",
-        "story": "Icon Recall is a web application that enables users to have a free online gaming experience on their mobile phones and tablets. I worked with a usability consultant to house one of the various games housed in the Games of Chance website. I researched other gaming websites and formed a kid-friendly color palette.",
-        "tools": "",
-        "hardskills": "",
-        "softskills": "",
-        "photos": ["/img/ir.png"],
-        "url": "/projs/ir",
-        "isHosted": false
-    },
-    {
-        "id": "goc",
-        "name": "Game Website",
-        "type": "web",
-        "client": "",
-        "story": "Games of Chance is a gaming website that enables users to have a free online gaming experience. I worked with a usability consultant to create a hub to house the various chance-based games. I researched other gaming websites and formed a kid-friendly color palette. The brandmark is consistently represented throughout the website.",
-        "tools": "",
-        "hardskills": "",
-        "softskills": "",
-        "photos": ["/img/goc.png"],
-        "url": "/projs/goc",
-        "isHosted": false
+        "photos": ["dcn.png"],
+        "url": "dcn.pdf",
+        "isHosted": true
     }
 ]
