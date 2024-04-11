@@ -1,0 +1,100 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300&subset=latin,latin-ext);
+*{transition:all .5s;}
+html {overflow: hidden;}
+html,
+body {
+  position: absolute;
+  height: 100%;
+  background-color:black;
+  width:100%;
+  margin:0 auto;
+  text-align:center;
+  transform-origin: top left;
+  font:300 16px 'Roboto', sans-serif;
+}
+table{margin:0 auto !important;}
+.content, .menubar{min-height:100%;}
+.content{
+  position:absolute;
+  height:100%; 
+  width:98%;
+  padding:1%;
+  overflow-y:scroll;/*
+  border-radius:0 0 0 50px;*/
+}
+a.logo img, a.logo{
+	margin:20px !important;
+	border-radius:50% !important;
+	display:block !important;
+	height:100px !important;
+	width:100px !important;
+}
+a.logo img{
+	margin:0 auto !important;
+}
+a:hover{
+	opacity:0.5;
+}
+.menubar{
+  position:fixed;
+  width:142px;
+  left:0px;
+  color:rgba(20,255,0,1.00);
+  text-align:right;
+  background-color:black;
+}
+.menubar ul{
+  font:300 1em 'Roboto', sans-serif;
+  position:absolute;
+  bottom:0;right:0;
+  list-style:none;
+}
+.menubar ul li a{
+  display: block;
+  border:2px solid rgba(20,255,0,0.5);
+  padding:7px 14px 7px 9999px;
+  margin:20px 15px 10px;
+  text-align:right;
+  color:rgba(20,255,0,1.00);
+  text-decoration:none;
+}
+.menubar ul li a:hover,.content .wrapper h1:hover{
+  background-color:rgba(20,255,0,0.25);
+  cursor:cell;
+}
+.opacity{
+  opacity:.75;
+}
+.active{
+  transform: rotate(-20deg);
+}
+.content .wrapper{margin:0 auto; text-align:center;}
+.contain{
+	background-color:rgba(255,255,255,0.75);
+	border:1px grey solid;
+	padding:20px;
+	width:40%;
+	margin:0 148px;
+	height:100%;
+	position:absolute;
+}
+.content .wrapper h1{
+  text-align:left;
+  border:2px solid rgba(20,255,0,0.5);
+  padding:10px; 
+  font-weight:300;
+  width:90px;
+  margin:50px 10px 10px 10px;
+}
+.content .wrapper img{
+  margin:18px 0 30px 0;
+}
+.content .wrapper p{
+  padding:0;
+  margin:0 0 15px 0;
+  text-align:center;
+}
+.content .wrapper  p:first-of-type{
+  font-size:16px;
+  font-weight:400;
+}

@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/react-site/static/css/main.a8e95f42.css",
+    "main.js": "/react-site/static/js/main.bb0ce7e9.js",
+    "static/js/453.8d1148a8.chunk.js": "/react-site/static/js/453.8d1148a8.chunk.js",
+    "static/media/fa-duotone-900.ttf": "/react-site/static/media/fa-duotone-900.3f45c5c197f52d283b4a.ttf",
+    "static/media/fa-solid-900.ttf": "/react-site/static/media/fa-solid-900.42ce62dd5ccebc21cf2f.ttf",
+    "static/media/fa-sharp-solid-900.ttf": "/react-site/static/media/fa-sharp-solid-900.b7506c1a48eb357a6752.ttf",
+    "static/media/fa-duotone-900.woff2": "/react-site/static/media/fa-duotone-900.ac0455b2ff12ba45e5e6.woff2",
+    "static/media/fa-solid-900.woff2": "/react-site/static/media/fa-solid-900.9f1626ec58494c3a070a.woff2",
+    "static/media/fa-sharp-solid-900.woff2": "/react-site/static/media/fa-sharp-solid-900.60dcb2e6aa70afc4a792.woff2",
+    "static/media/fa-brands-400.ttf": "/react-site/static/media/fa-brands-400.bb8a10b0705432f301de.ttf",
+    "static/media/fa-brands-400.woff2": "/react-site/static/media/fa-brands-400.5e7b19421dd30c3feeea.woff2",
+    "static/media/cursor.svg": "/react-site/static/media/cursor.5c6bab977cd561f4b66b.svg",
+    "index.html": "/react-site/index.html",
+    "main.a8e95f42.css.map": "/react-site/static/css/main.a8e95f42.css.map",
+    "main.bb0ce7e9.js.map": "/react-site/static/js/main.bb0ce7e9.js.map",
+    "453.8d1148a8.chunk.js.map": "/react-site/static/js/453.8d1148a8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a8e95f42.css",
+    "static/js/main.bb0ce7e9.js"
+  ]
+}
