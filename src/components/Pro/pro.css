@@ -150,7 +150,7 @@
 
 .proj-content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
 
@@ -175,5 +175,11 @@
   .btn {
     padding: 1.6rem;
     width: fit-content;
+  }
+}
+
+@media (min-width: 56rem) {
+  .proj-content {
+    flex-direction: row;
   }
 }
