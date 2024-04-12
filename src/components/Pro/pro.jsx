@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import { compose } from 'redux'
 import { proCards } from '../utils'
 import { Nav, Footer } from '../Nav'
+import FeaturedPro from './FeaturedPro'
 import $ from 'jquery'
 import './pro.css'
 
@@ -9,15 +10,17 @@ const endpointGetProjects = '/mocks/proj.json'
 
 class Pro extends React.Component {
 
-    state = { data: null, IsLoaded: false }
+    state = {
+      IsLoaded: false,
+      data: null,
+      selectedProj: null
+    }
 
     componentDidMount() {
         this.loadSettings()
     }
 
-    toggleCallback = (isActive) => {
-        const { appId, handleShowAppToUsers } = this.props
-        handleShowAppToUsers(appId, isActive)
+    toggleCallback = () => {
     }
 
     loadSettings = () => {
@@ -27,24 +30,25 @@ class Pro extends React.Component {
       })
     }
 
-    render() {
-        const { IsLoaded, data } = this.state
-        if (!IsLoaded || !data) return <span>Loading</span>
+    selectPro = (data) => this.setState({ selectedProj: data })
 
-        return (
-          <div className='wrap portfolio'>
-          <Fragment>
-            <Nav />
-            <main>
-              <h2>Portfolio</h2>
-              <ul className='cards'>
-                {proCards(data)}
-              </ul>
-            </main>
-            <Footer />
-          </Fragment>
-        </div>
-        )
+    render() {
+      const { IsLoaded, data, selectedProj } = this.state
+      if (!IsLoaded || !data) return <span>Loading</span>
+
+      return <div className='wrap portfolio'>
+        <Fragment>
+          <Nav />
+          <main>
+            <h2>{selectedProj ? selectedProj.name : 'Portfolio'}</h2>
+            {selectedProj 
+            ? <FeaturedPro selectedProj={selectedProj} selectPro={this.selectPro}/> 
+            : <ul className='cards'>{proCards(data, this.selectPro)}</ul>
+            }
+          </main>
+          <Footer />
+        </Fragment>
+      </div>
     }
 }
 

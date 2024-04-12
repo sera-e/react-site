@@ -52,17 +52,17 @@ export const socials = () => {
     })
 }
 
-export const proCards = (proData) => proData.map((pro) => {
-    const {id, name, type, client, story, tools, hardskills, softskills, photos, url, isHosted = false } = pro
+export const proCards = (proData, selectPro) => proData.map((pro) => {
+    const {id, name, photos } = pro
 
-    return <li className='cards_item' key={id+name+type+client+story+tools+hardskills+softskills}>
+    return <li className='cards-item' key={id}>
         <div className='procard'>
-            <div className='card_image'>
-                <img src={require(`../../public/img/${photos[0]}`)} alt={name} />
+            <div>
+                <img className='card-image' src={require(`/public/img/${photos[0]}`)} alt={name} />
             </div>
-            <div className='card_content'>
-                <h3 class='card_title'>{name}</h3>
-                <a class='btn card_btn' href={!isHosted ? url : require(`../../public/projs/${id}/${url}`)} target='_blank' rel='noreferrer'>View Source</a>
+            <div className='card-content'>
+                <h3 className='card-title'>{name}</h3>
+                <button className='btn card-btn' onClick={() => { selectPro(pro) }} type='button'>Read More</button>
             </div>
         </div>
     </li>
