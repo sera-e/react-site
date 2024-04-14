@@ -3,6 +3,7 @@ import { compose } from 'redux'
 import { proCards } from '../utils'
 import { Nav, Footer } from '../Nav'
 import FeaturedPro from './FeaturedPro'
+import Loader from '../Loader/loader'
 import $ from 'jquery'
 import './pro.css'
 
@@ -17,33 +18,32 @@ class Pro extends React.Component {
     }
 
     componentDidMount() {
-        this.loadSettings()
-    }
-
-    toggleCallback = () => {
+      this.loadSettings()
     }
 
     loadSettings = () => {
 
       $.getJSON(endpointGetProjects, (data) => {
-          this.setState({ data, IsLoaded: true })
-      })
+          this.setState({ data })
+      }, () => {setTimeout(() => {this.setState({ IsLoaded: true })}, 1000)})
     }
 
     selectPro = (data) => this.setState({ selectedProj: data })
 
     render() {
       const { IsLoaded, data, selectedProj } = this.state
-      if (!IsLoaded || !data) return <span>Loading</span>
+      if (!IsLoaded || !data) return <Loader />
 
       return <div className='wrap portfolio'>
         <Fragment>
           <Nav />
           <main>
-            <h2>{selectedProj ? selectedProj.name : 'Portfolio'}</h2>
             {selectedProj 
             ? <FeaturedPro selectedProj={selectedProj} selectPro={this.selectPro}/> 
-            : <ul className='cards'>{proCards(data, this.selectPro)}</ul>
+            : <div>
+                <h2>Portfolio</h2>
+                <ul className='cards'>{proCards(data, this.selectPro)}</ul>
+              </div>
             }
           </main>
           <Footer />

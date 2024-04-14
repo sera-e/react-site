@@ -1,11 +1,19 @@
 import React, { Fragment } from 'react'
 import { compose } from 'redux'
+import Loader from '../Loader/loader'
 import './pro.css'
 
 class FeaturedPro extends React.Component {
 
     state = {
-        IsLoaded: true
+        IsLoaded: false
+    }
+
+    componentDidMount = () => {
+
+        setTimeout(() => {
+            this.setState({ IsLoaded: true }
+        )}, 1000)
     }
 
     getPhotos = (selectedProj, photos) => {
@@ -16,11 +24,12 @@ class FeaturedPro extends React.Component {
     render() {
         const { IsLoaded } = this.state
         const { selectedProj, selectPro } = this.props
-        const { id, role, client, story, tools, hardskills, softskills, photos, url, isHosted = false } = selectedProj
+        const { id, name, role, client, story, tools, hardskills, softskills, photos, url, isHosted = false } = selectedProj
 
-        if (!IsLoaded || !selectedProj) return <span>Loading</span>
+        if (!IsLoaded || !selectedProj) return <Loader />
 
         return <Fragment>
+            <h2>{name}</h2>
             <button onClick={() => { selectPro(null) }} type='button'>
                 <i className='fa-light fa-arrow-left' />
                 <span>Go Back</span>
