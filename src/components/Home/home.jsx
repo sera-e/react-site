@@ -1,13 +1,25 @@
 import React, { Fragment } from 'react'
-import { compose } from 'redux'
 import { nav, socials } from '../utils'
 import { Nav, Footer } from '../Nav'
+import Loader from '../Loader/loader'
 
 import './home.css'
 
-const Home = () => {
+class Home extends React.Component {
 
-  return <div className='wrap home'>
+  state = {
+    IsLoaded: false
+  }
+
+  componentDidMount() {
+    setTimeout(() => {this.setState({ IsLoaded: true })}, 1000)
+  }
+
+  render() {
+    const { IsLoaded } = this.state
+    if (!IsLoaded) return <Loader />
+
+    return <div className='wrap home'>
     <Fragment>
       <Nav />
       <main>
@@ -28,6 +40,7 @@ const Home = () => {
       <Footer />
     </Fragment>
   </div>
+  }
 }
 
-export default compose()(Home)
+export default Home
