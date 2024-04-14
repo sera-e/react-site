@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react'
-import { compose } from 'redux'
 import { Nav, Footer } from '../Nav'
 
 import './err.css'
@@ -32,4 +31,4 @@ const Err = () => {
   </div>
 }
 
-export default compose()(Err)
+export default Err

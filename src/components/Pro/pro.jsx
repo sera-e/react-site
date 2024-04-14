@@ -1,5 +1,4 @@
-import React, { Fragment } from 'react'
-import { compose } from 'redux'
+import React, { Fragment, useEffect, useState } from 'react'
 import { proCards } from '../utils'
 import { Nav, Footer } from '../Nav'
 import FeaturedPro from './FeaturedPro'
@@ -9,48 +8,40 @@ import './pro.css'
 
 const endpointGetProjects = '/mocks/proj.json'
 
-class Pro extends React.Component {
+const Pro = () => {
 
-    state = {
-      IsLoaded: false,
-      data: null,
-      selectedProj: null
-    }
+  const [isLoaded, setIsLoaded] = useState(false)
+  const [data, setData] = useState(null)
+  const [selectedProj, setSelectedProj] = useState(null)
 
-    componentDidMount() {
-      this.loadSettings()
-    }
+  const loadSettings = () => {
+    $.getJSON(endpointGetProjects, (datajson) => setData(datajson))
+  }
 
-    loadSettings = () => {
-      setTimeout(() => {
-        $.getJSON(endpointGetProjects, (data) => {
-            this.setState({ data, IsLoaded: true })
-        })
-      }, 1000)
-    }
+  useEffect(() => {
+    setIsLoaded(false)
+    loadSettings()
+    setTimeout(() => { setIsLoaded(true) }, 1000)
+  }, [selectedProj])
 
-    selectPro = (data) => this.setState({ selectedProj: data })
+  const selectPro = (selectedPro) => setSelectedProj(selectedPro)
 
-    render() {
-      const { IsLoaded, data, selectedProj } = this.state
-      if (!IsLoaded || !data) return <Loader />
-
-      return <div className='wrap portfolio'>
-        <Fragment>
-          <Nav />
-          <main>
-            {selectedProj 
-            ? <FeaturedPro selectedProj={selectedProj} selectPro={this.selectPro}/> 
-            : <div>
-                <h2>Portfolio</h2>
-                <ul className='cards'>{proCards(data, this.selectPro)}</ul>
-              </div>
-            }
-          </main>
-          <Footer />
-        </Fragment>
-      </div>
-    }
+  return <div className='wrap portfolio'>
+    <Fragment>
+      <Nav />
+      {!isLoaded && <Loader />}
+      {data && <main className={!isLoaded && 'loading'}>
+        {selectedProj 
+        ? <FeaturedPro selectedProj={selectedProj} selectPro={selectPro}/> 
+        : <div>
+            <h2>Portfolio</h2>
+            <ul className='cards'>{proCards(data, selectPro)}</ul>
+          </div>
+        }
+      </main>}
+      <Footer />
+    </Fragment>
+  </div>
 }
 
-export default compose()(Pro)
+export default Pro

@@ -1,5 +1,4 @@
 import React from 'react'
-import { compose } from 'redux'
 import { nav, toggleMenu } from '../utils'
 
 import './nav.css'
@@ -14,4 +13,4 @@ const Nav = () => <nav className='top'>
     </div>
 </nav>
 
-export default compose()(Nav)
+export default Nav

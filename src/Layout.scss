@@ -75,3 +75,10 @@
     border-radius: 1rem;
     border: 0rem none #001;
   }
+
+  .loading {
+    opacity: 0;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+  }
