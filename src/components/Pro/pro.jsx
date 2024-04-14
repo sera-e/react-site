@@ -22,10 +22,11 @@ class Pro extends React.Component {
     }
 
     loadSettings = () => {
-
-      $.getJSON(endpointGetProjects, (data) => {
-          this.setState({ data })
-      }, () => {setTimeout(() => {this.setState({ IsLoaded: true })}, 1000)})
+      setTimeout(() => {
+        $.getJSON(endpointGetProjects, (data) => {
+            this.setState({ data, IsLoaded: true })
+        })
+      }, 1000)
     }
 
     selectPro = (data) => this.setState({ selectedProj: data })
