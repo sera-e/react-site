@@ -41,7 +41,7 @@ const Pro = () => {
     <Fragment>
       <Nav IsLoaded={isLoaded} />
       {!isLoaded && <Loader />}
-      {data && <main className={!isLoaded ? 'loading' : ''}>
+      {data && <main className={isLoaded ? 'loading loaded' : 'loading'}>
         {selectedProj 
         ? <FeaturedPro selectedProj={selectedProj} selectPro={selectPro}/> 
         : <div>
