@@ -55,7 +55,7 @@ export const socials = () => {
 export const proCards = (proData, selectPro) => proData.map((pro) => {
     const {id, name, photos } = pro
 
-    return <li className='cards-item' key={id}>
+    return <li id={id} className='cards-item' key={id}>
         <div className='procard'>
             <div>
                 <img className='card-image' src={require(`/public/img/${photos[0]}`)} alt={name} />

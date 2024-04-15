@@ -14,7 +14,7 @@ class FeaturedPro extends React.Component {
 
         return <Fragment>
             <h2>{name}</h2>
-            <button onClick={() => { selectPro(null) }} type='button'>
+            <button onClick={() => { selectPro(null, id) }} type='button'>
                 <i className='fa-light fa-arrow-left' />
                 <span>Go Back</span>
             </button>

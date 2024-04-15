@@ -22,7 +22,7 @@ class Home extends React.Component {
     <Fragment>
       <Nav IsLoaded={IsLoaded} />
       {!IsLoaded && <Loader />}
-      <main className={!IsLoaded && 'loading'}>
+      <main className={!IsLoaded ? 'loading' : ''}>
         <div className='card'>
           <h2>SERA EBEN</h2>
           <h4>Designer // Programmer</h4>
