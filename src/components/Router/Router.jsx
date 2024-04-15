@@ -27,10 +27,7 @@ class Router extends Component {
                     <Route path='/(portfolio)(/*)'>
                         <Pro />
                     </Route>
-                    <Route path='/(*)'>
-                        <Err />
-                    </Route>
-                    <Route path='*'>
+                    <Route path='/*'>
                         <Err />
                     </Route>
                 </Switch>

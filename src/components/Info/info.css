@@ -3,3 +3,15 @@
 .contact a:active {
     background: none;
 }
+
+.contact {
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    input, textarea {
+        width: 100%;
+        padding: 1.2rem;
+        margin: 0 0 1rem 0;
+    }
+}

@@ -23,12 +23,17 @@
     max-width: 140rem;
     margin: 0 auto;
   }
+
+  .proj-wrapper, .procard, .card-image { 
+    transition: 0.5s ease;
+  }
   
   .card-image {
-    height: auto;
+    height: 18rem;
     width: 100%;
     vertical-align: middle;
     object-fit: cover;
+    background: #000;
 
     &:hover, &:active, &:focus {
       cursor: pointer;
@@ -39,7 +44,6 @@
   
   @media (min-width: 37rem) {
     .card-image {
-      height: auto;
       max-height: 18rem;
       width: max-content;
       min-width: 100%;
@@ -47,6 +51,10 @@
       object-fit: cover;
       object-position: center top;
     }
+  }
+
+  .goback-btn {
+    margin: 0 0 1rem 0;
   }
   
   .btn {
@@ -142,7 +150,6 @@
 }
 
 .proj-wrapper {
-  transition: 0.5s ease;
   word-break: break-all;
   word-break: break-word;
   position: relative;

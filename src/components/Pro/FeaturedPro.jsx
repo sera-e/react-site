@@ -19,11 +19,10 @@ class FeaturedPro extends React.Component {
         return <div id={id}>
             <Fragment>
                 <h2>{name}</h2>
-                <button onClick={() => { selectPro(null) }} type='button'>
+                <button className='goback-btn' onClick={() => { selectPro(null) }} type='button'>
                     <i className='fa-light fa-arrow-left' />
                     <span>Go Back</span>
                 </button>
-                <br />
                 <div className='proj-wrapper'>
                     <div className='proj-content'>
                         <div className='proj-photos'>

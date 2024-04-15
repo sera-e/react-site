@@ -5,7 +5,7 @@ import './err.css'
 
 const Err = () => {
 
-  return <div className='wrap contact'>
+  return <div className='wrap err'>
     <Fragment>
       <Nav />
       <main>
@@ -15,15 +15,12 @@ const Err = () => {
           <p>
             Oops! Looks like you strayed too far.
           </p>
-          <br /><br /><br />
           <h5>
               That's okay :)
           </h5>
           <p>
             Why don't you stick around a while in quiet contemplation?
           </p>
-          <br />
-          <br />
         </div>
       </main>
       <Footer />
