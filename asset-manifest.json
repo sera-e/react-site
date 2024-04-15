@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.82ba4379.css",
-    "main.js": "/static/js/main.75981b05.js",
+    "main.css": "/static/css/main.6b779560.css",
+    "main.js": "/static/js/main.27881b9e.js",
     "static/js/453.c78a39cd.chunk.js": "/static/js/453.c78a39cd.chunk.js",
     "static/media/bpi.pdf": "/static/media/bpi.5e6fb9f5c51a7a7768d5.pdf",
     "static/media/aita.pdf": "/static/media/aita.7e1e1da2368fe485a313.pdf",
@@ -46,12 +46,12 @@
     "static/media/bpi-logo.png": "/static/media/bpi-logo.eed38a124dfc74d43968.png",
     "static/media/cursor.svg": "/static/media/cursor.5c6bab977cd561f4b66b.svg",
     "index.html": "/index.html",
-    "main.82ba4379.css.map": "/static/css/main.82ba4379.css.map",
-    "main.75981b05.js.map": "/static/js/main.75981b05.js.map",
+    "main.6b779560.css.map": "/static/css/main.6b779560.css.map",
+    "main.27881b9e.js.map": "/static/js/main.27881b9e.js.map",
     "453.c78a39cd.chunk.js.map": "/static/js/453.c78a39cd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.82ba4379.css",
-    "static/js/main.75981b05.js"
+    "static/css/main.6b779560.css",
+    "static/js/main.27881b9e.js"
   ]
 }
