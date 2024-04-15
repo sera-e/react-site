@@ -13,7 +13,7 @@ const Pro = () => {
   const [isLoaded, setIsLoaded] = useState(false)
   const [data, setData] = useState(null)
   const [selectedProj, setSelectedProj] = useState(null)
-  const [selectedId, setSelectedId] = useState(null)
+  const [selectedId, setSelectedId] = useState('site')
 
   const loadSettings = () => {
     $.getJSON(endpointGetProjects, (datajson) => setData(datajson))
@@ -23,18 +23,16 @@ const Pro = () => {
     setIsLoaded(false)
     loadSettings()
     setTimeout(() => { setIsLoaded(true) }, 1500)
-    if (!!selectedProj) setTimeout(() => { window.scrollTo(0, 0, { behavior: 'smooth' }) }, 1600)
+    if (!!selectedProj) setTimeout(() => { window.scrollTo({ top: 0, behavior: 'smooth' }) }, 1600)
   }, [selectedProj])
 
   useEffect(() => {
-    const id = selectedId || 'site'
-    setTimeout(() => { document.getElementById(id).scrollIntoView({ behavior: 'smooth' }) }, 1600)
-    
+    setTimeout(() => { document.getElementById(selectedId).scrollIntoView({ behavior: 'smooth' }) }, 1600)
   }, [selectedId])
 
   const selectPro = (selectedPro, id) => {
     setSelectedProj(selectedPro)
-    if (id) setSelectedId(id)
+    setSelectedId(id)
   }
 
   return <div className='wrap portfolio'>
