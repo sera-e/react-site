@@ -28,6 +28,7 @@ const Pro = () => {
 
   useEffect(() => {
     setTimeout(() => { document.getElementById(selectedId).scrollIntoView({ behavior: 'smooth' }) }, 1600)
+    if (selectedId === 'site') setTimeout(() => { window.scrollTo({ top: 0, behavior: 'smooth' }) }, 1600)
   }, [selectedId])
 
   const selectPro = (selectedPro, id) => {
