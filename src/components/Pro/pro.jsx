@@ -23,11 +23,10 @@ const Pro = () => {
     setIsLoaded(false)
     loadSettings()
     setTimeout(() => { setIsLoaded(true) }, 1500)
-    if (!!selectedProj) setTimeout(() => { window.scrollTo({ top: 0, behavior: 'smooth' }) }, 1600)
   }, [selectedProj])
 
   useEffect(() => {
-    if (selectedId === 'site') setTimeout(() => { window.scrollTo({ top: 0, behavior: 'smooth' }) }, 1600)
+    if (selectedId === 'site') setTimeout(() => { window.scrollTo(0, 0) }, 1600)
     if (selectedId !== 'site') setTimeout(() => { document.getElementById(selectedId).scrollIntoView({ behavior: 'smooth' }) }, 1600)
   }, [selectedId])
 
