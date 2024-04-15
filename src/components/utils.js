@@ -58,11 +58,11 @@ export const proCards = (proData, selectPro) => proData.map((pro) => {
     return <li id={id} className='cards-item' key={id} >
         <div className='procard'>
             <div>
-                <img className='card-image' onClick={() => { selectPro(pro, null) }} src={require(`/public/img/${photos[0]}`)} alt={name} />
+                <img className='card-image' onClick={() => { selectPro(pro) }} src={require(`/public/img/${photos[0]}`)} alt={name} />
             </div>
             <div className='card-content'>
-                <h3 className='card-title' onClick={() => { selectPro(pro, null) }}>{name}</h3>
-                <button className='btn card-btn' onClick={() => { selectPro(pro, null) }} type='button'>Read More</button>
+                <h3 className='card-title' onClick={() => { selectPro(pro) }}>{name}</h3>
+                <button className='btn card-btn' onClick={() => { selectPro(pro) }} type='button'>Read More</button>
             </div>
         </div>
     </li>

@@ -13,7 +13,6 @@ const Pro = () => {
   const [isLoaded, setIsLoaded] = useState(false)
   const [data, setData] = useState(null)
   const [selectedProj, setSelectedProj] = useState(null)
-  const [selectedId, setSelectedId] = useState(null)
 
   const loadSettings = () => {
     $.getJSON(endpointGetProjects, (datajson) => setData(datajson))
@@ -22,28 +21,23 @@ const Pro = () => {
   useEffect(() => {
     setIsLoaded(false)
     loadSettings()
-    setTimeout(() => {
-      setIsLoaded(true)
-      window.scroll(0, 0)
-    }, 1500)
+    setTimeout(() => { setIsLoaded(true) }, 1600)
+    setTimeout(() => { document.getElementById(selectedProj ? selectedProj.id : 'root').scrollIntoView({ behavior: 'smooth'}) }, 1700)
   }, [selectedProj])
 
   useEffect(() => {
-    if (!!selectedId) setTimeout(() => {
-      document.getElementById(selectedId).scrollIntoView({ behavior: 'smooth' })
-    }, 1600)
-  }, [selectedId])
+  }, [selectedProj])
 
-  const selectPro = (selectedPro, id) => {
+  const selectPro = (selectedPro) => {
     setSelectedProj(selectedPro)
-    setSelectedId(id)
   }
+  
+  if (!isLoaded) return <Loader />
 
   return <div className='wrap portfolio'>
     <Fragment>
-      <Nav IsLoaded={isLoaded} />
-      {!isLoaded && <Loader />}
-      {data && <main className={isLoaded ? 'loading loaded' : 'loading'}>
+      <Nav />
+      {data && <main>
         {selectedProj 
         ? <FeaturedPro selectedProj={selectedProj} selectPro={selectPro}/> 
         : <div>

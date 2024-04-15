@@ -8,7 +8,7 @@ const Info = () => {
 
   return <div className='wrap contact'>
     <Fragment>
-      <Nav IsLoaded={true} />
+      <Nav />
       <main>
         <div className='card'>
           <h2>Contact info</h2>

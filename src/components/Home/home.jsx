@@ -17,12 +17,12 @@ class Home extends React.Component {
 
   render() {
     const { IsLoaded } = this.state
+    if (!IsLoaded) return <Loader />
 
     return <div className='wrap home'>
     <Fragment>
-      <Nav IsLoaded={IsLoaded} />
-      {!IsLoaded && <Loader />}
-      <main className={IsLoaded ? 'loading loaded' : 'loading'}>
+      <Nav />
+      <main>
         <div className='card'>
           <h2>SERA EBEN</h2>
           <h4>Designer // Programmer</h4>
