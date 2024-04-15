@@ -3,6 +3,12 @@ import './pro.css'
 
 class FeaturedPro extends React.Component {
 
+    componentDidMount() {
+        setTimeout(() => {
+            document.getElementById('root').scrollTo({ top: 0, behavior: 'smooth' })
+        }, 1600)
+    }
+
     getPhotos = (selectedProj, photos) => {
         const { id, type } = selectedProj
         return photos.map((photo) => <img key={id + type} src={require(`/public/img/${photo}`)} alt={photo} />)

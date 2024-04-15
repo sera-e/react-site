@@ -13,7 +13,7 @@ const Pro = () => {
   const [isLoaded, setIsLoaded] = useState(false)
   const [data, setData] = useState(null)
   const [selectedProj, setSelectedProj] = useState(null)
-  const [selectedId, setSelectedId] = useState('site')
+  const [selectedId, setSelectedId] = useState(null)
 
   const loadSettings = () => {
     $.getJSON(endpointGetProjects, (datajson) => setData(datajson))
@@ -22,12 +22,16 @@ const Pro = () => {
   useEffect(() => {
     setIsLoaded(false)
     loadSettings()
-    setTimeout(() => { setIsLoaded(true) }, 1500)
+    setTimeout(() => {
+      setIsLoaded(true)
+      window.scroll(0, 0)
+    }, 1500)
   }, [selectedProj])
 
   useEffect(() => {
-    if (selectedId === 'site') setTimeout(() => { window.scrollTo(0, 0) }, 1600)
-    if (selectedId !== 'site') setTimeout(() => { document.getElementById(selectedId).scrollIntoView({ behavior: 'smooth' }) }, 1600)
+    if (!!selectedId) setTimeout(() => {
+      document.getElementById(selectedId).scrollIntoView({ behavior: 'smooth' })
+    }, 1600)
   }, [selectedId])
 
   const selectPro = (selectedPro, id) => {

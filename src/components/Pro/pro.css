@@ -29,6 +29,11 @@
     width: 100%;
     vertical-align: middle;
     object-fit: cover;
+
+    &:hover, &:active, &:focus {
+      cursor: pointer;
+      opacity: 0.75;
+    }
   }
   
   @media (min-width: 37rem) {
@@ -119,6 +124,11 @@
     text-transform: capitalize;
     margin: 0;
     padding: 1rem 0 2rem;
+
+    &:hover, &:active, &:focus {
+      text-decoration: underline;
+      cursor: pointer;
+    }
   }
   
   .card-text {

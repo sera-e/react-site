@@ -55,14 +55,14 @@ export const socials = () => {
 export const proCards = (proData, selectPro) => proData.map((pro) => {
     const {id, name, photos } = pro
 
-    return <li id={id} className='cards-item' key={id}>
+    return <li id={id} className='cards-item' key={id} >
         <div className='procard'>
             <div>
-                <img className='card-image' src={require(`/public/img/${photos[0]}`)} alt={name} />
+                <img className='card-image' onClick={() => { selectPro(pro, null) }} src={require(`/public/img/${photos[0]}`)} alt={name} />
             </div>
             <div className='card-content'>
-                <h3 className='card-title'>{name}</h3>
-                <button className='btn card-btn' onClick={() => { selectPro(pro, 'site') }} type='button'>Read More</button>
+                <h3 className='card-title' onClick={() => { selectPro(pro, null) }}>{name}</h3>
+                <button className='btn card-btn' onClick={() => { selectPro(pro, null) }} type='button'>Read More</button>
             </div>
         </div>
     </li>
