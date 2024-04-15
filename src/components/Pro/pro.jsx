@@ -21,7 +21,7 @@ const Pro = () => {
   useEffect(() => {
     setIsLoaded(false)
     loadSettings()
-    setTimeout(() => { setIsLoaded(true) }, 1000)
+    setTimeout(() => { setIsLoaded(true) }, 1500)
   }, [selectedProj])
 
   const selectPro = (selectedPro) => setSelectedProj(selectedPro)
