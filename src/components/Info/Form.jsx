@@ -1,11 +1,23 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const Form = () => {
     const [submit, setSubmit] = useState(false)
+
+    useEffect(() => {
+        setTimeout(() => {
+            setSubmit(false)
+            setFormData({
+                'entry.910385804': '',
+                'entry.1738413758': '',
+                'entry.820084297': ''
+            })
+        }, 2000)
+      }, [submit])
+
     const [formData, setFormData] = useState({
-        'entry.205911261': '',
-        'entry.1676677340': '',
-        'entry.1154934995': ''
+        'entry.910385804': '',
+        'entry.1738413758': '',
+        'entry.820084297': ''
     })
 
     const handleInputData = (input) => (e) => {
@@ -21,7 +33,7 @@ const Form = () => {
         e.preventDefault()
         setSubmit(true)
 
-        let url = `https://docs.google.com/forms/u/0/d/e/1FAIpQLSe0OfKux1x0pZXKILd9NgH-FLeaOYhUtI_FHSo0zK0652Fydg/formResponse?entry.205911261=${formData['entry.205911261']}&entry.1676677340=${formData['entry.1676677340']}&entry.1154934995=${formData['entry.1154934995']}`
+        let url = `https://docs.google.com/forms/u/1/d/e/1FAIpQLSdoMFZYcketyKf-YIXwZfYA_5WIaSHeJHESOnHuptIJbCelRQ/formResponse?entry.910385804=${formData['entry.910385804']}&entry.1738413758=${formData['entry.1738413758']}&entry.820084297=${formData['entry.820084297']}`
 
         const res = await fetch(url, {
             method: 'POST',
@@ -37,9 +49,9 @@ const Form = () => {
                         <input
                             required
                             type='text'
-                            name='entry.205911261'
-                            onChange={handleInputData('entry.205911261')}
-                            value={formData['entry.205911261']}
+                            name='entry.910385804'
+                            onChange={handleInputData('entry.910385804')}
+                            value={formData['entry.910385804']}
                             autoComplete={false}
                             placeholder='name'
                         />
@@ -49,9 +61,9 @@ const Form = () => {
                         <input
                             required
                             type='email'
-                            name='entry.1676677340'
-                            onChange={handleInputData('entry.1676677340')}
-                            value={formData['entry.1676677340']}
+                            name='entry.1738413758'
+                            onChange={handleInputData('entry.1738413758')}
+                            value={formData['entry.1738413758']}
                             autoComplete={false}
                             placeholder='e-mail'
                         />
@@ -60,10 +72,10 @@ const Form = () => {
                     <fieldset>
                         <textarea
                             required
-                            name='entry.1154934995'
+                            name='entry.820084297'
                             rows='4'
-                            onChange={handleInputData('entry.1154934995')}
-                            value={formData['entry.1154934995']}
+                            onChange={handleInputData('entry.820084297')}
+                            value={formData['entry.820084297']}
                             autoComplete={false}
                             placeholder='message'
                         ></textarea>
