@@ -32,7 +32,8 @@
 
     &:hover, &:active, &:focus {
       cursor: pointer;
-      opacity: 0.75;
+      outline: 1px solid #fff;
+      outline-offset: 2px;
     }
   }
   
