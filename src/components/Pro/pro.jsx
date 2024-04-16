@@ -2,6 +2,7 @@ import React, { Fragment, useEffect, useState } from 'react'
 import Loader from '../Loader/loader'
 import { proCards } from '../utils'
 import { Nav, Footer } from '../Nav'
+import BackToTop from '../Nav/backtotop'
 import FeaturedPro from './FeaturedPro'
 import $ from 'jquery'
 import './pro.css'
@@ -24,7 +25,7 @@ const Pro = ({ portfolioId }) => {
   useEffect(() => {
     const match = projects && projects.filter((proj) => portfolioId.split('/')[1] === proj.id)
     setSelectedProj(match ? match[0] : null)
-  }, [projects])
+  }, [projects, portfolioId])
 
   useEffect(() => {
     setIsLoaded(false)
@@ -33,18 +34,13 @@ const Pro = ({ portfolioId }) => {
     }, 1500)
 
   }, [selectedProj])
-
-  useEffect(() => {
-    const id = selectedProj || 'site'
-
-    if (isLoaded) window.onload = () => document.getElementById(id).scrollIntoView({ behavior: 'smooth' })
-  }, [isLoaded])
   
   if (!isLoaded) return <Loader />
 
   return <div className='wrap portfolio'>
     <Fragment>
       <Nav />
+      <BackToTop />
       {projects && <main>
         {selectedProj 
         ? <FeaturedPro selectedProj={selectedProj} /> 

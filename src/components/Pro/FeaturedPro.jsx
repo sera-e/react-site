@@ -5,7 +5,7 @@ import './pro.css'
 class FeaturedPro extends React.Component {
 
     componentDidMount() {
-        setTimeout(() => { window.scrollTo(0, 0) }, 1500)
+        setTimeout(() => { window.scrollTo(0, 0, { behavior: 'smooth' }) }, 1600)
     }
 
     getPhotos = (selectedProj, photos) => {
