@@ -37,6 +37,7 @@ const Pro = () => {
     const match = projects && projects.filter((proj) => path.includes(proj.id))
 
     if (match) selectPro(match[0])
+    if (!match || !match.length) selectPro(null)
 
   }, [projects])
 
@@ -51,7 +52,7 @@ const Pro = () => {
 
   useEffect(() => {
     const id = selectedProjId || 'site'
-    
+
     if (isLoaded) window.onload = () => document.getElementById(id).scrollIntoView({ behavior: 'smooth' })
   }, [isLoaded])
   
