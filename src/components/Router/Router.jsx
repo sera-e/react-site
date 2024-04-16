@@ -13,9 +13,9 @@ class Router extends Component {
 
     render() {
         const { location } = this.props
-        const { pathname } = location
-        const segments = pathname.toLowerCase().split('/')
-        const Extended = segments.slice(2).join('/')
+        const { hash } = location
+        const segments = hash.replace(/^#\//,'').toLowerCase().split('/')
+        const Extended = segments.slice(0).join('/')
 
         return <div key='page-router'>
             <HashRouter>
