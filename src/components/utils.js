@@ -21,10 +21,6 @@ const smLinksData = [
         icon: 'codepen'
     },
     {
-        url: 'https://dribbble.com/serae',
-        icon: 'dribbble'
-    },
-    {
         url: 'https://linkedin.com/in/serae',
         icon: 'linkedin-in'
     },
