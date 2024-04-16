@@ -1,6 +1,6 @@
 [
     {
-        "id": "bhld",
+        "id": "bh-local-deals",
         "name": "Local Deals",
         "type": "web",
         "client": "BenefitHub",
@@ -14,7 +14,7 @@
         "isHosted": false
     },
     {
-        "id": "bhsw",
+        "id": "bh-site-wizard",
         "name": "Site Wizard",
         "type": "web",
         "client": "BenefitHub",
@@ -28,7 +28,7 @@
         "isHosted": false
     },
     {
-        "id": "bhua",
+        "id": "bh-user-authentication",
         "name": "User Authentication",
         "type": "web",
         "client": "BenefitHub",
@@ -42,7 +42,7 @@
         "isHosted": false
     },
     {
-        "id": "bhuk",
+        "id": "bh-ui-kit",
         "name": "UI Kit",
         "type": "web",
         "client": "BenefitHub",
@@ -56,7 +56,7 @@
         "isHosted": false
     },
     {
-        "id": "bhrc",
+        "id": "bh-resource-center",
         "name": "Resource Center",
         "type": "web",
         "client": "BenefitHub",
@@ -70,7 +70,7 @@
         "isHosted": false
     },
     {
-        "id": "bhhm",
+        "id": "bh-local-deals-module",
         "name": "Local Deals Module",
         "type": "web",
         "client": "BenefitHub",
@@ -84,7 +84,7 @@
         "isHosted": false
     },
     {
-        "id": "bhmw",
+        "id": "bh-marketing-website",
         "name": "Marketing Website",
         "type": "web",
         "client": "BenefitHub",
@@ -98,12 +98,12 @@
         "isHosted": false
     },
     {
-        "id": "bhas",
+        "id": "bh-admin-settings",
         "name": "Admin Settings",
         "type": "web",
         "client": "BenefitHub",
         "role": "UX Designer, UI Developer",
-        "story": "I collaborated with the stakeholders of this product to gather all the relevant user and admin settings related to their website, including webapp plugins and site metrics, into a cohesive user experience using best UX practices and modern programming techniques.",
+        "story": "I collaborated with the stakeholders of this product to gather all the relevant user and admin settings related to their website, including web-app plugins and site metrics, into a cohesive user experience using best UX practices and modern programming techniques.",
         "tools": "Visual Studio, Visual Studio Code, Adobe XD, Zoom",
         "hardskills": "ReactJS, React Router, Redux, CSS, SASS",
         "softskills": "UX Design, Prototyping, Attention to Detail, Communication, Leadership, Decision Making, Teamwork, Quality Assurance",
@@ -112,7 +112,7 @@
         "isHosted": false
     },
     {
-        "id": "ddsos",
+        "id": "sos-flyer",
         "name": "SOS Flyer",
         "type": "graphic",
         "client": "Dream Defenders",
@@ -126,7 +126,7 @@
         "isHosted": false
     },
     {
-        "id": "ddbb",
+        "id": "bb-video-flyer",
         "name": "B&B Video Flyer",
         "type": "graphic",
         "client": "Dream Defenders",
@@ -140,7 +140,7 @@
         "isHosted": false
     },
     {
-        "id": "tpcdm",
+        "id": "dali-cta-flyer",
         "name": "Call To Action Flyer",
         "type": "graphic",
         "client": "Tri-Partisan Canvas",
@@ -154,7 +154,7 @@
         "isHosted": false
     },
     {
-        "id": "parsp",
+        "id": "parsp-library-website",
         "name": "Library Website",
         "type": "web",
         "client": "PARSP",
@@ -168,7 +168,7 @@
         "isHosted": false
     },
     {
-        "id": "bhcl",
+        "id": "bh-content-library",
         "name": "Content Library",
         "type": "web",
         "client": "BenefitHub",
@@ -182,7 +182,7 @@
         "isHosted": false
     },
     {
-        "id": "nec",
+        "id": "nec-education-brochure",
         "name": "Education Brochure",
         "type": "graphic",
         "client": "Bisk",
@@ -196,7 +196,7 @@
         "isHosted": false
     },
     {
-        "id": "aita",
+        "id": "aita-event-banners",
         "name": "Event Banners",
         "type": "graphic",
         "client": "The Art Institute of Tampa",
@@ -210,12 +210,12 @@
         "isHosted": true
     },
     {
-        "id": "bpi",
+        "id": "bpi-restaurant-menu",
         "name": "Restaurant Menu",
         "type": "graphic",
         "client": "Buonasera Piccola Italia",
         "role": "Graphic Designer",
-        "story": "This client, formely known as Joe's Little Italy, was looking for a modern rebrand for their mom-and-pop family style restaurant. This was the branding and menu concept I designed for the business.",
+        "story": "This client, formerly known as Joe's Little Italy, was looking for a modern rebrand for their mom-and-pop family style restaurant. This was the branding and menu concept I designed for the business.",
         "tools": "Adobe Photoshop, Adobe Illustrator",
         "hardskills": "Graphic Design, Typography, Layout Design, Ideation, Branding",
         "softskills": "Creativity, Communication, Leadership, Decision Making, Goal Setting, Self Motivation",
@@ -224,7 +224,7 @@
         "isHosted": true
     },
     {
-        "id": "dcn",
+        "id": "dcn-event-posters",
         "name": "Event Posters",
         "type": "graphic",
         "client": "Cooper-Hewitt National Design Museum",
