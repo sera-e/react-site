@@ -52,7 +52,7 @@ const Form = () => {
                             name='entry.910385804'
                             onChange={handleInputData('entry.910385804')}
                             value={formData['entry.910385804']}
-                            autoComplete={false}
+                            autoComplete='false'
                             placeholder='name'
                         />
                     </fieldset>
@@ -64,7 +64,7 @@ const Form = () => {
                             name='entry.1738413758'
                             onChange={handleInputData('entry.1738413758')}
                             value={formData['entry.1738413758']}
-                            autoComplete={false}
+                            autoComplete='false'
                             placeholder='e-mail'
                         />
                     </fieldset>
@@ -76,7 +76,7 @@ const Form = () => {
                             rows='4'
                             onChange={handleInputData('entry.820084297')}
                             value={formData['entry.820084297']}
-                            autoComplete={false}
+                            autoComplete='false'
                             placeholder='message'
                         ></textarea>
                     </fieldset>

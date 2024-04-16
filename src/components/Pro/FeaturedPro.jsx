@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import Link from '../Router/Link'
 import './pro.css'
 
 class FeaturedPro extends React.Component {
@@ -13,16 +14,16 @@ class FeaturedPro extends React.Component {
     }
 
     render() {
-        const { selectedProj, selectPro } = this.props
+        const { selectedProj } = this.props
         const { id, name, role, client, story, tools, hardskills, softskills, photos, url, isHosted = false } = selectedProj
 
         return <div id={id}>
             <Fragment>
                 <h2>{name}</h2>
-                <a href='#/portfolio' className='goback-btn' onClick={() => { selectPro(null, id) }}>
+                <Link to='/portfolio' className='goback-btn'>
                     <i className='fa-light fa-arrow-left' />
                     <span>Go Back</span>
-                </a>
+                </Link>
                 <div className='proj-wrapper'>
                     <div className='proj-content'>
                         <div className='proj-photos'>
@@ -30,20 +31,30 @@ class FeaturedPro extends React.Component {
                         </div>
                         <div className='proj-inner-content'>
                             <div>
-                                {client && <h3>Client</h3>}
-                                {client && <p>{client}</p>}
-                                {role && <h3>My Role</h3>}
-                                {role && <p>{role}</p>}
-                                {story && <h3>Summary</h3>}
-                                {story && <p>{story}</p>}
-                                {tools && <h3>Tools</h3>}
-                                {tools && <p>{tools}</p>}
-                                {hardskills && <h3>Skills</h3>}
-                                {hardskills && <p>{`${hardskills}${softskills ? `, ${softskills}` : ''}`}</p>}
+                                {client && <div>
+                                    <h3>Client</h3>
+                                    <p>{client}</p>
+                                </div>}
+                                {role && <div>
+                                    <h3>My Role</h3>
+                                    <p>{role}</p>
+                                </div>}
+                                {story && <div>
+                                    <h3>Summary</h3>
+                                    <p>{story}</p>
+                                </div>}
+                                {tools && <div>
+                                    <h3>Tools</h3>
+                                    <p>{tools}</p>
+                                </div>}
+                                {hardskills && <div>
+                                    <h3>Skills</h3>
+                                    <p>{`${hardskills}${softskills ? `, ${softskills}` : ''}`}</p>
+                                </div>}
                             </div>
-                            <a className='btn card-btn' href={!isHosted ? url : require(`/public/projs/${id}/${url}`)} target='_blank' rel='noreferrer'>
+                            <Link className='btn card-btn' to={!isHosted ? url : require(`/public/projs/${id}/${url}`)} target='_blank'>
                                 <span>View Source</span>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

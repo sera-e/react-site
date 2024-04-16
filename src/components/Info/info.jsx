@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect, useState } from 'react'
 import { compose } from 'redux'
-import { Nav, Footer } from '../Nav'
 import Loader from '../Loader/loader'
+import { Nav, Footer } from '../Nav'
 import Form from './Form'
 
 import './info.css'

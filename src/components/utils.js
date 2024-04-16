@@ -1,14 +1,16 @@
+import Link from './Router/Link'
+
 const navLinks = [
     {
-        url: '/',
+        url: 'home',
         name: 'Home'
     },
     {
-        url: '/portfolio',
+        url: 'portfolio',
         name: 'Portfolio'
     },
     {
-        url: '/contact',
+        url: 'contact',
         name: 'Contact'
     }
 ]
@@ -36,7 +38,9 @@ export const nav = () => {
     return navLinks.map((navLink) => {
         const { url, name } = navLink
 
-        return <li key={name}><a href={`#${url}`}>{name}</a></li>
+        return <li key={name}>
+            <Link to={url}>{name}</Link>
+        </li>
     })
 }
 
@@ -45,24 +49,30 @@ export const socials = () => {
         const { url, icon } = smLink
 
         return <li key={icon} className='inline-block'>
-            <a href={url} target='_blank' rel='noreferrer'>
+            <Link to={url} target='_blank'>
                 <i className={`fab fa-${icon}`}></i>
-            </a>
+            </Link>
         </li>
     })
 }
 
-export const proCards = (proData, selectPro) => proData.map((pro) => {
+export const proCards = (proData) => proData.map((pro) => {
     const {id, name, photos } = pro
 
-    return <li id={id} className='cards-item' key={id} >
+    return <li id={id} className='cards-item' key={id}>
         <div className='procard'>
-            <div>
-                <img className='card-image' onClick={() => { selectPro(pro) }} src={require(`/public/img/${photos[0]}`)} alt={name} />
-            </div>
+            <Link to={`portfolio/${id}`}>
+                <div>
+                    <img className='card-image' src={require(`/public/img/${photos[0]}`)} alt={name} />
+                </div>
+            </Link>
             <div className='card-content'>
-                <h3 className='card-title' onClick={() => { selectPro(pro) }}>{name}</h3>
-                <a href={`#portfolio/${id}`} className='btn card-btn' onClick={() => { selectPro(pro) }}>Read More</a>
+                <Link to={`portfolio/${id}`}>
+                    <h3 className='card-title'>{name}</h3>
+                </Link>
+                <Link className='btn card-btn' to={`portfolio/${id}`}>
+                    Read More
+                </Link>
             </div>
         </div>
     </li>

@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
-import { nav, socials } from '../utils'
-import { Nav, Footer } from '../Nav'
 import Loader from '../Loader/loader'
+import { Nav, Footer } from '../Nav'
+import { nav, socials } from '../utils'
 
 import './home.css'
 

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { HashRouter, Switch } from 'react-router-dom'
+import { compose } from 'redux'
+import { Switch, withRouter } from 'react-router-dom'
 
 import Home from '../Home'
 import Info from '../Info'
@@ -11,29 +12,34 @@ import Route from './Route'
 class Router extends Component {
 
     render() {
+        const { location } = this.props
+        const { pathname } = location
+        const segments = pathname.toLowerCase().split('/')
+        const Extended = segments.slice(2).join('/')
 
         return <div key='page-router'>
-            <HashRouter>
-                <Switch>
-                    <Route exact path='/'>
-                        <Home />
-                    </Route>
-                    <Route path='/(home|index)(/*)'>
-                        <Home />
-                    </Route>
-                    <Route path='/(contact)(/*)'>
-                        <Info />
-                    </Route>
-                    <Route path='/(portfolio)(/*)'>
-                        <Pro />
-                    </Route>
-                    <Route path='/*'>
-                        <Err />
-                    </Route>
-                </Switch>
-            </HashRouter>
+            <Switch>
+                <Route exact path='/'>
+                    <Home />
+                </Route>
+                <Route path='/(home|index)(/*)'>
+                    <Home />
+                </Route>
+                <Route path='/contact(/*)'>
+                    <Info />
+                </Route>
+                <Route path='/portfolio/:portfolioId?'>
+                    <Pro portfolioId={Extended} key={Extended} />
+                </Route>
+                <Route path='/*'>
+                    <Err />
+                </Route>
+            </Switch>
         </div>
     }
 }
 
-export default Router
+export default compose(
+    withRouter
+)(Router)
+
