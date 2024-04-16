@@ -140,7 +140,7 @@
         "isHosted": false
     },
     {
-        "id": "dali-cta-flyer",
+        "id": "tpc-dali-cta-flyer",
         "name": "Call To Action Flyer",
         "type": "graphic",
         "client": "Tri-Partisan Canvas",
@@ -210,8 +210,8 @@
         "isHosted": true
     },
     {
-        "id": "bpi-restaurant-menu",
-        "name": "Restaurant Menu",
+        "id": "bpi-restaurant-rebrand",
+        "name": "Restaurant Rebrand",
         "type": "graphic",
         "client": "Buonasera Piccola Italia",
         "role": "Graphic Designer",
