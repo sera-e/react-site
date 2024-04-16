@@ -9,48 +9,63 @@ import './pro.css'
 const endpointGetProjects = '/mocks/proj.json'
 
 const Pro = () => {
-
   const [isLoaded, setIsLoaded] = useState(false)
-  const [data, setData] = useState(null)
+  const [projects, setProjects] = useState(null)
   const [selectedProj, setSelectedProj] = useState(null)
   const [selectedProjId, setSelectedProjId] = useState('site')
   const [showSelectedProj, setShowSelectedProj] = useState(false)
 
   const loadSettings = () => {
-    $.getJSON(endpointGetProjects, (datajson) => setData(datajson))
+    $.getJSON(endpointGetProjects, (data) => setProjects(data))
+  }
+
+  const selectPro = (pro, id) => {
+    setSelectedProj(pro)
+
+    let projid = id || 'site'
+    if (pro) projid = pro.id
+
+    setSelectedProjId(projid)
   }
 
   useEffect(() => {
-    setIsLoaded(false)
     loadSettings()
+  }, [])
+
+  useEffect(() => {
+    const path = window.location.hash
+    const match = projects && projects.filter((proj) => path.includes(proj.id))
+
+    if (match) selectPro(match[0])
+
+  }, [projects])
+
+  useEffect(() => {
+    setIsLoaded(false)
     setTimeout(() => {
       setIsLoaded(true)
-    }, 1600)
+    }, 1500)
 
     setShowSelectedProj(!!selectedProj)
   }, [selectedProj])
 
   useEffect(() => {
     const id = selectedProjId || 'site'
-    document.getElementById(id).scrollIntoView({ behavior: 'smooth'})
-  }, [selectedProjId])
-
-  const selectPro = (pro) => {
-    setSelectedProj(pro)
-    if (pro) setSelectedProjId(pro.id)
-  }
+    
+    if (isLoaded) window.onload = () => document.getElementById(id).scrollIntoView({ behavior: 'smooth' })
+  }, [isLoaded])
   
   if (!isLoaded) return <Loader />
 
   return <div className='wrap portfolio'>
     <Fragment>
       <Nav />
-      {data && <main>
+      {projects && <main>
         {selectedProj && showSelectedProj 
         ? <FeaturedPro selectedProj={selectedProj} selectPro={selectPro}/> 
         : <div>
             <h2>Portfolio</h2>
-            <ul className='cards'>{proCards(data, selectPro)}</ul>
+            <ul className='cards'>{proCards(projects, selectPro)}</ul>
           </div>
         }
       </main>}

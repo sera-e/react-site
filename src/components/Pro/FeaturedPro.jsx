@@ -4,7 +4,7 @@ import './pro.css'
 class FeaturedPro extends React.Component {
 
     componentDidMount() {
-        setTimeout(() => { window.scrollTo(0, 0) }, 1600)
+        setTimeout(() => { window.scrollTo(0, 0) }, 1500)
     }
 
     getPhotos = (selectedProj, photos) => {
@@ -19,10 +19,10 @@ class FeaturedPro extends React.Component {
         return <div id={id}>
             <Fragment>
                 <h2>{name}</h2>
-                <button className='goback-btn' onClick={() => { selectPro(null) }} type='button'>
+                <a href='#/portfolio' className='goback-btn' onClick={() => { selectPro(null, id) }}>
                     <i className='fa-light fa-arrow-left' />
                     <span>Go Back</span>
-                </button>
+                </a>
                 <div className='proj-wrapper'>
                     <div className='proj-content'>
                         <div className='proj-photos'>

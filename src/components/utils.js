@@ -62,7 +62,7 @@ export const proCards = (proData, selectPro) => proData.map((pro) => {
             </div>
             <div className='card-content'>
                 <h3 className='card-title' onClick={() => { selectPro(pro) }}>{name}</h3>
-                <button className='btn card-btn' onClick={() => { selectPro(pro) }} type='button'>Read More</button>
+                <a href={`#portfolio/${id}`} className='btn card-btn' onClick={() => { selectPro(pro) }}>Read More</a>
             </div>
         </div>
     </li>
