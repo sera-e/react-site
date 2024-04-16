@@ -20,7 +20,7 @@ class FeaturedPro extends React.Component {
         return <div id={id}>
             <Fragment>
                 <h2>{name}</h2>
-                <Link to='/portfolio' className='goback-btn'>
+                <Link to='#portfolio' className='goback-btn'>
                     <i className='fa-light fa-arrow-left' />
                     <span>Go Back</span>
                 </Link>

@@ -39,7 +39,7 @@ export const nav = () => {
         const { url, name } = navLink
 
         return <li key={name}>
-            <Link to={url}>{name}</Link>
+            <Link to={`#${url}`}>{name}</Link>
         </li>
     })
 }
@@ -61,16 +61,16 @@ export const proCards = (proData) => proData.map((pro) => {
 
     return <li id={id} className='cards-item' key={id}>
         <div className='procard'>
-            <Link to={`portfolio/${id}`}>
+            <Link to={`#portfolio/${id}`}>
                 <div>
                     <img className='card-image' src={require(`/public/img/${photos[0]}`)} alt={name} />
                 </div>
             </Link>
             <div className='card-content'>
-                <Link to={`portfolio/${id}`}>
+                <Link to={`#portfolio/${id}`}>
                     <h3 className='card-title'>{name}</h3>
                 </Link>
-                <Link className='btn card-btn' to={`portfolio/${id}`}>
+                <Link className='btn card-btn' to={`#portfolio/${id}`}>
                     Read More
                 </Link>
             </div>
