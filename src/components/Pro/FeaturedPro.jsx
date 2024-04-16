@@ -15,7 +15,7 @@ class FeaturedPro extends React.Component {
 
     render() {
         const { selectedProj } = this.props
-        const { id, name, role, client, story, tools, hardskills, softskills, photos, url, isHosted = false } = selectedProj
+        const { id, name, role, client, story, tools, hardskills, softskills, photos, url, urltype, isHosted = false } = selectedProj
 
         return <div id={id}>
             <Fragment>
@@ -53,7 +53,7 @@ class FeaturedPro extends React.Component {
                                 </div>}
                             </div>
                             <Link className='btn card-btn' to={!isHosted ? url : require(`/public/projs/${id}/${url}`)} target='_blank'>
-                                <span>View Source</span>
+                                <span>View {urltype.toUpperCase()}</span>
                             </Link>
                         </div>
                     </div>
