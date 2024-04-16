@@ -11,6 +11,7 @@
         "softskills": "UX Design, Prototyping, Attention to Detail, Communication, Leadership, Decision Making, Teamwork, Quality Assurance",
         "photos": ["bhld.png"],
         "url": "https://wawamzn.benefithub.com/app/local-deals",
+        "urltype": "site",
         "isHosted": false
     },
     {
@@ -25,6 +26,7 @@
         "softskills": "Attention to Detail, Communication, Leadership, Decision Making, Teamwork, Quality Assurance",
         "photos": ["bhsw.jpg"],
         "url": "https://xd.adobe.com/view/86917e3a-ae6b-4a0d-7a7c-2e23cd9a9908-f0a0",
+        "urltype": "xd mocks",
         "isHosted": false
     },
     {
@@ -39,6 +41,7 @@
         "softskills": "UX Design, Prototyping, Attention to Detail, Communication, Leadership, Decision Making, Teamwork, Quality Assurance",
         "photos": ["bhua.png"],
         "url": "https://mybenefithub.benefithub.com/welcome",
+        "urltype": "site",
         "isHosted": false
     },
     {
@@ -53,6 +56,7 @@
         "softskills": "UX Design, Prototyping, Communication, Collaborative, Teamwork",
         "photos": ["bhuk.png"],
         "url": "https://benefithubcommonui.azurewebsites.net/",
+        "urltype": "site",
         "isHosted": false
     },
     {
@@ -67,6 +71,7 @@
         "softskills": "UX Design, Prototyping, Attention to Detail, Communication, Leadership, Decision Making, Teamwork, Quality Assurance",
         "photos": ["bhrc.png"],
         "url": "https://bbinsrelief.benefithub.com/app/home",
+        "urltype": "site",
         "isHosted": false
     },
     {
@@ -81,6 +86,7 @@
         "softskills": "Attention to Detail, Communication, Teamwork, Quality Assurance",
         "photos": ["bhhm.png"],
         "url": "https://wawamzn.benefithub.com/app/discounts/home",
+        "urltype": "site",
         "isHosted": false
     },
     {
@@ -95,6 +101,7 @@
         "softskills": "UX Design, Prototyping, Attention to Detail, Communication, Leadership, Decision Making, Teamwork, Quality Assurance",
         "photos": ["bhmw.png"],
         "url": "https://web.archive.org/web/20161004033929/http://benefithub.com/",
+        "urltype": "site",
         "isHosted": false
     },
     {
@@ -109,6 +116,7 @@
         "softskills": "UX Design, Prototyping, Attention to Detail, Communication, Leadership, Decision Making, Teamwork, Quality Assurance",
         "photos": ["bhas.png"],
         "url": "https://xd.adobe.com/view/861d05d0-e58b-4ae6-8138-96226545f4d7-d34e",
+        "urltype": "xd mocks",
         "isHosted": false
     },
     {
@@ -123,6 +131,7 @@
         "softskills": "Creativity, Communication, Leadership, Teamwork, Goal Setting, Self Motivation, Diversity and Inclusion",
         "photos": ["ddsos.jpg"],
         "url": "https://www.instagram.com/p/C17Oi9qsz4Q/",
+        "urltype": "site",
         "isHosted": false
     },
     {
@@ -137,6 +146,7 @@
         "softskills": "Creativity, Communication, Leadership, Teamwork, Goal Setting, Self Motivation, Diversity and Inclusion",
         "photos": ["ddbb.jpg"],
         "url": "https://www.instagram.com/reel/CztiVLzpsrD/",
+        "urltype": "site",
         "isHosted": false
     },
     {
@@ -151,6 +161,7 @@
         "softskills": "Creativity, Communication, Leadership, Teamwork, Goal Setting, Self Motivation, Diversity and Inclusion",
         "photos": ["tpc-dali.png"],
         "url": "https://www.instagram.com/p/CSco7kUJe7K",
+        "urltype": "site",
         "isHosted": false
     },
     {
@@ -165,6 +176,7 @@
         "softskills": "Prototyping, Creativity, Communication, Leadership, Decision Making, Teamwork, Goal Setting, Self Motivation",
         "photos": ["parsp.png"],
         "url": "http://parsp.org/",
+        "urltype": "site",
         "isHosted": false
     },
     {
@@ -179,6 +191,7 @@
         "softskills": "UX Design, Prototyping, Attention to Detail, Communication, Leadership, Decision Making, Teamwork, Quality Assurance",
         "photos": ["bhcl.png"],
         "url": "https://xd.adobe.com/view/03a02f4f-785b-406a-79f4-d35b629f3ed3-7591/",
+        "urltype": "xd mocks",
         "isHosted": false
     },
     {
@@ -193,6 +206,7 @@
         "softskills": "Creativity, Communication, Collaborative, Teamwork",
         "photos": ["nec.jpg"],
         "url": "https://web.archive.org/web/20160327211606/https://www.newenglandcollegeonline.com/media/15321333/nec-undergraduate-programs-brochure.pdf",
+        "urltype": "final print",
         "isHosted": false
     },
     {
@@ -207,6 +221,7 @@
         "softskills": "Creativity, Communication, Leadership, Decision Making, Goal Setting, Self Motivation",
         "photos": ["aita.jpg"],
         "url": "aita.pdf",
+        "urltype": "final print",
         "isHosted": true
     },
     {
@@ -221,6 +236,7 @@
         "softskills": "Creativity, Communication, Leadership, Decision Making, Goal Setting, Self Motivation",
         "photos": ["bpi.png"],
         "url": "bpi.pdf",
+        "urltype": "final print",
         "isHosted": true
     },
     {
@@ -235,6 +251,7 @@
         "softskills": "Creativity, Communication, Leadership, Decision Making, Goal Setting, Self Motivation",
         "photos": ["dcn.png"],
         "url": "dcn.pdf",
+        "urltype": "final print",
         "isHosted": true
     }
 ]
