@@ -171,7 +171,7 @@
   word-break: break-word;
   position: relative;
   padding: 1rem;
-  margin: 0 auto 1rem;
+  margin: 0 auto;
   width: 100%;
   top: 0.2rem;
 }
@@ -180,6 +180,7 @@
   .proj-wrapper {
       background-color: rgba(255, 255, 255, 0.02);
       box-shadow: -1rem 1rem 2rem 0rem rgba(0, 0, 0, 0.02), -1rem 1rem 2rem 0rem rgba(0, 0, 0, 0.1);
+      padding: 2rem 2rem 0;
   }
 }
 
@@ -195,6 +196,7 @@
 
     @media (min-width: 56rem) {
       flex-direction: column;
+      padding: 0 0 2rem;
     }
   }
 

@@ -219,7 +219,7 @@
         "tools": "Adobe Photoshop, Adobe Illustrator",
         "hardskills": "Graphic Design, Typography, Layout Design, Ideation, Branding",
         "softskills": "Creativity, Communication, Leadership, Decision Making, Goal Setting, Self Motivation",
-        "photos": ["aita.jpg"],
+        "photos": ["aita.jpg", "1.jpg", "2.jpg", "3.jpg", "4.png"],
         "url": "aita.pdf",
         "urltype": "final print",
         "isHosted": true

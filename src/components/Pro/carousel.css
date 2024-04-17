@@ -1,0 +1,183 @@
+.carousel {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+
+    .carousel-inner {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+
+    .carousel-item {
+        backface-visibility: hidden;
+        display: none;
+        float: left;
+        margin-right: -100%;
+        position: relative;
+        transition: transform .2s ease-in-out;
+        transition-property: transform;
+        width: 100%;
+    }
+
+    .carousel-item-next,
+    .carousel-item-prev,
+    .carousel-item.active {
+        display: block;
+    }
+
+    &.carousel-fade .carousel-item {
+        opacity: 0;
+        transform: none;
+        transition-property: opacity;
+    }
+
+    &.carousel-fade .carousel-item-next.carousel-item-start,
+    &.carousel-fade .carousel-item-prev.carousel-item-end,
+    &.carousel-fade .carousel-item.active {
+        opacity: 1;
+        z-index: 1;
+    }
+
+    .carousel-indicators {
+        display: flex;
+        justify-content: center;
+        margin: 0 15%;
+        padding: 0;
+    }
+
+    .carousel-indicators button {
+        border: none;
+        cursor: pointer;
+        flex: 0 1 auto;
+        margin: 0 1px;
+        opacity: 0.4;
+        padding: 0;
+        transition: opacity .6s ease;
+        width: 4.4rem;
+        height: 4.4rem;
+        position: relative;
+
+        &::before {
+            content: "";
+            background-color: #fff;
+            height: 1.2rem;
+            width: 1.2rem;
+            border-radius: 50px;
+            display: block;
+            margin: auto;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+            opacity: 1;
+        }
+    }
+
+    img {
+        height: 48rem;
+        object-fit: contain;
+        background: #001;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        align-items: center;
+        background: 0 0;
+        border: 0;
+        bottom: 0;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        opacity: 0.4;
+        padding: 0;
+        position: absolute;
+        text-align: center;
+        top: 0;
+        transition: opacity .15s ease;
+        width: 15%;
+        z-index: 1;
+
+        &:hover,
+        &:focus,
+        &:active {
+            text-decoration: none;
+            opacity: 0.8;
+        }
+
+        &:hover {
+            cursor: pointer;
+
+            .carousel-control-prev-icon,
+            .carousel-control-next-icon {
+                border: 1px solid rgba(255, 255, 255, 0.6);
+            }
+        }
+
+        &:active {
+
+            .carousel-control-prev-icon,
+            .carousel-control-next-icon {
+                border: 1px solid #002;
+            }
+        }
+    }
+
+    .carousel-control-prev {
+        left: 0;
+    }
+
+    .carousel-control-next {
+        right: 0;
+    }
+
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        border: 1px solid #002;
+        display: inline-block;
+        position: relative;
+        background: #002;
+        border-radius: 50px;
+        height: 4.4rem;
+        width: 4.4rem;
+
+        &::before {
+            content: "\203A";
+            display: block;
+            font-size: 6rem;
+            padding: 0;
+            color: #fff;
+            line-height: 1;
+            font-weight: 200;
+            margin: 0;
+            top: -1.6rem;
+            left: 0;
+            position: relative;
+        }
+    }
+
+    .carousel-control-prev-icon {
+        &::before {
+            content: "\2039";
+        }
+    }
+
+    .visually-hidden,
+    .visually-hidden-focusable:not(:focus):not(:focus-within) {
+        clip: rect(0, 0, 0, 0) !important;
+        border: 0 !important;
+        height: 1px !important;
+        margin: -1px !important;
+        overflow: hidden !important;
+        padding: 0 !important;
+        white-space: nowrap !important;
+        width: 1px !important;
+    }
+
+    .visually-hidden-focusable:not(:focus):not(:focus-within):not(caption),
+    .visually-hidden:not(caption) {
+        position: absolute !important;
+    }
+}

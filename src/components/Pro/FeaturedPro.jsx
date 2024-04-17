@@ -1,16 +1,12 @@
 import React, { Fragment } from 'react'
 import Link from '../Router/Link'
+import PhotoCarousel from './carousel'
 import './pro.css'
 
 class FeaturedPro extends React.Component {
 
     componentDidMount() {
         setTimeout(() => { window.scrollTo(0, 0, { behavior: 'smooth' }) }, 1600)
-    }
-
-    getPhotos = (selectedProj, photos) => {
-        const { id, type } = selectedProj
-        return photos.map((photo) => <img key={id + type} src={require(`/public/img/${photo}`)} alt={photo} />)
     }
 
     render() {
@@ -27,7 +23,7 @@ class FeaturedPro extends React.Component {
                 <div className='proj-wrapper'>
                     <div className='proj-content'>
                         <div className='proj-photos'>
-                            {this.getPhotos(selectedProj, photos)}
+                            <PhotoCarousel data={selectedProj} slideDeck={photos} />
                         </div>
                         <div className='proj-inner-content'>
                             <div>
