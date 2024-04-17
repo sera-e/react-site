@@ -7,7 +7,7 @@ function App() {
     <div className='site' id='site'>
       <Router />
       <div className='stars'>
-        <div id='stars'></div>
+        <div id='stars1'></div>
         <div id='stars2'></div>
         <div id='stars3'></div>
       </div>
