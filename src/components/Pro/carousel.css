@@ -89,11 +89,11 @@
         object-fit: contain;
         background: #001;
   
-        @media (min-width: 40rem) {
+        @media (min-width: 37rem) {
             height: 36rem;
         }
   
-        @media (min-width: 60rem) {
+        @media (min-width: 56rem) {
             height: 48rem;
         }
     }
@@ -116,7 +116,7 @@
         width: 15%;
         z-index: 1;
   
-        @media (min-width: 40rem) {
+        @media (min-width: 37rem) {
             display: flex;
         }
 
