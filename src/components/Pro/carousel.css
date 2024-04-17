@@ -76,9 +76,13 @@
     }
 
     img {
-        height: 48rem;
+        height: 30rem;
         object-fit: contain;
         background: #001;
+  
+        @media (min-width: 40rem) {
+            height: 48rem;
+        }
     }
 
     .carousel-control-next,
