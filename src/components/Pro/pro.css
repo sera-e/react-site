@@ -9,7 +9,7 @@
   
   @media (min-width: 40rem) {
     h2 {
-      margin: 3rem auto 2rem;
+      margin: 3rem auto 0;
     }
   }
   
@@ -61,6 +61,10 @@
   .goback-btn {
     margin: -2rem 0 1rem 0;
     padding: 1rem;
+
+    @media (min-width: 40rem) {
+      margin: -3rem 0 0 2rem;
+    }
   }
   
   .goback-btn i {
@@ -177,13 +181,19 @@
   word-break: break-all;
   word-break: break-word;
   position: relative;
-  padding: 1rem;
+  padding: 1rem 1rem 3rem;
   margin: 0 auto;
   width: 100%;
   top: 0.2rem;
 }
 
 @media (min-width: 40rem) {
+  .proj-wrapper {
+      padding: 2rem 2rem 3rem;
+  }
+}
+
+@media (min-width: 60rem) {
   .proj-wrapper {
       background-color: rgba(255, 255, 255, 0.02);
       box-shadow: -1rem 1rem 2rem 0rem rgba(0, 0, 0, 0.02), -1rem 1rem 2rem 0rem rgba(0, 0, 0, 0.1);

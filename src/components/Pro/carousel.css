@@ -90,6 +90,10 @@
         background: #001;
   
         @media (min-width: 40rem) {
+            height: 36rem;
+        }
+  
+        @media (min-width: 60rem) {
             height: 48rem;
         }
     }
