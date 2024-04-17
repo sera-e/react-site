@@ -6,35 +6,36 @@
     text-align: center;
     margin: 0 auto 2rem;
   }
-  
+
   @media (min-width: 37rem) {
     h2 {
       margin: 3rem auto 0;
     }
   }
-  
+
   @media (min-width: 56rem) {
     h2 {
       margin: 4rem auto 0;
     }
   }
-  
+
   main {
     max-width: 140rem;
     margin: 0 auto;
 
-    > div {
-  
-      @media (min-width: 56rem) {
+    @media (min-width: 56rem) {
+      >div {
         padding: 0 2rem;
       }
     }
   }
 
-  .proj-wrapper, .procard, .card-image { 
+  .proj-wrapper,
+  .procard,
+  .card-image {
     transition: 0.5s ease;
   }
-  
+
   .card-image {
     height: 18rem;
     width: 100%;
@@ -42,11 +43,13 @@
     object-fit: cover;
     background: #002;
 
-    &:hover, &:active, &:focus {
+    &:hover,
+    &:active,
+    &:focus {
       cursor: pointer;
     }
   }
-  
+
   @media (min-width: 37rem) {
     .card-image {
       max-height: 18rem;
@@ -61,18 +64,20 @@
   .goback-btn {
     margin: -2rem 0 1rem 0;
     padding: 1rem;
+  }
 
-    @media (min-width: 37rem) {
+  @media (min-width: 37rem) {
+    .goback-btn {
       margin: -3rem 0 0 2rem;
     }
   }
-  
+
   .goback-btn i {
     padding: 0 1rem 0 0;
     height: auto;
     width: auto;
   }
-  
+
   .btn {
     color: #ffffff;
     padding: 1rem;
@@ -86,11 +91,11 @@
     border: 1px solid rgba(255, 255, 255, 0.2);
     background: transparent;
   }
-  
+
   .btn:hover {
     background-color: rgba(255, 255, 255, 0.1);
   }
-  
+
   .cards {
     display: flex;
     justify-content: center;
@@ -99,37 +104,37 @@
     margin: 0;
     padding: 0 0 2rem 0;
   }
-  
+
   .cards-item {
     display: flex;
     padding: 1rem;
     width: 100%;
   }
-  
+
   @media (min-width: 37rem) {
     .cards-item {
       width: 50%;
     }
   }
-  
+
   @media (min-width: 56rem) {
     .cards-item {
       width: 33.3333%;
     }
   }
-  
+
   @media (min-width: 76rem) {
     .cards-item {
       width: 25%;
     }
   }
-  
+
   @media (min-width: 99rem) {
     .cards-item {
       width: 20%;
     }
   }
-  
+
   .procard {
     box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -141,20 +146,20 @@
   }
 
   @media (min-width: 37rem) {
-  
-      .procard:hover {
-          background-color: rgba(255, 255, 255, 0.04);
-          box-shadow: -0.5rem 0.5rem 2rem 0rem rgba(0, 0, 0, 0.2), -1rem 1rem 2rem 0rem rgba(0, 0, 0, 0.2);
-          top: 0rem;
-      }
+
+    .procard:hover {
+      background-color: rgba(255, 255, 255, 0.04);
+      box-shadow: -0.5rem 0.5rem 2rem 0rem rgba(0, 0, 0, 0.2), -1rem 1rem 2rem 0rem rgba(0, 0, 0, 0.2);
+      top: 0rem;
+    }
   }
-  
+
   .card-content {
     padding: 1rem;
     background: linear-gradient(to bottom left, rgba(17, 17, 68, 0.4) 40%, #44114466 100%);
     text-align: center;
   }
-  
+
   .card-title {
     color: #ffffff;
     letter-spacing: 1px;
@@ -162,12 +167,14 @@
     margin: 0;
     padding: 1rem 0 2rem;
 
-    &:hover, &:active, &:focus {
+    &:hover,
+    &:active,
+    &:focus {
       text-decoration: underline;
       cursor: pointer;
     }
   }
-  
+
   .card-text {
     color: #ffffff;
     font-size: 0.875rem;
@@ -189,21 +196,21 @@
 
 @media (min-width: 37rem) {
   .proj-wrapper {
-      padding: 2rem 2rem 3rem;
+    padding: 2rem 2rem 3rem;
   }
 }
 
 @media (min-width: 56rem) {
   .proj-wrapper {
-      background-color: rgba(255, 255, 255, 0.02);
-      box-shadow: -1rem 1rem 2rem 0rem rgba(0, 0, 0, 0.02), -1rem 1rem 2rem 0rem rgba(0, 0, 0, 0.1);
-      padding: 2rem 2rem 0;
+    background-color: rgba(255, 255, 255, 0.02);
+    box-shadow: -1rem 1rem 2rem 0rem rgba(0, 0, 0, 0.02), -1rem 1rem 2rem 0rem rgba(0, 0, 0, 0.1);
+    padding: 2rem 2rem 0;
   }
 }
 
 @media (min-width: 76rem) {
   .proj-wrapper {
-      padding: 2rem;
+    padding: 2rem;
   }
 }
 
@@ -216,8 +223,10 @@
   .proj-inner-content {
     display: flex;
     flex-direction: column-reverse;
+  }
 
-    @media (min-width: 56rem) {
+  @media (min-width: 56rem) {
+    .proj-inner-content {
       flex-direction: column;
       padding: 0 0 2rem;
     }
@@ -230,16 +239,22 @@
     text-align: center;
     font-weight: 600;
     font-size: 1.9rem;
+  }
 
-    @media (min-width: 56rem) {
+  @media (min-width: 56rem) {
+
+    .card-btn {
       margin: 0;
     }
   }
-  
-  > div {
-    width: 100%;
 
-    @media (min-width: 56rem) {
+  >div {
+    width: 100%;
+  }
+
+  @media (min-width: 76rem) {
+
+    >div {
       width: 49%;
     }
   }

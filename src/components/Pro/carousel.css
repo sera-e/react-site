@@ -44,6 +44,7 @@
     &.single-slide .carousel-control-next {
         display: none;
     }
+
     &.single-slide {
         margin-bottom: 2rem;
     }
@@ -88,12 +89,18 @@
         height: 24rem;
         object-fit: contain;
         background: #001;
-  
-        @media (min-width: 37rem) {
+    }
+
+    @media (min-width: 37rem) {
+
+        img {
             height: 36rem;
         }
-  
-        @media (min-width: 56rem) {
+    }
+
+    @media (min-width: 56rem) {
+
+        img {
             height: 48rem;
         }
     }
@@ -115,10 +122,6 @@
         transition: opacity .15s ease;
         width: 15%;
         z-index: 1;
-  
-        @media (min-width: 37rem) {
-            display: flex;
-        }
 
         &:hover,
         &:focus,
@@ -142,6 +145,14 @@
             .carousel-control-next-icon {
                 border: 1px solid #002;
             }
+        }
+    }
+
+    @media (min-width: 37rem) {
+
+        .carousel-control-next,
+        .carousel-control-prev {
+            display: flex;
         }
     }
 
