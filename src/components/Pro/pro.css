@@ -120,7 +120,7 @@
     padding: 0 0 4rem 0;
   }
 
-  @media (min-width: 56rem) {
+  @media (min-width: 37rem) {
     .cards {
       padding: 0 1rem 4rem 1rem;
     }
