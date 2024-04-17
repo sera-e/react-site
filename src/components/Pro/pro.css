@@ -273,9 +273,9 @@
     width: 100%;
   }
 
-  @media (min-width: 76rem) {
+  @media (min-width: 56rem) {
 
-    >div {
+    > div {
       width: 49%;
     }
   }
