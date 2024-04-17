@@ -87,6 +87,12 @@
     }
   }
 
+  @media (min-width: 56rem) {
+    .goback-btn {
+      margin: -3rem 0 0 0;
+    }
+  }
+
   .goback-btn i {
     padding: 0 1rem 0 0;
     height: auto;
