@@ -151,7 +151,7 @@
   
   .card-content {
     padding: 1rem;
-    background: linear-gradient(to bottom left, rgba(17, 17, 68, 0.4) 40%, rgba(68, 17, 68, 0.4) 100%);
+    background: linear-gradient(to bottom left, rgba(17, 17, 68, 0.4) 40%, #44114466 100%);
     text-align: center;
   }
   
