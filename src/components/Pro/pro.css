@@ -223,11 +223,6 @@
 
   img {
     width: 100%;
-    padding: 0 0 2rem 0;
-
-    @media (min-width: 56rem) {
-      padding: 0;
-    }
   }
 
   h3 {
