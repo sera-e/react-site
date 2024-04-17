@@ -117,7 +117,13 @@
     flex-wrap: wrap;
     list-style: none;
     margin: 0;
-    padding: 0 0 2rem 0;
+    padding: 0 0 4rem 0;
+  }
+
+  @media (min-width: 56rem) {
+    .cards {
+      padding: 0 1rem 4rem 1rem;
+    }
   }
 
   .cards-item {
