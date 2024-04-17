@@ -81,7 +81,7 @@ const Form = () => {
                         ></textarea>
                     </fieldset>
 
-                    <button type='submit'>{submit ? 'Message Sent!' : 'Send'}</button>
+                    <button className='submit' type='submit'>{submit ? 'Message Sent!' : 'Send'}</button>
                 </form>
             </div>
         </div>
