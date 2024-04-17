@@ -17,7 +17,7 @@ const PhotoCarousel = ({ data, slideDeck }) => {
         </Carousel.Item>)
     }
 
-    return <Carousel fade activeIndex={index} onSelect={handleSelect}>
+    return <Carousel fade activeIndex={index} onSelect={handleSelect} className={slideDeck.length < 2 ? 'single-slide' : ''}>
         {slides()}
     </Carousel>
 }
