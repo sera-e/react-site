@@ -33,7 +33,7 @@ $star3: lavender;
 #stars1 {
   background: transparent;
   border-radius: 50rem;
-  animation: animStar 200s linear infinite;
+  animation: animStar 400s linear infinite;
 
   &::before, &::after {
     content: " ";
@@ -57,7 +57,7 @@ $star3: lavender;
 #stars2 {
   background: transparent;
   border-radius: 50rem;
-  animation: animStar 300s linear infinite;
+  animation: animStar 600s linear infinite;
 
   &::before, &::after {
     content: " ";
@@ -81,7 +81,7 @@ $star3: lavender;
 #stars3 {
   background: transparent;
   border-radius: 50rem;
-  animation: animStar 400s linear infinite;
+  animation: animStar 800s linear infinite;
 
   &::before, &::after {
     content: " ";
