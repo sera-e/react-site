@@ -9,13 +9,28 @@
 
   @media (min-width: 37rem) {
     h2 {
-      margin: 3rem auto 0;
+      margin: 3rem auto;
     }
   }
 
   @media (min-width: 56rem) {
     h2 {
-      margin: 4rem auto 0;
+      margin: 4rem auto;
+    }
+  }
+
+  .featured-pro {
+
+    @media (min-width: 37rem) {
+      h2 {
+        margin: 3rem auto 0;
+      }
+    }
+  
+    @media (min-width: 56rem) {
+      h2 {
+        margin: 4rem auto 0;
+      }
     }
   }
 
@@ -24,7 +39,7 @@
     margin: 0 auto;
 
     @media (min-width: 56rem) {
-      >div {
+      > div {
         padding: 0 2rem;
       }
     }

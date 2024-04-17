@@ -13,7 +13,7 @@ class FeaturedPro extends React.Component {
         const { selectedProj } = this.props
         const { id, name, role, client, story, tools, hardskills, softskills, photos, url, urltype, isHosted = false } = selectedProj
 
-        return <div id={id}>
+        return <div className='featured-pro' id={id}>
             <Fragment>
                 <h2>{name}</h2>
                 <Link to='#portfolio' className='goback-btn'>
