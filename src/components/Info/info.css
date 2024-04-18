@@ -13,7 +13,7 @@
     input,
     textarea {
         width: 100%;
-        padding: 1.1rem;
+        padding: 1rem;
         margin: 0 0 1rem 0;
         background: rgba(0, 0, 34, 0.9);
         color: #fff;
@@ -24,7 +24,14 @@
     }
 
     .submit {
-        padding: 2.2rem;
         border: 1px solid rgba(255, 255, 255, 0.4)
+    }
+
+    .card {
+        padding: 4rem;
+    }
+
+    hr {
+        margin: 2rem auto;
     }
 }

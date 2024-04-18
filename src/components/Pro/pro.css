@@ -4,32 +4,53 @@
 
   h2 {
     text-align: center;
-    margin: 0 auto 2rem;
+    margin: 2rem auto;
   }
 
-  @media (min-width: 37rem) {
+  @media (min-width: 990px) {
     h2 {
       margin: 3rem auto;
     }
   }
 
-  @media (min-width: 56rem) {
+  @media (max-height: 560px) {
+    h2 {
+      margin: 0 auto 2rem;
+    }
+  }
+
+  @media (min-width: 1600px) {
     h2 {
       margin: 4rem auto;
     }
   }
 
   .featured-pro {
+    h2 {
+      margin: 2rem auto;
+    }
 
-    @media (min-width: 37rem) {
+    @media (min-width: 760px) {
       h2 {
-        margin: 3rem auto 0;
+        margin: 3rem auto 2.4rem;
       }
     }
-  
-    @media (min-width: 56rem) {
+
+    @media (max-height: 560px) {
       h2 {
-        margin: 4rem auto 0;
+        margin: 0 auto 2rem;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      h2 {
+        margin: 2rem auto;
+      }
+    }
+
+    @media (min-width: 1600px) {
+      h2 {
+        margin: 0 auto 2rem;
       }
     }
   }
@@ -38,8 +59,8 @@
     max-width: 140rem;
     margin: 0 auto;
 
-    @media (min-width: 56rem) {
-      > div {
+    @media (min-width: 990px) {
+      >div {
         padding: 0 2rem;
       }
     }
@@ -65,7 +86,7 @@
     }
   }
 
-  @media (min-width: 37rem) {
+  @media (min-width: 760px) {
     .card-image {
       max-height: 18rem;
       width: max-content;
@@ -77,26 +98,57 @@
   }
 
   .goback-btn {
-    margin: -2rem 0 1rem 0;
+    position: relative;
+    vertical-align: middle;
+    margin: -8.6rem 0 0.2rem 2rem;
     padding: 1rem;
   }
 
-  @media (min-width: 37rem) {
-    .goback-btn {
-      margin: -3rem 0 0 2rem;
+  .goback-btn span {
+    display: none;
+  }
+
+  @media (min-width: 760px) {
+    .goback-btn span {
+      display: inline;
     }
   }
 
-  @media (min-width: 56rem) {
+  @media (min-width: 560px) {
     .goback-btn {
-      margin: -3rem 0 0 0;
+      margin: -8.8rem 0 0.2rem 2rem;
+      margin: -9.2rem 0 0.2rem 2rem;
+    }
+  }
+
+  @media (max-height: 560px) {
+    .goback-btn {
+      margin: -8.6rem 0 0.2rem 2rem;
+    }
+  }
+
+  @media (min-width: 990px) {
+    .goback-btn {
+      margin: -9.4rem 0 0.2rem;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .goback-btn {
+      margin: -8.4rem 0 0.2rem;
     }
   }
 
   .goback-btn i {
-    padding: 0 1rem 0 0;
+    padding: 0;
     height: auto;
     width: auto;
+  }
+
+  @media (min-width: 560px) {
+    .goback-btn i {
+      padding: 0 1rem 0 0;
+    }
   }
 
   .btn {
@@ -126,7 +178,7 @@
     padding: 0 0 4rem 0;
   }
 
-  @media (min-width: 37rem) {
+  @media (min-width: 760px) {
     .cards {
       padding: 0 1rem 4rem 1rem;
     }
@@ -134,29 +186,30 @@
 
   .cards-item {
     display: flex;
-    padding: 1rem;
+    padding: 0 2rem 2rem;
     width: 100%;
   }
 
-  @media (min-width: 37rem) {
+  @media (min-width: 760px) {
     .cards-item {
+      padding: 0 1rem 2rem;
       width: 50%;
     }
   }
 
-  @media (min-width: 56rem) {
+  @media (min-width: 990px) {
     .cards-item {
       width: 33.3333%;
     }
   }
 
-  @media (min-width: 76rem) {
+  @media (min-width: 1600px) {
     .cards-item {
       width: 25%;
     }
   }
 
-  @media (min-width: 99rem) {
+  @media (min-width: 1600px) {
     .cards-item {
       width: 20%;
     }
@@ -172,7 +225,7 @@
     top: 0.2rem;
   }
 
-  @media (min-width: 37rem) {
+  @media (min-width: 760px) {
 
     .procard:hover {
       background-color: rgba(255, 255, 255, 0.04);
@@ -215,28 +268,22 @@
   word-break: break-all;
   word-break: break-word;
   position: relative;
-  padding: 1rem 1rem 3rem;
+  padding: 0 2rem 4rem;
   margin: 0 auto;
   width: 100%;
   top: 0.2rem;
 }
 
-@media (min-width: 37rem) {
+@media (min-width: 760px) {
   .proj-wrapper {
-    padding: 2rem 2rem 3rem;
+    padding: 0 2rem 3rem 2rem;
   }
 }
 
-@media (min-width: 56rem) {
+@media (min-width: 990px) {
   .proj-wrapper {
     background-color: rgba(255, 255, 255, 0.02);
     box-shadow: -1rem 1rem 2rem 0rem rgba(0, 0, 0, 0.02), -1rem 1rem 2rem 0rem rgba(0, 0, 0, 0.1);
-    padding: 2rem 2rem 0;
-  }
-}
-
-@media (min-width: 76rem) {
-  .proj-wrapper {
     padding: 2rem;
   }
 }
@@ -252,7 +299,7 @@
     flex-direction: column-reverse;
   }
 
-  @media (min-width: 56rem) {
+  @media (min-width: 990px) {
     .proj-inner-content {
       flex-direction: column;
       padding: 0 0 2rem;
@@ -268,7 +315,7 @@
     font-size: 1.9rem;
   }
 
-  @media (min-width: 56rem) {
+  @media (min-width: 990px) {
 
     .card-btn {
       margin: 0;
@@ -279,9 +326,9 @@
     width: 100%;
   }
 
-  @media (min-width: 56rem) {
+  @media (min-width: 990px) {
 
-    > div {
+    >div {
       width: 49%;
     }
   }
@@ -301,7 +348,13 @@
   }
 }
 
-@media (min-width: 56rem) {
+@media (min-width: 990px) {
+  .proj-inner-content > div > div:last-child > p {
+    padding: 0;
+  }
+}
+
+@media (min-width: 990px) {
   .proj-content {
     flex-direction: row;
   }

@@ -1,5 +1,4 @@
 import React, { Fragment, useEffect, useState } from 'react'
-import { compose } from 'redux'
 import Loader from '../Loader/loader'
 import { Nav, Footer } from '../Nav'
 import Form from './Form'
@@ -29,4 +28,4 @@ const Info = () => {
   </div>
 }
 
-export default compose()(Info)
+export default Info

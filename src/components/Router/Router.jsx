@@ -3,6 +3,7 @@ import { compose } from 'redux'
 import { HashRouter, Switch, withRouter } from 'react-router-dom'
 
 import Home from '../Home'
+import About from '../About'
 import Info from '../Info'
 import Pro from '../Pro'
 import Err from '../Err'
@@ -25,6 +26,9 @@ class Router extends Component {
                     </Route>
                     <Route path='/(home|index)(/*)'>
                         <Home />
+                    </Route>
+                    <Route path='/(about|about-me)(/*)'>
+                        <About />
                     </Route>
                     <Route path='/contact(/*)'>
                         <Info />

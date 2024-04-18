@@ -6,6 +6,10 @@ const navLinks = [
         name: 'Home'
     },
     {
+        url: 'about',
+        name: 'About'
+    },,
+    {
         url: 'portfolio',
         name: 'Portfolio'
     },

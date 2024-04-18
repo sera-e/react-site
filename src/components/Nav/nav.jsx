@@ -4,9 +4,19 @@ import { nav, toggleMenu } from '../utils'
 import './nav.css'
 
 const Nav = ({ IsLoading }) => <nav className='top'>
-    <div className={IsLoading ? 'loading' : 'loading loaded'}>
-        <button className='menu' onClick={() => { toggleMenu() }}><i className='fas fa-bars'></i>Menu</button>
-        <button className='close' onClick={() => { toggleMenu() }}><i className='fas fa-times'></i>Close</button>
+    <div className={IsLoading ? 'top-inner loading' : 'top-inner loading loaded'}>
+        <button className='menu' onClick={() => { toggleMenu() }} type='button'>
+            <div>
+                <i className='fa-light fa-bars' />
+                <p>Menu</p>
+            </div>
+        </button>
+        <button className='close' onClick={() => { toggleMenu() }} type='button'>
+            <div>
+                <i className='fa-light fa-times' />
+                <p>Close</p>
+            </div>
+        </button>
         <ul>
             {nav()}
         </ul>

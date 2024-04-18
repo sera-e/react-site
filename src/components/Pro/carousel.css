@@ -2,7 +2,6 @@
     position: relative;
     display: flex;
     flex-direction: column-reverse;
-    border: 1px solid rgba(255,255,255,0.1);
 
     .carousel-inner {
         overflow: hidden;
@@ -90,19 +89,20 @@
         height: 24rem;
         object-fit: contain;
         background: #001;
+        border: 1px solid rgba(255,255,255,0.1);
     }
 
-    @media (min-width: 37rem) {
+    @media (min-width: 370px) {
 
         img {
             height: 36rem;
         }
     }
 
-    @media (min-width: 56rem) {
+    @media (min-width: 560px) {
 
         img {
-            height: 48rem;
+            height: 40rem;
         }
     }
 
@@ -149,7 +149,7 @@
         }
     }
 
-    @media (min-width: 37rem) {
+    @media (min-width: 370px) {
 
         .carousel-control-next,
         .carousel-control-prev {

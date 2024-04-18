@@ -3,17 +3,17 @@ nav {
     z-index: 2;
 }
 
-@media (min-width: 37rem) {
+@media (min-width: 560px) {
     nav {
         text-align: center;
     }
 }
 
-nav div {
+nav .top-inner {
     transition: none;
 }
 
-@media (min-width: 37rem) {
+@media (min-width: 560px) {
     nav button {
         display: none;
     }
@@ -23,7 +23,7 @@ nav ul {
     display: none;
 }
 
-@media (min-width: 37rem) {
+@media (min-width: 560px) {
     nav ul {
         display: block;
     }
@@ -37,49 +37,76 @@ nav ul li {
 nav ul li a {
     line-height: 4.6rem;
     font-size: 1.6rem;
-    height: 4.6rem;
-    width: 12rem;
+    height: 5rem;
+    width: 11rem;
 }
 
-nav button.close {
+.wrap nav ul li a {
+    margin: 0 0.3rem;
+}
+
+nav .close {
     display: none;
 }
 
-@media (min-width: 37rem) {
-    nav.top {
-        margin-top: 2rem;
+@media (min-width: 560px) {
+    .top {
+        margin: 2rem auto 0;
     }
 }
 
-nav.top.open {
+@media (max-height: 560px) {
+    .top {
+        margin: 2rem auto;
+    }
+}
+
+.top.open {
     min-height: 7rem;
 }
 
-@media (min-width: 37rem) {
-    nav.top.open {
+@media (min-width: 560px) {
+    .top.open {
         min-height: auto;
     }
 }
 
-nav.top.open button.menu {
+.menu,
+.close {
+    margin: 1rem 0 0 1rem;
+}
+
+.menu > div,
+.close > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  
+    p {
+        font-weight: 500;
+    }
+}
+
+.top.open .menu {
     display: none;
 }
 
-nav.top.open button.close {
+.top.open .close {
     display: block;
 }
 
-@media (min-width: 37rem) {
-    nav.top.open button.close {
+@media (min-width: 560px) {
+    .top.open .close {
         display: none;
     }
 }
 
-nav.top.open {
+.top.open {
     position: relative;
 }
 
-nav.top.open div {
+.top.open .top-inner {
     background: rgba(17, 17, 68, 0.9);
     height: 100vh;
     width: 100%;
@@ -87,36 +114,37 @@ nav.top.open div {
     top: 0;
 }
 
-@media (min-width: 37rem) {
-    nav.top.open div {
+@media (min-width: 560px) {
+    .top.open .top-inner {
         height: auto;
         background: none;
     }
 }
 
-nav.top.open div ul,
-nav.top.open div li,
-nav.top.open div a {
+.top.open .top-inner ul,
+.top.open .top-inner li,
+.top.open .top-inner a {
     transition: none;
     display: block;
     width: 100%;
 }
 
-@media (min-width: 37rem) {
+@media (min-width: 560px) {
 
-    nav.top.open div li,
-    nav.top.open div a {
+    .top.open .top-inner li,
+    .top.open .top-inner a {
         display: inline-block;
         width: 12rem;
     }
 }
 
-nav.top.open div a {
-    padding-left: 2.4rem;
+.top.open .top-inner a {
+    margin: 0.2rem 0;
+    padding-left: 4.4rem;
 }
 
-@media (min-width: 37rem) {
-    nav.top.open div a {
+@media (min-width: 560px) {
+    .top.open .top-inner a {
         padding-left: 0;
     }
 }
