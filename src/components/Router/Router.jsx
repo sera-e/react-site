@@ -27,8 +27,8 @@ class Router extends Component {
                     <Route path='/(home|index)(/*)'>
                         <Home />
                     </Route>
-                    <Route path='/about(/*)'>
-                        <About />
+                    <Route path='/about/:aboutId?'>
+                        <About key={Extended} />
                     </Route>
                     <Route path='/contact(/*)'>
                         <Info />

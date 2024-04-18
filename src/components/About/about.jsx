@@ -11,6 +11,10 @@ const About = () => {
     setTimeout(() => {setIsLoaded(true)}, 1000)
   }, [])
 
+  const img = () => {
+      return <img className='about-img' src={require('./me.jpg')} alt={`me`} />
+  }
+
   return <div className='wrap about'>
     <Fragment>
       <Nav IsLoading={!isLoaded} />
@@ -20,7 +24,7 @@ const About = () => {
           <h2>About me</h2>
           <hr />
           <div>
-            <img className='about-img' src='/public/about/me.jpg' alt='me'/>
+            {img()}
             <p>
               Hello, I'm Sera :) 
               <br /><br />
