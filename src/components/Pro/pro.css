@@ -56,7 +56,7 @@
   }
 
   main {
-    max-width: 140rem;
+    max-width: 180rem;
     margin: 0 auto;
 
     @media (min-width: 990px) {
@@ -209,7 +209,7 @@
     }
   }
 
-  @media (min-width: 1600px) {
+  @media (min-width: 1900px) {
     .cards-item {
       width: 20%;
     }
