@@ -50,6 +50,7 @@
         p {
             text-align: left;
             font-weight: 400;
+            padding: 0 0 4rem;
         }
 
         img {
@@ -71,6 +72,10 @@
 
             img {
                 height: 28rem;
+            }
+
+            p {
+                padding: 0;
             }
         }
     }
