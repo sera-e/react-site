@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.b2fd355e.css",
+    "main.css": "/static/css/main.f726f98e.css",
     "main.js": "/static/js/main.d7435aa9.js",
     "static/media/bpi.pdf": "/static/media/bpi.5e6fb9f5c51a7a7768d5.pdf",
     "static/media/aita.pdf": "/static/media/aita.7e1e1da2368fe485a313.pdf",
@@ -48,11 +48,11 @@
     "static/media/bpi-logo.png": "/static/media/bpi-logo.eed38a124dfc74d43968.png",
     "static/media/cursor.svg": "/static/media/cursor.5c6bab977cd561f4b66b.svg",
     "index.html": "/index.html",
-    "main.b2fd355e.css.map": "/static/css/main.b2fd355e.css.map",
+    "main.f726f98e.css.map": "/static/css/main.f726f98e.css.map",
     "main.d7435aa9.js.map": "/static/js/main.d7435aa9.js.map"
   },
   "entrypoints": [
-    "static/css/main.b2fd355e.css",
+    "static/css/main.f726f98e.css",
     "static/js/main.d7435aa9.js"
   ]
 }
