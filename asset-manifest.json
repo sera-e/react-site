@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.a523fc9b.css",
-    "main.js": "/static/js/main.28b36426.js",
+    "main.js": "/static/js/main.c4dda16e.js",
     "static/media/bpi.pdf": "/static/media/bpi.5e6fb9f5c51a7a7768d5.pdf",
     "static/media/aita.pdf": "/static/media/aita.7e1e1da2368fe485a313.pdf",
     "static/media/bpi.png": "/static/media/bpi.bd086d972d3c671a4170.png",
+    "static/media/me.jpg": "/static/media/me.618ce35fb0cfecc8ab86.jpg",
     "static/media/nec-undergraduate-programs-brochure.pdf": "/static/media/nec-undergraduate-programs-brochure.a6077a590eedfd9fa97f.pdf",
     "static/media/parsp.png": "/static/media/parsp.7689a93d3aebe7670970.png",
     "static/media/dcn-3.png": "/static/media/dcn-3.482100ec897d96046e9f.png",
@@ -48,10 +49,10 @@
     "static/media/cursor.svg": "/static/media/cursor.5c6bab977cd561f4b66b.svg",
     "index.html": "/index.html",
     "main.a523fc9b.css.map": "/static/css/main.a523fc9b.css.map",
-    "main.28b36426.js.map": "/static/js/main.28b36426.js.map"
+    "main.c4dda16e.js.map": "/static/js/main.c4dda16e.js.map"
   },
   "entrypoints": [
     "static/css/main.a523fc9b.css",
-    "static/js/main.28b36426.js"
+    "static/js/main.c4dda16e.js"
   ]
 }
