@@ -8,7 +8,7 @@ const navLinks = [
     {
         url: 'about',
         name: 'About'
-    },,
+    },
     {
         url: 'portfolio',
         name: 'Portfolio'
@@ -50,7 +50,7 @@ export const socials = () => {
 
         return <li key={icon} className='inline-block'>
             <Link to={url} target='_blank'>
-                <i className={`fab fa-${icon}`}></i>
+                <i className={`fab fa-${icon}`} />
             </Link>
         </li>
     })

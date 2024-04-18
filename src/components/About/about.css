@@ -16,34 +16,37 @@
         max-width: 110rem;
         padding: 2rem;
 
-        > div {
+        >div {
             display: flex;
             flex-direction: column;
         }
 
         @media (min-width: 990px) {
 
-            > div {
+            >div {
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: flex-start;
             }
         }
 
-        p, img {
+        .about-txt,
+        img {
             width: 100%;
         }
 
         @media (min-width: 990px) {
 
-            p, img {
+            .about-txt,
+            img {
                 width: 49%;
             }
         }
-    
+
         p {
             text-align: left;
             font-weight: 400;
+            padding: 0 0 2rem;
         }
 
         img {
@@ -55,7 +58,7 @@
         }
 
         @media (min-width: 760px) {
-    
+
             img {
                 height: 36rem;
             }
@@ -64,7 +67,7 @@
         @media (min-width: 990px) {
 
             img {
-                height: 40rem;
+                height: 42rem;
                 margin: 0;
             }
         }
@@ -76,5 +79,39 @@
 
     img {
         width: 100%;
+    }
+
+    .btn {
+        color: #ffffff;
+        padding: 1rem;
+        text-transform: uppercase;
+        border-radius: 4px;
+        font-weight: 400;
+        font-size: 1.6rem;
+        display: block;
+        width: 100%;
+        cursor: pointer;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: transparent;
+    }
+
+    .btn:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .card-btn {
+        padding: 0.4rem 1rem 0.4rem 2rem;
+        width: fit-content;
+        margin: 0;
+        text-align: center;
+        font-weight: 600;
+        font-size: 1.9rem;
+    }
+
+    @media (min-width: 990px) {
+
+        .card-btn {
+            margin: 0;
+        }
     }
 }
