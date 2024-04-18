@@ -13,7 +13,7 @@
     }
 
     .card {
-        max-width: 110rem;
+        max-width: 100rem;
         padding: 2rem;
 
         >div {
@@ -31,14 +31,14 @@
         }
 
         .about-txt,
-        img {
+        .about-img {
             width: 100%;
         }
 
         @media (min-width: 990px) {
 
             .about-txt,
-            img {
+            .about-img {
                 width: 49%;
             }
         }
@@ -46,7 +46,6 @@
         p {
             text-align: left;
             font-weight: 400;
-            padding: 0 0 2rem;
         }
 
         img {
@@ -54,21 +53,20 @@
             height: 24rem;
             background: #001;
             object-fit: cover;
-            object-position: center;
+            object-position: center top;
         }
 
         @media (min-width: 760px) {
 
             img {
-                height: 36rem;
+                height: 30rem;
             }
         }
 
         @media (min-width: 990px) {
 
             img {
-                height: 42rem;
-                margin: 0;
+                height: 27rem;
             }
         }
     }
@@ -101,8 +99,8 @@
 
     .card-btn {
         padding: 0.4rem 1rem 0.4rem 2rem;
-        width: fit-content;
-        margin: 0;
+        width: 100%;
+        margin: 0 0 2rem;
         text-align: center;
         font-weight: 600;
         font-size: 1.9rem;
