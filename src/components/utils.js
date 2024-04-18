@@ -21,16 +21,16 @@ const navLinks = [
 
 const smLinksData = [
     {
+        url: 'https://linkedin.com/in/serae',
+        icon: 'linkedin'
+    },
+    {
         url: 'https://codepen.io/serae',
         icon: 'codepen'
     },
     {
-        url: 'https://linkedin.com/in/serae',
-        icon: 'linkedin-in'
-    },
-    {
         url: 'https://github.com/sera-e',
-        icon: 'github'
+        icon: 'github-alt'
     }
 ]
 
@@ -48,7 +48,7 @@ export const socials = () => {
     return smLinksData.map((smLink) => {
         const { url, icon } = smLink
 
-        return <li key={icon} className='inline-block'>
+        return <li key={icon} className='inline-block socials'>
             <Link to={url} target='_blank'>
                 <i className={`fab fa-${icon}`} />
             </Link>

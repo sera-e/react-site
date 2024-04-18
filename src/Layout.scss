@@ -17,13 +17,13 @@ main {
   width: 100%;
 }
 
-@media (min-width: 370px) {
+@media (min-width: 560px) {
   main {
     padding: 0;
   }
 }
 
-@media (min-width: 370px) {
+@media (min-width: 560px) {
   main nav ul {
     display: block;
   }
