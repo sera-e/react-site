@@ -37,7 +37,7 @@ const Pro = ({ portfolioId }) => {
   
   if (!isLoaded) return <Loader />
 
-  return <div className='wrap portfolio'>
+  return <div className={`wrap portfolio${selectedProj ? ' selected-proj' : ''}`}>
     <Fragment>
       <Nav />
       <BackToTop />

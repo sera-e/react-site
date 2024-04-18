@@ -25,6 +25,17 @@
     }
   }
 
+  main {
+    max-width: 180rem;
+    margin: 0 auto;
+
+    @media (min-width: 990px) {
+      >div {
+        padding: 0 2rem;
+      }
+    }
+  }
+
   .featured-pro {
     h2 {
       margin: 2rem auto;
@@ -55,15 +66,8 @@
     }
   }
 
-  main {
-    max-width: 180rem;
-    margin: 0 auto;
-
-    @media (min-width: 990px) {
-      >div {
-        padding: 0 2rem;
-      }
-    }
+  &.selected-proj main {
+    max-width: 140rem;
   }
 
   .proj-wrapper,
