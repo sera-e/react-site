@@ -20,7 +20,7 @@ const About = () => {
           <h2>About me</h2>
           <hr />
           <div>
-            <img className='about-img' src={require('/public/about/me.jpg')} alt='me'/>
+            <img className='about-img' src='/public/about/me.jpg' alt='me'/>
             <p>
               Hello, I'm Sera :) 
               <br /><br />
