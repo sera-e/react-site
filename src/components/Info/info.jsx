@@ -1,6 +1,7 @@
 import React, { Fragment, useEffect, useState } from 'react'
 import Loader from '../Loader/loader'
 import { Nav, Footer } from '../Nav'
+import BackToTop from '../Nav/backtotop'
 import Form from './Form'
 
 import './info.css'
@@ -16,6 +17,7 @@ const Info = () => {
     <Fragment>
       <Nav IsLoading={!isLoaded} />
       {!isLoaded && <Loader />}
+      <BackToTop />
       <main className={isLoaded ? 'loading loaded' : 'loading'}>
         <div className='card'>
           <h2>Contact me</h2>
