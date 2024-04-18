@@ -1,8 +1,4 @@
 /* contact */
-.contact a:hover,
-.contact a:active {
-    background: none;
-}
 
 .contact {
     form {
