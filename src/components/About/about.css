@@ -139,6 +139,9 @@
         text-align: center;
         font-weight: 600;
         font-size: 1.9rem;
+        i {
+            font-weight: 400;
+        }
     }
 
     @media (min-width: 990px) {

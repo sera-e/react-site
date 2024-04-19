@@ -120,8 +120,7 @@
 
   @media (min-width: 560px) {
     .goback-btn {
-      margin: -8.8rem 0 0.2rem 2rem;
-      margin: -9.2rem 0 0.2rem 2rem;
+      margin: -8.2rem 0 0.2rem 2rem;
     }
   }
 
@@ -289,6 +288,7 @@
     background-color: rgba(255, 255, 255, 0.02);
     box-shadow: -1rem 1rem 2rem 0rem rgba(0, 0, 0, 0.02), -1rem 1rem 2rem 0rem rgba(0, 0, 0, 0.1);
     padding: 2rem;
+    margin: 0 0 6rem;
   }
 }
 
@@ -306,12 +306,12 @@
   @media (min-width: 990px) {
     .proj-inner-content {
       flex-direction: column;
-      padding: 0 0 2rem;
+      padding: 0;
     }
   }
 
   .card-btn {
-    padding: 1.6rem;
+    padding: 1.25rem;
     width: 100%;
     margin: 0 0 2rem 0;
     text-align: center;

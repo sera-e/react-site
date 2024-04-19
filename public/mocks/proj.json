@@ -9,7 +9,8 @@
         "tools": "Visual Studio, Visual Studio Code, Adobe XD, Adobe Illustrator, Adobe Photoshop, Zoom",
         "hardskills": "ReactJS, React Router, Redux, JSON Contracting, CSS, SASS",
         "softskills": "UX Design, Prototyping, Attention to Detail, Communication, Leadership, Decision Making, Teamwork, Quality Assurance",
-        "photos": ["bhld.png"],
+        "photos": ["final.png", "mocks.png", "old.png"],
+        "photodesc" : ["final version", "prototypes", "previous version"],
         "url": "https://wawamzn.benefithub.com/app/local-deals",
         "urltype": "site",
         "isHosted": false
@@ -25,6 +26,7 @@
         "hardskills": "UX Design, Prototyping",
         "softskills": "Attention to Detail, Communication, Leadership, Decision Making, Teamwork, Quality Assurance",
         "photos": ["bhsw.jpg"],
+        "photodesc" : ["final version", "prototypes"],
         "url": "https://xd.adobe.com/view/86917e3a-ae6b-4a0d-7a7c-2e23cd9a9908-f0a0",
         "urltype": "xd mocks",
         "isHosted": false
@@ -40,6 +42,7 @@
         "hardskills": "ReactJS, React Router, Redux, JSON Contracting, CSS, SASS",
         "softskills": "UX Design, Prototyping, Attention to Detail, Communication, Leadership, Decision Making, Teamwork, Quality Assurance",
         "photos": ["bhua.png"],
+        "photodesc" : ["final version", "prototypes", "previous version"],
         "url": "https://mybenefithub.benefithub.com/welcome",
         "urltype": "site",
         "isHosted": false
@@ -55,6 +58,7 @@
         "hardskills": "ReactJS, NPM, Redux, CSS, SASS, WCAG",
         "softskills": "UX Design, Prototyping, Communication, Collaborative, Teamwork",
         "photos": ["bhuk.png"],
+        "photodesc" : ["final version", "prototypes"],
         "url": "https://benefithubcommonui.azurewebsites.net/",
         "urltype": "site",
         "isHosted": false
@@ -70,6 +74,7 @@
         "hardskills": "ReactJS, React Router, Redux, JSON Contracting, CSS, SASS",
         "softskills": "UX Design, Prototyping, Attention to Detail, Communication, Leadership, Decision Making, Teamwork, Quality Assurance",
         "photos": ["bhrc.png"],
+        "photodesc" : ["final version", "prototypes"],
         "url": "https://bbinsrelief.benefithub.com/app/home",
         "urltype": "site",
         "isHosted": false
@@ -85,6 +90,7 @@
         "hardskills": "ReactJS, Redux, JSON Contracting, CSS, SASS",
         "softskills": "Attention to Detail, Communication, Teamwork, Quality Assurance",
         "photos": ["bhhm.png"],
+        "photodesc" : ["final version", "prototypes"],
         "url": "https://wawamzn.benefithub.com/app/discounts/home",
         "urltype": "site",
         "isHosted": false
@@ -100,6 +106,7 @@
         "hardskills": "ReactJS, Content Writing, CSS, SASS",
         "softskills": "UX Design, Prototyping, Attention to Detail, Communication, Leadership, Decision Making, Teamwork, Quality Assurance",
         "photos": ["bhmw.png"],
+        "photodesc" : ["final version", "prototypes", "previous version"],
         "url": "https://web.archive.org/web/20161004033929/http://benefithub.com/",
         "urltype": "site",
         "isHosted": false
@@ -115,6 +122,7 @@
         "hardskills": "ReactJS, React Router, Redux, CSS, SASS",
         "softskills": "UX Design, Prototyping, Attention to Detail, Communication, Leadership, Decision Making, Teamwork, Quality Assurance",
         "photos": ["bhas.png"],
+        "photodesc" : ["final version", "prototypes", "previous version"],
         "url": "https://xd.adobe.com/view/861d05d0-e58b-4ae6-8138-96226545f4d7-d34e",
         "urltype": "xd mocks",
         "isHosted": false
@@ -130,6 +138,7 @@
         "hardskills": "Graphic Design, Typography, Layout Design, Ideation, Branding",
         "softskills": "Creativity, Communication, Leadership, Teamwork, Goal Setting, Self Motivation, Diversity and Inclusion",
         "photos": ["ddsos.jpg"],
+        "photodesc" : ["final version", "prototypes"],
         "url": "https://www.instagram.com/p/C17Oi9qsz4Q/",
         "urltype": "site",
         "isHosted": false
@@ -145,6 +154,7 @@
         "hardskills": "Graphic Design, Typography, Layout Design, Ideation, Branding",
         "softskills": "Creativity, Communication, Leadership, Teamwork, Goal Setting, Self Motivation, Diversity and Inclusion",
         "photos": ["ddbb.jpg"],
+        "photodesc" : ["final version", "prototypes"],
         "url": "https://www.instagram.com/reel/CztiVLzpsrD/",
         "urltype": "site",
         "isHosted": false
@@ -160,6 +170,7 @@
         "hardskills": "Graphic Design, Typography, Layout Design, Ideation, Branding",
         "softskills": "Creativity, Communication, Leadership, Teamwork, Goal Setting, Self Motivation, Diversity and Inclusion",
         "photos": ["tpc-dali.png"],
+        "photodesc" : ["final version", "prototypes"],
         "url": "https://www.instagram.com/p/CSco7kUJe7K",
         "urltype": "site",
         "isHosted": false
@@ -175,6 +186,7 @@
         "hardskills": "Web Design, Graphic Design, Typography, Ideation, Branding",
         "softskills": "Prototyping, Creativity, Communication, Leadership, Decision Making, Teamwork, Goal Setting, Self Motivation",
         "photos": ["parsp.png"],
+        "photodesc" : ["final version", "prototypes", "previous version"],
         "url": "http://parsp.org/",
         "urltype": "site",
         "isHosted": false
@@ -190,6 +202,7 @@
         "hardskills": "ReactJS, jQuery, CSS, SASS",
         "softskills": "UX Design, Prototyping, Attention to Detail, Communication, Leadership, Decision Making, Teamwork, Quality Assurance",
         "photos": ["bhcl.png"],
+        "photodesc" : ["final version", "prototypes"],
         "url": "https://xd.adobe.com/view/03a02f4f-785b-406a-79f4-d35b629f3ed3-7591/",
         "urltype": "xd mocks",
         "isHosted": false
@@ -205,8 +218,9 @@
         "hardskills": "Graphic Design, Layout Design, Ideation, Branding",
         "softskills": "Creativity, Communication, Collaborative, Teamwork",
         "photos": ["nec.jpg"],
+        "photodesc" : ["final design"],
         "url": "https://web.archive.org/web/20160327211606/https://www.newenglandcollegeonline.com/media/15321333/nec-undergraduate-programs-brochure.pdf",
-        "urltype": "final print",
+        "urltype": "final pdf",
         "isHosted": false
     },
     {
@@ -219,9 +233,10 @@
         "tools": "Adobe Photoshop, Adobe Illustrator",
         "hardskills": "Graphic Design, Typography, Layout Design, Ideation, Branding",
         "softskills": "Creativity, Communication, Leadership, Decision Making, Goal Setting, Self Motivation",
-        "photos": ["aita.jpg", "1.jpg", "2.jpg", "3.jpg", "4.png"],
+        "photos": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.png"],
+        "photodesc" : ["final print", "final prints", "final print", "final prints", "final design"],
         "url": "aita.pdf",
-        "urltype": "final print",
+        "urltype": "final pdf",
         "isHosted": true
     },
     {
@@ -235,8 +250,9 @@
         "hardskills": "Graphic Design, Typography, Layout Design, Ideation, Branding",
         "softskills": "Creativity, Communication, Leadership, Decision Making, Goal Setting, Self Motivation",
         "photos": ["bpi.png"],
+        "photodesc" : ["final print", "final design", "previous version"],
         "url": "bpi.pdf",
-        "urltype": "final print",
+        "urltype": "final pdf",
         "isHosted": true
     },
     {
@@ -250,8 +266,9 @@
         "hardskills": "Graphic Design, Typography, Layout Design, Ideation, Branding",
         "softskills": "Creativity, Communication, Leadership, Decision Making, Goal Setting, Self Motivation",
         "photos": ["dcn.png"],
+        "photodesc" : ["final print", "final design"],
         "url": "dcn.pdf",
-        "urltype": "final print",
+        "urltype": "final pdf",
         "isHosted": true
     }
 ]

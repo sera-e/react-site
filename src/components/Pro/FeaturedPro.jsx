@@ -17,7 +17,7 @@ class FeaturedPro extends React.Component {
             <Fragment>
                 <h2>{name}</h2>
                 <Link to='#portfolio' className='goback-btn'>
-                    <i className='fa-light fa-arrow-left' />
+                    <i className='fa-regular fa-arrow-left' />
                     <span>Go Back</span>
                 </Link>
                 <div className='proj-wrapper'>

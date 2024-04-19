@@ -10,10 +10,13 @@ const PhotoCarousel = ({ data, slideDeck }) => {
     }
 
     const slides = () => {
-        const { id, type } = data
+        const { id, photodesc, type } = data
         
-        return slideDeck.map((photo, i) => <Carousel.Item>
+        return slideDeck.map((photo, i) => <Carousel.Item interval={4000}>
             <img key={id + type + i} src={require(`/public/projs/${id}/${photo}`)} alt={`${id} ${photo}`} />
+            {/* <Carousel.Caption>
+                {photodesc[i]}
+            </Carousel.Caption> */}
         </Carousel.Item>)
     }
 
