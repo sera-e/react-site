@@ -25,8 +25,8 @@
         "tools": "Visual Studio, Visual Studio Code, Adobe XD, Zoom",
         "hardskills": "UX Design, Prototyping",
         "softskills": "Attention to Detail, Communication, Leadership, Decision Making, Teamwork, Quality Assurance",
-        "photos": ["bhsw.jpg"],
-        "photodesc" : ["final version", "prototypes"],
+        "photos": ["final.jpg", "mocks.png", "flowchart.png", "old.png"],
+        "photodesc" : ["final version", "prototypes", "flow chart", "previous version"],
         "url": "https://xd.adobe.com/view/86917e3a-ae6b-4a0d-7a7c-2e23cd9a9908-f0a0",
         "urltype": "xd mocks",
         "isHosted": false
