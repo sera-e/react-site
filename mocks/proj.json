@@ -9,8 +9,8 @@
         "tools": "Visual Studio, Visual Studio Code, Adobe XD, Adobe Illustrator, Adobe Photoshop, Zoom",
         "hardskills": "ReactJS, React Router, Redux, JSON Contracting, CSS, SASS",
         "softskills": "UX Design, Prototyping, Attention to Detail, Communication, Leadership, Decision Making, Teamwork, Quality Assurance",
-        "photos": ["final.png", "mocks.png", "old.png"],
-        "photodesc" : ["final version", "prototypes", "previous version"],
+        "photos": ["final.png", "code.png", "mocks.png", "old.png"],
+        "photodesc" : ["final version", "sample code", "prototypes", "previous version"],
         "url": "https://wawamzn.benefithub.com/app/local-deals",
         "urltype": "site",
         "isHosted": false
