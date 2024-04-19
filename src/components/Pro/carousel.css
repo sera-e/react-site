@@ -29,7 +29,7 @@
     @media (min-width: 990px) {
 
         .carousel-inner {
-            height: 44rem;
+            height: 48rem;
         }
     }
 
@@ -94,6 +94,17 @@
             display: block;
             margin: auto;
         }
+
+        &:hover,
+        &:focus,
+        &:active {
+            background: none;
+            opacity: 1;
+
+            &::before {
+                box-shadow: 0 0 4px black;
+            }
+        }
     }
 
     img {
@@ -124,7 +135,8 @@
         &:focus,
         &:active {
             text-decoration: none;
-            opacity: 0.8;
+            opacity: 1;
+            text-shadow: 0 0 4px black;
         }
 
         &:hover {
@@ -198,13 +210,14 @@
         color: lightcyan;
         font-size: 1.6rem;
         display: inline-block;
-        padding: 0.1rem 0.4rem 0.4rem;
+        padding: 0.2rem 0.5rem 0.4rem;
         text-transform: uppercase;
         z-index: 3;
         position: absolute;
         top: 1px;
         margin: auto;
         text-align: center;
+        opacity: 0.8;
     }
 
     .active.carousel-item-end,
