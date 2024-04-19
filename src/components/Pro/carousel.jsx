@@ -14,9 +14,9 @@ const PhotoCarousel = ({ data, slideDeck }) => {
         
         return slideDeck.map((photo, i) => <Carousel.Item interval={4000}>
             <img key={id + type + i} src={require(`/public/projs/${id}/${photo}`)} alt={`${id} ${photo}`} />
-            {/* <Carousel.Caption>
+            <Carousel.Caption>
                 {photodesc[i]}
-            </Carousel.Caption> */}
+            </Carousel.Caption>
         </Carousel.Item>)
     }
 
