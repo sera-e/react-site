@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.34679b9d.css",
-    "main.js": "/static/js/main.58f1b5a2.js",
+    "main.js": "/static/js/main.b01bc070.js",
     "static/media/bpi.pdf": "/static/media/bpi.5e6fb9f5c51a7a7768d5.pdf",
     "static/media/aita.pdf": "/static/media/aita.7e1e1da2368fe485a313.pdf",
     "static/media/bpi.png": "/static/media/bpi.bd086d972d3c671a4170.png",
@@ -26,6 +26,7 @@
     "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.244128d7a5557df268b2.woff2",
     "static/media/ddbb.jpg": "/static/media/ddbb.1bea039c5df3d72ad34c.jpg",
     "static/media/tpc-dali.pdf": "/static/media/tpc-dali.b0a60a6411e068584c9f.pdf",
+    "static/media/old.png": "/static/media/old.ed9e8aa368471b32d7d2.png",
     "static/media/bhua.png": "/static/media/bhua.f384db748f7573f32b04.png",
     "static/media/bhas.png": "/static/media/bhas.8f5a11b960a27ad51dbf.png",
     "static/media/original.jpg": "/static/media/original.9decc812f3bedbbec9e0.jpg",
@@ -34,23 +35,23 @@
     "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.bb8a10b0705432f301de.ttf",
     "static/media/bhmw.png": "/static/media/bhmw.6b97bbb5d37ced67a2f7.png",
     "static/media/ddsos.jpg": "/static/media/ddsos.20c2ca46e5a94390231a.jpg",
-    "static/media/mocks.png": "/static/media/mocks.bef2a531b9ee48d3a1d6.png",
+    "static/media/mocks.png": "/static/media/mocks.35d9f922e27136598dfd.png",
     "static/media/bhcl.png": "/static/media/bhcl.aefc80cc5e6a710525a4.png",
     "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.5e7b19421dd30c3feeea.woff2",
-    "static/media/bhsw.jpg": "/static/media/bhsw.fe0f9c7621fbe64dd9ef.jpg",
+    "static/media/final.jpg": "/static/media/final.fe0f9c7621fbe64dd9ef.jpg",
     "static/media/bhcl-header.png": "/static/media/bhcl-header.318a9e051b6cbc8ce04c.png",
     "static/media/nec-weathervane.jpg": "/static/media/nec-weathervane.47979b9c013bb801f5ff.jpg",
-    "static/media/old.png": "/static/media/old.5e27b6519f35d28a6998.png",
     "static/media/tpc-dali.png": "/static/media/tpc-dali.aaa1531e789007a3979b.png",
+    "static/media/flowchart.png": "/static/media/flowchart.7ee876f435facb0c9008.png",
     "static/media/goc.png": "/static/media/goc.0213c9269e459e3a4252.png",
     "static/media/bpi-logo.png": "/static/media/bpi-logo.eed38a124dfc74d43968.png",
     "static/media/cursor.svg": "/static/media/cursor.5c6bab977cd561f4b66b.svg",
     "index.html": "/index.html",
     "main.34679b9d.css.map": "/static/css/main.34679b9d.css.map",
-    "main.58f1b5a2.js.map": "/static/js/main.58f1b5a2.js.map"
+    "main.b01bc070.js.map": "/static/js/main.b01bc070.js.map"
   },
   "entrypoints": [
     "static/css/main.34679b9d.css",
-    "static/js/main.58f1b5a2.js"
+    "static/js/main.b01bc070.js"
   ]
 }
