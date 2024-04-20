@@ -6,7 +6,6 @@ import Home from '../Home'
 import About from '../About'
 import Info from '../Info'
 import Pro from '../Pro'
-import Biz from '../Biz'
 import Err from '../Err'
 
 import Route from './Route'
@@ -36,9 +35,6 @@ class Router extends Component {
                     </Route>
                     <Route path='/portfolio/:portfolioId?'>
                         <Pro portfolioId={Extended} key={Extended} />
-                    </Route>
-                    <Route path='/card'>
-                        <Biz />
                     </Route>
                     <Route path='/secret'>
                     </Route>
