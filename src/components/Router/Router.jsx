@@ -36,7 +36,7 @@ class Router extends Component {
                     <Route path='/portfolio/:portfolioId?'>
                         <Pro portfolioId={Extended} key={Extended} />
                     </Route>
-                    <Route path='/sera'>
+                    <Route path='/secret'>
                     </Route>
                     <Route path='/*'>
                         <Err />
