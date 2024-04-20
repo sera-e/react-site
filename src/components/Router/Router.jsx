@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { compose } from 'redux'
-import { BrowserRouter, HashRouter, Switch, Redirect, withRouter } from 'react-router-dom'
+import { HashRouter, Switch, withRouter } from 'react-router-dom'
 
 import Home from '../Home'
 import About from '../About'
@@ -20,28 +20,6 @@ class Router extends Component {
         const Extended = segments.slice(0).join('/')
 
         return <div key='page-router'>
-            <BrowserRouter>
-                <Switch>
-                    <Route path='/home'>
-                        <Redirect to='#/' />
-                    </Route>
-                    <Route path='/about'>
-                        <Redirect to='#/about' />
-                    </Route>
-                    <Route path='/contact'>
-                        <Redirect to='#/contact' />
-                    </Route>
-                    <Route path='/portfolio'>
-                        <Redirect to='#/portfolio' />
-                    </Route>
-                    <Route exact path='/card'>
-                        <Redirect to='#/card' />
-                    </Route>
-                    <Route path='/secret'>
-                        <Redirect to='#/secret' />
-                    </Route>
-                </Switch>
-            </BrowserRouter>
             <HashRouter>
                 <Switch>
                     <Route exact path='/'>
@@ -64,7 +42,7 @@ class Router extends Component {
                     </Route>
                     <Route path='/secret'>
                     </Route>
-                    <Route path='/(error|*)'>
+                    <Route path='/*'>
                         <Err />
                     </Route>
                 </Switch>
