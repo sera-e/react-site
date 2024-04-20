@@ -57,9 +57,9 @@ export const socials = () => {
 }
 
 export const proCards = (proData) => proData.map((pro) => {
-    const {id, name, photos } = pro
+    const { id, name, photos } = pro
 
-    return <li id={id} className='cards-item' key={id}>
+    return <li id={id} className='cards-item' key={`card ${id}`}>
         <div className='procard'>
             <Link to={`#portfolio/${id}`}>
                 <div>

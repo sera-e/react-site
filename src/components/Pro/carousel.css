@@ -63,7 +63,7 @@
     .carousel-indicators {
         display: flex;
         justify-content: center;
-        margin: 0 15%;
+        margin: 0 10%;
         padding: 0;
         position: absolute;
         z-index: 2;
@@ -128,7 +128,10 @@
         text-align: center;
         top: 0;
         transition: opacity .15s ease;
-        width: 15%;
+        width: 10%;
+        height: 75%;
+        bottom: 0;
+        margin: auto;
         z-index: 1;
 
         &:hover,
@@ -230,23 +233,43 @@
         transform: translateX(-100%)
     }
 
-    &.carousel-fade  .carousel-item {
+    &.carousel-fade .carousel-item {
         opacity: 0;
         transform: none;
         transition-property: opacity
     }
 
-    &.carousel-fade  .carousel-item-next.carousel-item-start,
-    &.carousel-fade  .carousel-item-prev.carousel-item-end,
-    &.carousel-fade  .carousel-item.active {
+    &.carousel-fade .carousel-item-next.carousel-item-start,
+    &.carousel-fade .carousel-item-prev.carousel-item-end,
+    &.carousel-fade .carousel-item.active {
         opacity: 1;
         z-index: 1
     }
 
-    &.carousel-fade  .active.carousel-item-end,
-    &.carousel-fade  .active.carousel-item-start {
+    &.carousel-fade .active.carousel-item-end,
+    &.carousel-fade .active.carousel-item-start {
         opacity: 0;
         transition: opacity 0s .6s;
         z-index: 0
+    }
+}
+
+.carousel-wrap {
+    position: relative;
+
+    .fa-regular.fa-expand {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 3;
+        height: 5rem;
+        width: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 }

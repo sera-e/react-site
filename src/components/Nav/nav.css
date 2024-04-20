@@ -1,6 +1,5 @@
 nav {
     transition: none;
-    z-index: 2;
 }
 
 @media (min-width: 560px) {

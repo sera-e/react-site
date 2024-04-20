@@ -12,6 +12,7 @@ const About = () => {
   useEffect(() => {
     setTimeout(() => { setIsLoaded(true) }, 1000)
   }, [])
+  
   return <div className='wrap about'>
     <Fragment>
       <Nav IsLoading={!isLoaded} />
