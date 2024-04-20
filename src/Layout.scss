@@ -1,6 +1,13 @@
 /* layout */
 @import 'stars.scss';
 
+$liteblue: #CDE;
+$litepurp: #DCE;
+$black: #001;
+$blue: #208;
+$darkblue: #002;
+$darkpurp: #204;
+
 .wrap {
   justify-content: space-between;
   flex-direction: column;
@@ -31,8 +38,8 @@ main {
 html {
   height: 100%;
   cursor: url('../public/cursor.svg'), default;
-  background: #002;
-  background: radial-gradient(ellipse at bottom, #204 0%, #002 80%);
+  background: $darkblue;
+  background: radial-gradient(ellipse at bottom, $darkpurp 0%, $darkblue 80%);
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -43,14 +50,14 @@ a:hover {
 }
 
 a {
-  transition: 0.5s ease;
+  transition: 0.4s ease;
 }
 
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #207 #001;
+  scrollbar-color: $blue $black;
 }
 
 /* Chrome, Edge, and Safari */
@@ -59,17 +66,17 @@ a {
 }
 
 *::-webkit-scrollbar-track {
-  background: #001;
+  background: $black;
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #ddeeff;
+  background-color: $liteblue;
   border-radius: 1rem;
-  border: 0rem none #001;
+  border: 0rem none $black;
 }
 
 .loading {
-  transition: 0.2s ease;
+  transition: 0.4s ease;
   opacity: 0;
   z-index: -1;
   position: absolute;
@@ -77,7 +84,7 @@ a {
 }
 
 .loaded {
-  transition: 0.2s ease;
+  transition: 0.4s ease;
   opacity: 1;
   z-index: 1;
   position: relative;

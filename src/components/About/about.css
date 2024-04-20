@@ -1,4 +1,5 @@
 /* about */
+
 .about {
 
     h2 {
@@ -17,7 +18,7 @@
     }
 
     .card {
-        transition: 0.5s ease;
+        transition: 0.4s ease;
         word-break: break-all;
         word-break: break-word;
         text-align: center;
@@ -82,7 +83,7 @@
         img {
             margin: 0 0 2rem;
             height: 24rem;
-            background: #001;
+            background: $black;
             object-fit: cover;
             object-position: center top;
         }
@@ -115,7 +116,7 @@
     }
 
     .btn {
-        color: #ffffff;
+        color: $liteblue;
         padding: 1rem;
         text-transform: uppercase;
         border-radius: 4px;

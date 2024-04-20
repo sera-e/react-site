@@ -11,7 +11,7 @@
     }
 
     .card {
-        transition: 0.5s ease;
+        transition: 0.4s ease;
         word-break: break-all;
         word-break: break-word;
         text-align: center;

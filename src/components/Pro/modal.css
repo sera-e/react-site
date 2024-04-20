@@ -27,7 +27,7 @@
     }
 
     .caption {
-        background: #001;
+        background: $black;
         color: lightcyan;
         font-size: 1.6rem;
         display: inline-block;

@@ -73,7 +73,7 @@
   .proj-wrapper,
   .procard,
   .card-image {
-    transition: 0.5s ease;
+    transition: 0.4s ease;
   }
 
   .card-image {
@@ -81,12 +81,12 @@
     width: 100%;
     vertical-align: middle;
     object-fit: cover;
-    background: #002;
+    background: $darkblue;
+    opacity: 0.8;
 
-    &:hover,
-    &:active,
-    &:focus {
+    &:hover {
       cursor: pointer;
+      opacity: 1;
     }
   }
 
@@ -155,7 +155,7 @@
   }
 
   .btn {
-    color: #ffffff;
+    color: $liteblue;
     padding: 1rem;
     text-transform: uppercase;
     border-radius: 4px;
@@ -239,12 +239,17 @@
 
   .card-content {
     padding: 1rem;
-    background: linear-gradient(to bottom left, rgba(17, 17, 68, 0.4) 40%, #44114466 100%);
+    background: linear-gradient(to bottom left, #11114466 40%, #44114466 100%);
     text-align: center;
+    
+    > a:first-child:hover {
+      transition: 0.4s ease;
+      background: none;
+    }
   }
 
   .card-title {
-    color: #ffffff;
+    color: $liteblue;
     letter-spacing: 1px;
     text-transform: capitalize;
     margin: 0;
@@ -259,7 +264,7 @@
   }
 
   .card-text {
-    color: #ffffff;
+    color: $liteblue;
     font-size: 0.875rem;
     line-height: 1.5;
     margin-bottom: 1.25rem;
@@ -347,7 +352,7 @@
 
   p {
     padding: 0 0 2rem 0;
-    text-shadow: 0 0 1rem black;
+    text-shadow: 0 0 1rem $black;
     font-weight: 400;
   }
 }

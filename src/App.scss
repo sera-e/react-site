@@ -3,6 +3,13 @@
 @import './assets/fontawesome-pro-6.5.1-web/scss/regular.scss';
 @import './assets/fontawesome-pro-6.5.1-web/scss/brands.scss';
 
+$liteblue: #CDE;
+$litepurp: #DCE;
+$black: #001;
+$blue: #208;
+$darkblue: #002;
+$darkpurp: #204;
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, 
 q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, 
 tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -78,13 +85,13 @@ h1, h2, h3, h4, h5, h6, p, a, input, textarea, code, button {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
-  color: #CDE;
+  color: $liteblue;
 }
 
 @media (min-width: 370px) {
 
   h1, h2, h3, h4, h5, h6 {
-    color: #BCD;
+    color: $liteblue;
   }
 }
 
@@ -161,8 +168,8 @@ h6 {
 }
 
 hr {
-  border-bottom: 0.11rem solid #CDE;
-  border-color: #CDE;
+  border-bottom: 0.11rem solid $liteblue;
+  border-color: $liteblue;
   border-right: none;
   border-left: none;
   border-top: none;
@@ -172,7 +179,7 @@ hr {
 
 @media (min-width: 370px) {
   hr {
-    border-bottom: 0.11rem solid #CDE;
+    border-bottom: 0.11rem solid $liteblue;
     margin: 3rem 0;
   }
 }
@@ -187,31 +194,31 @@ p, li, a, button {
 }
 
 p, li {
-  color: #CDE;
+  color: $liteblue;
 }
 
 a, i, button {
   background: none;
   border: none;
-  color: #DCE;
+  color: $litepurp;
 }
 
 a:hover, a:visited, a:active, a:focus,
 i:hover, i:visited, i:active, i:focus,
 button:hover, button:visited, button:active, button:focus {
-  color: #DEF;
+  color: $liteblue;
 }
 
 @media (min-width: 370px) {
 
   a, i, button {
-    color: #ABC;
+    color: $liteblue;
   }
 
   a:hover, a:visited, a:active, a:focus,
   i:hover, i:visited, i:active, i:focus,
   button:hover, button:visited, button:active, button:focus {
-    color: #CDE;
+    color: $liteblue;
   }
 }
 
