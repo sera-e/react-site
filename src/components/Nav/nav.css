@@ -62,7 +62,7 @@ nav .close {
 
 .top.open {
     min-height: 7rem;
-    z-index: 2;
+    z-index: 4;
 }
 
 @media (min-width: 560px) {
