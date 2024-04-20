@@ -57,8 +57,8 @@
         "tools": "Visual Studio, Visual Studio Code, Adobe XD, Zoom",
         "hardskills": "ReactJS, NPM, Redux, CSS, SASS, WCAG",
         "softskills": "UX Design, Prototyping, Communication, Collaborative, Teamwork",
-        "photos": ["bhuk.png"],
-        "photodesc" : ["final version", "prototypes"],
+        "photos": ["final.png", "mocks.png", "code.png"],
+        "photodesc" : ["final version", "prototypes", "sample code"],
         "url": "https://benefithubcommonui.azurewebsites.net/",
         "urltype": "site",
         "isHosted": false
@@ -89,8 +89,8 @@
         "tools": "Visual Studio, Visual Studio Code, Adobe XD, Zoom",
         "hardskills": "ReactJS, Redux, JSON Contracting, CSS, SASS",
         "softskills": "Attention to Detail, Communication, Teamwork, Quality Assurance",
-        "photos": ["bhhm.png"],
-        "photodesc" : ["final version", "prototypes"],
+        "photos": ["final.png", "code.png"],
+        "photodesc" : ["final version", "sample code"],
         "url": "https://wawamzn.benefithub.com/app/discounts/home",
         "urltype": "site",
         "isHosted": false
