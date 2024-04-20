@@ -83,7 +83,7 @@
         img {
             margin: 0 0 2rem;
             height: 24rem;
-            background: $black;
+            background: #001;
             object-fit: cover;
             object-position: center top;
         }
@@ -116,7 +116,7 @@
     }
 
     .btn {
-        color: $liteblue;
+        color: #CDE;
         padding: 1rem;
         text-transform: uppercase;
         border-radius: 4px;

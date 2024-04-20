@@ -81,8 +81,8 @@
     width: 100%;
     vertical-align: middle;
     object-fit: cover;
-    background: $darkblue;
-    opacity: 0.8;
+    background: #002;
+    opacity: 0.9;
 
     &:hover {
       cursor: pointer;
@@ -155,7 +155,7 @@
   }
 
   .btn {
-    color: $liteblue;
+    color: #CDE;
     padding: 1rem;
     text-transform: uppercase;
     border-radius: 4px;
@@ -249,7 +249,7 @@
   }
 
   .card-title {
-    color: $liteblue;
+    color: #CDE;
     letter-spacing: 1px;
     text-transform: capitalize;
     margin: 0;
@@ -264,7 +264,7 @@
   }
 
   .card-text {
-    color: $liteblue;
+    color: #CDE;
     font-size: 0.875rem;
     line-height: 1.5;
     margin-bottom: 1.25rem;
@@ -352,7 +352,7 @@
 
   p {
     padding: 0 0 2rem 0;
-    text-shadow: 0 0 1rem $black;
+    text-shadow: 0 0 1rem #001;
     font-weight: 400;
   }
 }
