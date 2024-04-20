@@ -26,6 +26,13 @@
         }
     }
 
+    @media (max-height: 560px) {
+
+        .carousel-inner {
+            height: 32rem;
+        }
+    }
+
     @media (min-width: 990px) {
 
         .carousel-inner {
@@ -125,8 +132,8 @@
         position: absolute;
         text-align: center;
         transition: opacity 0.4s ease;
-        width: 10%;
-        height: 75%;
+        width: 15%;
+        height: 55%;
         margin: auto;
         z-index: 1;
 
@@ -147,6 +154,31 @@
         .carousel-control-next,
         .carousel-control-prev {
             display: flex;
+        }
+    }
+
+    @media (min-width: 560px) {
+
+        .carousel-control-next,
+        .carousel-control-prev {
+            width: 10%;
+            height: 65%;
+        }
+    }
+
+    @media (min-width: 760px) {
+
+        .carousel-control-next,
+        .carousel-control-prev {
+            height: 75%;
+        }
+    }
+
+    @media (max-height: 560px) {
+
+        .carousel-control-next,
+        .carousel-control-prev {
+            height: 65%;
         }
     }
 
@@ -255,7 +287,7 @@
 
     .expand {
         position: absolute;
-        bottom: 0;
+        top: 0;
         right: 0;
         z-index: 3;
         height: 5rem;
@@ -263,13 +295,30 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        
+        text-shadow: 0 0 1px #001;
+
         i {
             margin: 0;
         }
 
         &:hover {
             cursor: pointer;
+        }
+    }
+
+    @media (min-width: 760px) {
+
+        .expand {
+            top: unset;
+            bottom: 0;
+        }
+    }
+
+    @media (max-height: 560px) {
+
+        .expand {
+            top: 0;
+            bottom: unset;
         }
     }
 }
