@@ -257,7 +257,7 @@
 .carousel-wrap {
     position: relative;
 
-    .fa-regular.fa-expand {
+    .expand {
         position: absolute;
         bottom: 0;
         right: 0;
@@ -267,6 +267,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        
+        i {
+            margin: 0;
+        }
 
         &:hover {
             cursor: pointer;

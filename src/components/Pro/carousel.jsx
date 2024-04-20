@@ -11,7 +11,7 @@ const PhotoCarousel = ({ data, slideDeck, showModal }) => {
 
     const slides = () => {
         const { id, photodesc } = data
-        
+
         return slideDeck.map((photo, i) => <Carousel.Item interval={4000} key={`photo ${id} ${i}`}>
             <img src={require(`/public/projs/${id}/${photo}`)} alt={`${id} ${photo}`} />
             {slideDeck.length > 1 && <Carousel.Caption>
@@ -21,7 +21,9 @@ const PhotoCarousel = ({ data, slideDeck, showModal }) => {
     }
 
     return <div className='carousel-wrap'>
-        <i className='fa-regular fa-expand' onClick={() => { showModal(true, index) }} key={`expand ${index}`} />
+        <button className='expand' onClick={() => { showModal(true, index) }} type='button'>
+            <i className='fa-regular fa-expand' key={`expand ${index}`} />
+        </button>
         <Carousel fade activeIndex={index} onSelect={handleSelect} className={slideDeck.length < 2 ? 'single-slide' : ''}>
             {slides()}
         </Carousel>
