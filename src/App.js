@@ -5,22 +5,25 @@ import Router from './components/Router/Router'
 import ReactGA from 'react-ga4';
 
 function App() {
-    useEffect(() => {
-        ReactGA.initialize('G-3P20DLHZPK');
-        // Send pageview with a custom path
-        ReactGA.send({ hitType: 'pageview', page: '/webpage', title: 'Web Page' })
-    }, [])
+  useEffect(() => {
+    const { hash, href } = window.location
+    const pagetitle = hash.replace('#/', '').toUpperCase().split('/').join(' ')
 
-    return (
-      <div className='site' id='site'>
-        <Router />
-        <div className='stars'>
-          <div id='stars1'></div>
-          <div id='stars2'></div>
-          <div id='stars3'></div>
-        </div>
+    ReactGA.initialize('G-3P20DLHZPK');
+    // Send pageview with a custom path
+    ReactGA.send({ hitType: 'pageview', page: hash, title: pagetitle, link: href })
+  }, [])
+
+  return (
+    <div className='site' id='site'>
+      <Router />
+      <div className='stars'>
+        <div id='stars1'></div>
+        <div id='stars2'></div>
+        <div id='stars3'></div>
       </div>
-    )
+    </div>
+  )
 }
 
 export default App
