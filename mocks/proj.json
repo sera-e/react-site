@@ -73,8 +73,8 @@
         "tools": "Visual Studio, Visual Studio Code, Adobe XD, Zoom",
         "hardskills": "ReactJS, React Router, Redux, JSON Contracting, CSS, SASS",
         "softskills": "UX Design, Prototyping, Attention to Detail, Communication, Leadership, Decision Making, Teamwork, Quality Assurance",
-        "photos": ["bhrc.png"],
-        "photodesc" : ["final version", "prototypes"],
+        "photos": ["final.png", "code.png", "mocks.png"],
+        "photodesc" : ["final version", "sample code", "early prototypes"],
         "url": "https://bbinsrelief.benefithub.com/app/home",
         "urltype": "site",
         "isHosted": false
