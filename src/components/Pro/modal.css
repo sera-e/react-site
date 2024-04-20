@@ -21,20 +21,45 @@
     }
 
     img {
-        max-height: 85%;
+        max-height: 75%;
         max-width: 95%;
-        margin: 0 auto 1rem;
+        margin: 0 auto;
     }
 
     .caption {
         background: #001;
         color: lightcyan;
-        font-size: 1.9rem;
+        font-size: 1.6rem;
         display: inline-block;
         padding: 0.2rem 4rem 0.4rem;
         text-transform: uppercase;
-        margin: 0 auto 1rem;
+        margin: 0.2rem auto;
         text-align: center;
+    }
+    
+    @media (min-width: 760px) {
+
+        img {
+            max-height: 80%;
+        }
+
+        .caption {
+            font-size: 1.9rem;
+        }
+    }
+    
+    @media (min-width: 1200px) {
+
+        img {
+            margin: 1rem auto;
+        }
+    }
+    
+    @media (min-width: 1600px) {
+
+        img {
+            max-height: 85%;
+        }
     }
 
     .modalbg {
