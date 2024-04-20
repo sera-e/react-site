@@ -3,6 +3,7 @@ import Loader from '../Loader/loader'
 import { Nav, Footer } from '../Nav'
 import BackToTop from '../Nav/backtotop'
 import Link from '../Router/Link'
+import ReactGA from 'react-ga4'
 
 import './about.css'
 
@@ -12,6 +13,14 @@ const About = () => {
   useEffect(() => {
     setTimeout(() => { setIsLoaded(true) }, 1000)
   }, [])
+
+  const handleClick = (platform) => {
+      ReactGA.event({
+          category: 'Resume Link',
+          action: 'Click',
+          label: platform,
+      })
+  }
   
   return <div className='wrap about'>
     <Fragment>
@@ -25,7 +34,7 @@ const About = () => {
           <div>
             <div className='about-img'>
               <img src={require('./me.png')} alt={`me`} />
-              <Link className='btn card-btn' to='https://docs.google.com/document/d/1jVhgV5iM3fHNR2dNnOsHP3ovK5ymPhe4wuDt6txHDHA/edit?usp=sharing' target='_blank'>
+              <Link onClick={handleClick} className='btn card-btn' to='https://docs.google.com/document/d/1jVhgV5iM3fHNR2dNnOsHP3ovK5ymPhe4wuDt6txHDHA/edit?usp=sharing' target='_blank'>
                 View My Resume <i className='fa-regular fa-file-user' />
               </Link>
             </div>

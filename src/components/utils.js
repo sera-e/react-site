@@ -1,4 +1,5 @@
 import Link from './Router/Link'
+import ReactGA from 'react-ga4'
 
 const navLinks = [
     {
@@ -48,8 +49,16 @@ export const socials = () => {
     return smLinksData.map((smLink) => {
         const { url, icon } = smLink
 
+        const handleClick = (platform) => {
+            ReactGA.event({
+                category: 'Social Links',
+                action: 'Click',
+                label: platform,
+            })
+        }
+
         return <li key={icon} className='inline-block socials'>
-            <Link to={url} target='_blank'>
+            <Link onClick={handleClick} to={url} target='_blank'>
                 <i className={`fab fa-${icon}`} />
             </Link>
         </li>
@@ -59,18 +68,26 @@ export const socials = () => {
 export const proCards = (proData) => proData.map((pro) => {
     const { id, name, photos } = pro
 
+    const handleClick = (platform) => {
+        ReactGA.event({
+            category: 'Project Links',
+            action: 'Click',
+            label: platform,
+        })
+    }
+
     return <li id={id} className='cards-item' key={`card ${id}`}>
         <div className='procard'>
-            <Link to={`#portfolio/${id}`}>
+            <Link onClick={handleClick} to={`#portfolio/${id}`}>
                 <div>
                     <img className='card-image' src={require(`/public/projs/${id}/${photos[0]}`)} alt={name} />
                 </div>
             </Link>
             <div className='card-content'>
-                <Link to={`#portfolio/${id}`}>
+                <Link onClick={handleClick} to={`#portfolio/${id}`}>
                     <h3 className='card-title'>{name}</h3>
                 </Link>
-                <Link className='btn card-btn' to={`#portfolio/${id}`}>
+                <Link onClick={handleClick} className='btn card-btn' to={`#portfolio/${id}`}>
                     Read More
                 </Link>
             </div>

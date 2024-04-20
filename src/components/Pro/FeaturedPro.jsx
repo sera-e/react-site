@@ -2,6 +2,7 @@ import React, { Fragment, useState } from 'react'
 import Link from '../Router/Link'
 import PhotoCarousel from './carousel'
 import Modal from './modal'
+import ReactGA from 'react-ga4'
 import './pro.css'
 
 const FeaturedPro = ({ selectedProj }) => {
@@ -13,6 +14,14 @@ const FeaturedPro = ({ selectedProj }) => {
     const showModal = (boole, index) => {
         setIsModalShown(boole)
         setPhotoIndex(index)
+    }
+
+    const handleClick = (platform) => {
+        ReactGA.event({
+            category: 'Project Source Links',
+            action: 'Click',
+            label: platform,
+        })
     }
 
     return <div className='featured-pro' id={id}>
@@ -27,7 +36,7 @@ const FeaturedPro = ({ selectedProj }) => {
                 <div className='proj-content'>
                     <div className='proj-photos'>
                         <PhotoCarousel data={selectedProj} slideDeck={photos} showModal={showModal} />
-                        <Link className='btn card-btn' to={!isHosted ? url : require(`/public/projs/${id}/${url}`)} target='_blank'>
+                        <Link onClick={handleClick} className='btn card-btn' to={!isHosted ? url : require(`/public/projs/${id}/${url}`)} target='_blank'>
                             <span>View {urltype.toUpperCase()}</span>
                         </Link>
                     </div>
