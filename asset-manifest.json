@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.6e313e24.css",
-    "main.js": "/static/js/main.ad3aeab8.js",
+    "main.js": "/static/js/main.e0bd1ac3.js",
     "static/media/bpi.pdf": "/static/media/bpi.5e6fb9f5c51a7a7768d5.pdf",
     "static/media/aita.pdf": "/static/media/aita.7e1e1da2368fe485a313.pdf",
     "static/media/bpi.png": "/static/media/bpi.bd086d972d3c671a4170.png",
@@ -19,9 +19,9 @@
     "static/media/5.png": "/static/media/5.c8bc285cc26b363192bb.png",
     "static/media/3.jpg": "/static/media/3.eb458f992ae11084b8ab.jpg",
     "static/media/4.jpg": "/static/media/4.1b7a23c86875af6de9cf.jpg",
+    "static/media/mocks.png": "/static/media/mocks.35d9f922e27136598dfd.png",
     "static/media/2.jpg": "/static/media/2.6363e34f7b999099d6b6.jpg",
     "static/media/ir.png": "/static/media/ir.432a54d65bd0ed974010.png",
-    "static/media/mocks.png": "/static/media/mocks.35d9f922e27136598dfd.png",
     "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.244128d7a5557df268b2.woff2",
     "static/media/ddbb.jpg": "/static/media/ddbb.1bea039c5df3d72ad34c.jpg",
     "static/media/tpc-dali.pdf": "/static/media/tpc-dali.b0a60a6411e068584c9f.pdf",
@@ -29,12 +29,11 @@
     "static/media/bhas.png": "/static/media/bhas.8f5a11b960a27ad51dbf.png",
     "static/media/original.jpg": "/static/media/original.9decc812f3bedbbec9e0.jpg",
     "static/media/1.jpg": "/static/media/1.55d544ad18d95da9b7ee.jpg",
+    "static/media/code.png": "/static/media/code.55b20cb343c3c473b743.png",
     "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.bb8a10b0705432f301de.ttf",
-    "static/media/bhmw.png": "/static/media/bhmw.6b97bbb5d37ced67a2f7.png",
+    "static/media/final - Copy.png": "/static/media/final - Copy.6b97bbb5d37ced67a2f7.png",
     "static/media/ddsos.jpg": "/static/media/ddsos.20c2ca46e5a94390231a.jpg",
     "static/media/final.jpg": "/static/media/final.a508d2a06421d6989086.jpg",
-    "static/media/code.png": "/static/media/code.55b20cb343c3c473b743.png",
-    "static/media/bhcl.png": "/static/media/bhcl.aefc80cc5e6a710525a4.png",
     "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.5e7b19421dd30c3feeea.woff2",
     "static/media/bhcl-header.png": "/static/media/bhcl-header.318a9e051b6cbc8ce04c.png",
     "static/media/nec-weathervane.jpg": "/static/media/nec-weathervane.47979b9c013bb801f5ff.jpg",
@@ -47,10 +46,10 @@
     "static/media/cursor.svg": "/static/media/cursor.5c6bab977cd561f4b66b.svg",
     "index.html": "/index.html",
     "main.6e313e24.css.map": "/static/css/main.6e313e24.css.map",
-    "main.ad3aeab8.js.map": "/static/js/main.ad3aeab8.js.map"
+    "main.e0bd1ac3.js.map": "/static/js/main.e0bd1ac3.js.map"
   },
   "entrypoints": [
     "static/css/main.6e313e24.css",
-    "static/js/main.ad3aeab8.js"
+    "static/js/main.e0bd1ac3.js"
   ]
 }
