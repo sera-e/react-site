@@ -217,8 +217,8 @@
         "tools": "Adobe Photoshop, Adobe Illustrator, Adobe InDesign",
         "hardskills": "Graphic Design, Layout Design, Ideation, Branding",
         "softskills": "Creativity, Communication, Collaborative, Teamwork",
-        "photos": ["final.png"],
-        "photodesc" : ["final design"],
+        "photos": ["final.png", "mocks.png"],
+        "photodesc" : ["final design", "prototypes"],
         "url": "https://web.archive.org/web/20160327211606/https://www.newenglandcollegeonline.com/media/15321333/nec-undergraduate-programs-brochure.pdf",
         "urltype": "final pdf",
         "isHosted": false
