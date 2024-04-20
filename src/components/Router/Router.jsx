@@ -13,8 +13,17 @@ import Route from './Route'
 
 class Router extends Component {
 
+    componentDidMount = () => {
+        const { location } = this.props
+        const { pathname } = location
+        const url = '/'
+        const hash = '#'
+        if (pathname.length > 1) window.location.href = url + hash + pathname
+    }
+
     render() {
         const { location } = this.props
+        console.log(location)
         const { hash } = location
         const segments = hash.replace(/^#\//,'').toLowerCase().split('/')
         const Extended = segments.slice(0).join('/')
