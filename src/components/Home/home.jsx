@@ -20,7 +20,7 @@ class Home extends React.Component {
 
     return <div className='wrap home'>
     <Fragment>
-      <Nav IsLoading={!IsLoaded} />
+      <Nav IsLoading={!IsLoaded} IsHome={true} />
       {!IsLoaded && <Loader />}
       <main className={IsLoaded ? 'loading loaded' : 'loading'}>
         <div className='card'>
@@ -33,7 +33,7 @@ class Home extends React.Component {
         </div>
         <nav>
           <ul>
-            {nav()}
+            {nav('home')}
           </ul>
         </nav>
       </main>

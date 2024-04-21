@@ -35,8 +35,11 @@ const smLinksData = [
     }
 ]
 
-export const nav = () => {
-    return navLinks.map((navLink) => {
+export const nav = (currentpage) => {
+    console.log(currentpage)
+    const filteredNavLinks = navLinks.filter((nav) => nav.name.toLowerCase() !== (currentpage || '').toLowerCase())
+
+    return filteredNavLinks.map((navLink) => {
         const { url, name } = navLink
 
         return <li key={name}>

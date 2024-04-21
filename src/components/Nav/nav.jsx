@@ -3,7 +3,7 @@ import { nav, toggleMenu } from '../utils'
 
 import './nav.css'
 
-const Nav = ({ IsLoading }) => <nav className='top'>
+const Nav = ({ IsLoading, IsHome }) => <nav className='top'>
     <div className={IsLoading ? 'top-inner loading' : 'top-inner loading loaded'}>
         <button className='menu' onClick={() => { toggleMenu() }} type='button'>
             <div>
@@ -18,7 +18,7 @@ const Nav = ({ IsLoading }) => <nav className='top'>
             </div>
         </button>
         <ul>
-            {nav()}
+            {nav(IsHome ? 'home' : '')}
         </ul>
     </div>
 </nav>
