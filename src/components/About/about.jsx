@@ -34,7 +34,7 @@ const About = () => {
           <div>
             <div className='about-img'>
               <img src={require('./me.png')} alt={`me`} />
-              <Link onClick={handleClick} className='btn card-btn' to='https://docs.google.com/document/d/1jVhgV5iM3fHNR2dNnOsHP3ovK5ymPhe4wuDt6txHDHA/edit?usp=sharing' target='_blank'>
+              <Link onClick={handleClick} className='btn card-btn' to='https://drive.google.com/file/d/17qzbrtEJT1clYhQKXa3v8Y4Z9lfsyvX_/view' target='_blank'>
                 View My Resume <i className='fa-regular fa-file-user' />
               </Link>
             </div>
