@@ -1,15 +1,16 @@
-nav {
+.site.navopen {
+    overflow: hidden;
+}
+
+.site.navopen main {
     transition: none;
+    opacity: 0;
 }
 
 @media (min-width: 560px) {
     nav {
         text-align: center;
     }
-}
-
-nav .top-inner {
-    transition: none;
 }
 
 @media (min-width: 560px) {
@@ -111,7 +112,7 @@ nav .close {
 }
 
 .top.open .top-inner {
-    background: rgba(0, 0, 17, 0.9);
+    background: rgba(0, 0, 17, 0.6);
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -128,7 +129,6 @@ nav .close {
 .top.open .top-inner ul,
 .top.open .top-inner li,
 .top.open .top-inner a {
-    transition: none;
     display: block;
     width: 100%;
 }
