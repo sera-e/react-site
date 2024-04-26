@@ -15,7 +15,7 @@ const Pro = ({ portfolioId }) => {
 
   const loadSettings = () => {
     $.getJSON(endpointGetProjects, (data) => {
-        setProjects(data)
+      setProjects(data)
     })
   }
 
@@ -23,7 +23,7 @@ const Pro = ({ portfolioId }) => {
     loadSettings()
     setTimeout(() => {
       setIsLoaded(true)
-    }, 1500)
+    }, 1000)
   }, [])
 
   useEffect(() => {
@@ -32,11 +32,12 @@ const Pro = ({ portfolioId }) => {
   }, [projects, portfolioId])
 
   useEffect(() => {
-    setIsLoaded(false)
-    setTimeout(() => {
-      setIsLoaded(true)
-    }, 1500)
-
+    if (selectedProj) {
+      setIsLoaded(false)
+      setTimeout(() => {
+        setIsLoaded(true)
+      }, 500)
+    }
   }, [selectedProj])
 
   if (!isLoaded) return <Loader />
