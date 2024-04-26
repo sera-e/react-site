@@ -67,7 +67,7 @@
 .innerloader {
     justify-content: center;
     align-items: center;
-    box-shadow: inset 0 0 0 0.1rem #40a;
+    box-shadow: inset 0 0 0 0.1rem #30a;
     animation: pulse3 1s linear infinite;
     position: relative;
     display: flex;
@@ -89,7 +89,7 @@
 }
 
 .darkloader:before {
-    box-shadow: inset 0 0 0 0.1rem #40c;
+    box-shadow: inset 0 0 0 0.1rem #30c;
     animation: pulse2 1s linear infinite;
     padding: 1rem;
 }
@@ -98,7 +98,7 @@
 .innerloader:after {
     justify-content: center;
     align-items: center;
-    box-shadow: inset 0 0 0 0.1rem #40f;
+    box-shadow: inset 0 0 0 0.1rem #30f;
     animation: pulse1 1s linear infinite;
     display: flex;
     padding: 0;
