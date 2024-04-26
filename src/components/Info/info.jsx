@@ -4,8 +4,6 @@ import { Nav, Footer } from '../Nav'
 import BackToTop from '../Nav/backtotop'
 import Form from './Form'
 
-import './info.css'
-
 const Info = () => {
   const [isLoaded, setIsLoaded] = useState(false)
 

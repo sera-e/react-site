@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import $ from 'jquery'
-import './nav.css'
 
 const BackToTop = () => {
     const [isClicked, setIsClicked] = useState(false)

@@ -1,8 +1,6 @@
 import React from 'react'
 import { nav, toggleMenu } from '../utils'
 
-import './nav.css'
-
 const Nav = ({ IsLoading, IsHome }) => <nav className='top'>
     <div className={IsLoading ? 'top-inner loading' : 'top-inner loading loaded'}>
         <button className='menu' onClick={() => { toggleMenu() }} type='button'>

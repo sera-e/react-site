@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 import ReactGA from 'react-ga4'
-import './carousel.css'
 
 const PhotoCarousel = ({ data, slideDeck, showModal }) => {
     const [index, setIndex] = useState(0)

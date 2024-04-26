@@ -3,8 +3,6 @@ import Loader from '../Loader/loader'
 import { Nav, Footer } from '../Nav'
 import { nav, socials } from '../utils'
 
-import './home.css'
-
 class Home extends React.Component {
 
   state = {

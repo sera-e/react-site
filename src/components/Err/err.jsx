@@ -1,8 +1,6 @@
 import React, { Fragment } from 'react'
 import { Nav, Footer } from '../Nav'
 
-import './err.css'
-
 const Err = () => {
 
   return <div className='wrap err'>

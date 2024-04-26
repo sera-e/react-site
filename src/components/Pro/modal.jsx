@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import './modal.css'
 
 const Modal = ({ proj, index, showModal, isModalShown }) => {
     const [isLoaded, setIsLoaded] = useState(false)

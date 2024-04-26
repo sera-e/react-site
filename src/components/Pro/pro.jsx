@@ -5,7 +5,6 @@ import { Nav, Footer } from '../Nav'
 import BackToTop from '../Nav/backtotop'
 import FeaturedPro from './FeaturedPro'
 import $ from 'jquery'
-import './pro.css'
 
 const endpointGetProjects = '/mocks/proj.json'
 

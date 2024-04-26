@@ -3,7 +3,6 @@ import Link from '../Router/Link'
 import PhotoCarousel from './carousel'
 import Modal from './modal'
 import ReactGA from 'react-ga4'
-import './pro.css'
 
 const FeaturedPro = ({ selectedProj }) => {
     const [isModalShown, setIsModalShown] = useState(false)

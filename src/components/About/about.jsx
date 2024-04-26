@@ -5,8 +5,6 @@ import BackToTop from '../Nav/backtotop'
 import Link from '../Router/Link'
 import ReactGA from 'react-ga4'
 
-import './about.css'
-
 const About = () => {
   const [isLoaded, setIsLoaded] = useState(false)
 
