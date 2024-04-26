@@ -23,7 +23,7 @@ const Pro = ({ portfolioId }) => {
     loadSettings()
     setTimeout(() => {
       setIsLoaded(true)
-    }, 1000)
+    }, 1500)
   }, [])
 
   useEffect(() => {
@@ -35,7 +35,7 @@ const Pro = ({ portfolioId }) => {
     setIsLoaded(false)
     setTimeout(() => {
       setIsLoaded(true)
-    }, 1000)
+    }, 1500)
 
   }, [selectedProj])
 
