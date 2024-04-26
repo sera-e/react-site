@@ -7,10 +7,18 @@
     opacity: 0;
 }
 
+nav {
+    transition: none;
+}
+
 @media (min-width: 560px) {
     nav {
         text-align: center;
     }
+}
+
+nav .top-inner {
+    transition: none;
 }
 
 @media (min-width: 560px) {
@@ -129,6 +137,7 @@ nav .close {
 .top.open .top-inner ul,
 .top.open .top-inner li,
 .top.open .top-inner a {
+    transition: none;
     display: block;
     width: 100%;
 }
