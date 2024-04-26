@@ -78,7 +78,8 @@ export const ProCards = ({ projects }) => {
                     Design
                 </button>
                 <button className={`filter-pill ${projectTypes.includes('Development') ? 'selected' : ''}`} onClick={() => setProjType('Development')} type='button'>
-                    Development
+                    <span className='mobile'>Dev</span>
+                    <span className='desktop'>Development</span>
                 </button>
             </div>
         </div>

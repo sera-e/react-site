@@ -38,12 +38,16 @@
 
   .dual-filter .filter-pill {
     margin: 0;
-    width: 16.7rem;
+    width: 11.1rem;
     padding: 0 2.5rem;
 
     &.selected {
       background: rgba(255,255,255,0.1);
     }
+  }
+
+  .desktop {
+    display: none;
   }
 
   .dual-filter .filter-pill:first-child {
@@ -53,6 +57,19 @@
 
   .dual-filter .filter-pill:last-child {
     border-radius: 0 5rem 5rem 0;
+  }
+
+  @media (min-width: 560px) {
+
+    .dual-filter .filter-pill {
+      width: 16.7rem;
+    }
+    .desktop {
+      display: inline;
+    }
+    .mobile {
+      display: none;
+    }
   }
 
   main {
