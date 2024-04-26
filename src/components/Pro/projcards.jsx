@@ -22,7 +22,7 @@ export const ProCards = ({ projects }) => {
 
     useEffect(() => {
         setTimeout(() => {
-            setIsLoaded(true)
+            // setIsLoaded(true)
         }, 500)
     }, [filteredProjects])
 

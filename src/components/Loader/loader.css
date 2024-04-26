@@ -5,8 +5,33 @@
     display: flex;
     height: 100vh;
 }
+
 .innerloader-wrapper {
-    height: 72vh;
+    height: 64vh;
+}
+
+@media (min-width: 760px) {
+    .innerloader-wrapper {
+        height: 78vh;
+    }
+}
+
+@media (min-width: 990px) {
+    .innerloader-wrapper {
+        height: 68vh;
+    }
+}
+
+@media (min-width: 1200px) {
+    .innerloader-wrapper {
+        height: 72vh;
+    }
+}
+
+@media (max-height: 560px) {
+    .innerloader-wrapper {
+        height: 64vh;
+    }
 }
 
 .darkloader,
