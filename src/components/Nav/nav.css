@@ -3,7 +3,6 @@
 }
 
 .site.navopen main {
-    transition: none;
     opacity: 0;
 }
 
@@ -120,7 +119,7 @@ nav .close {
 }
 
 .top.open .top-inner {
-    background: rgba(0, 0, 17, 0.6);
+    background: rgba(0, 0, 17, 0.9);
     height: 100vh;
     width: 100%;
     position: fixed;
