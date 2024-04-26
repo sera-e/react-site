@@ -19,6 +19,7 @@ class Router extends Component {
         const Extended = segments.slice(0).join('/')
 
         return <div key='page-router'>
+            <h1>{`Sera Eben's website - ${String(segments.slice(0, 1))} page`}</h1>
             <HashRouter>
                 <Switch>
                     <Route exact path='/'>
