@@ -2,10 +2,6 @@
     overflow: hidden;
 }
 
-.site.navopen main {
-    opacity: 0;
-}
-
 nav {
     transition: none;
 }
@@ -119,7 +115,7 @@ nav .close {
 }
 
 .top.open .top-inner {
-    background: rgba(0, 0, 17, 0.9);
+    background: rgba(0, 0, 17, 0.99);
     height: 100vh;
     width: 100%;
     position: fixed;
