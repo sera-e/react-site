@@ -1,7 +1,3 @@
-.site.navopen {
-    overflow: hidden;
-}
-
 nav {
     transition: none;
 }
