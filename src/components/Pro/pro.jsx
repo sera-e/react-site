@@ -23,7 +23,7 @@ const Pro = ({ portfolioId }) => {
     loadSettings()
     setTimeout(() => {
       setIsLoaded(true)
-    }, 1500)
+    }, 1000)
   }, [])
 
   useEffect(() => {
@@ -35,7 +35,7 @@ const Pro = ({ portfolioId }) => {
     setIsLoaded(false)
     setTimeout(() => {
       setIsLoaded(true)
-    }, 500)
+    }, 1000)
 
   }, [selectedProj])
 
@@ -45,7 +45,7 @@ const Pro = ({ portfolioId }) => {
     <Fragment>
       <Nav />
       <BackToTop />
-      {projects && <main>
+      {projects && <main className={isLoaded ? 'loading loaded' : 'loading'}>
         {selectedProj
           ? <FeaturedPro selectedProj={selectedProj} />
           : <ProCards projects={projects} />
