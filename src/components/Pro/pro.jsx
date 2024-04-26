@@ -1,6 +1,6 @@
 import React, { Fragment, useEffect, useState } from 'react'
 import Loader from '../Loader/loader'
-import { proCards } from '../utils'
+import ProCards from './projcards'
 import { Nav, Footer } from '../Nav'
 import BackToTop from '../Nav/backtotop'
 import FeaturedPro from './FeaturedPro'
@@ -15,11 +15,16 @@ const Pro = ({ portfolioId }) => {
   const [selectedProj, setSelectedProj] = useState(null)
 
   const loadSettings = () => {
-    $.getJSON(endpointGetProjects, (data) => setProjects(data))
+    $.getJSON(endpointGetProjects, (data) => {
+        setProjects(data)
+    })
   }
 
   useEffect(() => {
     loadSettings()
+    setTimeout(() => {
+      setIsLoaded(true)
+    }, 1500)
   }, [])
 
   useEffect(() => {
@@ -31,10 +36,10 @@ const Pro = ({ portfolioId }) => {
     setIsLoaded(false)
     setTimeout(() => {
       setIsLoaded(true)
-    }, 1500)
+    }, 500)
 
   }, [selectedProj])
-  
+
   if (!isLoaded) return <Loader />
 
   return <div className={`wrap portfolio${selectedProj ? ' selected-proj' : ''}`}>
@@ -42,12 +47,9 @@ const Pro = ({ portfolioId }) => {
       <Nav />
       <BackToTop />
       {projects && <main>
-        {selectedProj 
-        ? <FeaturedPro selectedProj={selectedProj} /> 
-        : <div>
-            <h2>Portfolio</h2>
-            <ul className='cards'>{proCards(projects)}</ul>
-          </div>
+        {selectedProj
+          ? <FeaturedPro selectedProj={selectedProj} />
+          : <ProCards projects={projects} />
         }
       </main>}
       <Footer />

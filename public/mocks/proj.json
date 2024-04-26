@@ -2,7 +2,7 @@
     {
         "id": "bh-local-deals",
         "name": "Local Deals",
-        "type": "web",
+        "types": ["Design", "Development"],
         "client": "BenefitHub",
         "role": "UX Designer, UI Developer",
         "story": "This company hosts a platform that combines employee benefits with employer discounts and rewards. This project was about helping users find deals and discounts near their provided location. I collaborated with the stakeholders of this product to revitalize the previous UI using best UX practices and modern programming techniques.",
@@ -18,7 +18,7 @@
     {
         "id": "bh-admin-settings",
         "name": "Admin Settings",
-        "type": "web",
+        "types": ["Design", "Development"],
         "client": "BenefitHub",
         "role": "UX Designer, UI Developer",
         "story": "I collaborated with the stakeholders of this product to gather all the relevant user and admin settings related to their website, including web-app plugins and site metrics, into a cohesive user experience using best UX practices and modern programming techniques.",
@@ -34,7 +34,7 @@
     {
         "id": "bh-user-authentication",
         "name": "User Authentication",
-        "type": "web",
+        "types": ["Design", "Development"],
         "client": "BenefitHub",
         "role": "UX Designer, UI Developer",
         "story": "This project was about uplifting the previous log in, sign up, and registration user interfaces, using best UX design practices and custom form programming.",
@@ -50,7 +50,7 @@
     {
         "id": "bh-site-wizard",
         "name": "Site Wizard",
-        "type": "web",
+        "types": ["Design"],
         "client": "BenefitHub",
         "role": "UX Designer",
         "story": "This project was based on the concept of brokers building, customizing, and tracking websites seamlessly for the various employers and subsequent millions of employees they represented. I collaborated with the stakeholders of this product to prototype the best first pass of the broker's user experience.",
@@ -66,7 +66,7 @@
     {
         "id": "bh-ui-kit",
         "name": "UI Kit",
-        "type": "web",
+        "types": ["Design", "Development"],
         "client": "BenefitHub",
         "role": "UX Designer, UI Developer",
         "story": "This project is an ongoing collaboration and compilation of well-researched, ADA-compliant, high quality reusable components in this custom library.",
@@ -82,7 +82,7 @@
     {
         "id": "bh-local-deals-module",
         "name": "Local Deals Module",
-        "type": "web",
+        "types": ["Development"],
         "client": "BenefitHub",
         "role": "UI Developer",
         "story": "This company hosts a platform that combines employee benefits with employer discounts and rewards. This project was about helping users find deals and discounts straight from the homepage. I collaborated with the stakeholders of this product to organize requirements, set short incrementing deliverables, and meet those deliverables in the development and testing phase of this project.",
@@ -98,7 +98,7 @@
     {
         "id": "bh-resource-center",
         "name": "Resource Center",
-        "type": "web",
+        "types": ["Design", "Development"],
         "client": "BenefitHub",
         "role": "UX Designer, UI Developer",
         "story": "This company hosts a platform that combines employee benefits with employer discounts and rewards. This project was about helping users access all their employee benefits in one dedicated user experience. I collaborated with the stakeholders of this product to revitalize the previous UI using best UX practices and modern programming techniques.",
@@ -114,7 +114,7 @@
     {
         "id": "bh-content-library",
         "name": "Content Library",
-        "type": "web",
+        "types": ["Design", "Development"],
         "client": "BenefitHub",
         "role": "UX Designer, UI Developer",
         "story": "I collaborated with the stakeholders of this product to create a user experience around content creation and content management for admins and brokers who manage one or multiple platforms for employers.",
@@ -130,7 +130,7 @@
     {
         "id": "bh-marketing-website",
         "name": "Marketing Website",
-        "type": "web",
+        "types": ["Design", "Development"],
         "client": "BenefitHub",
         "role": "UX Designer, UI Developer",
         "story": "This company hosts a platform that combines employee benefits with employer discounts and rewards. This project was about marketing the flagship product to companies, brokers, associations, and organizations across the globe.",
@@ -146,7 +146,7 @@
     {
         "id": "sos-flyer",
         "name": "SOS Flyer",
-        "type": "graphic",
+        "types": ["Design"],
         "client": "Dream Defenders",
         "role": "Graphic Designer",
         "story": "The Bay Area Dream Defenders was set to launch a grassroots campaign addressing the escalation of violence in the Child's Park neighborhood. They needed to voice their campaign launch and be able to have the neighborhood be an active participant in their campaign. I was given the opportunity to create a flyer for their target audience.",
@@ -162,7 +162,7 @@
     {
         "id": "bb-video-flyer",
         "name": "B&B Video Flyer",
-        "type": "graphic",
+        "types": ["Design"],
         "client": "Dream Defenders",
         "role": "Graphic Designer",
         "story": "The Bay Area Dream Defenders hosts a monthly social where they serve free breakfast, provide free books, and discuss various topics that are impacting the community. Recently, their Graphic Designer role had opened up and they were looking for a volunteer for some of their main projects. I collaborated with the organization to produce a video flyer to digitally promote their event.",
@@ -178,7 +178,7 @@
     {
         "id": "tpc-dali-cta-flyer",
         "name": "Call To Action Flyer",
-        "type": "graphic",
+        "types": ["Design"],
         "client": "Tri-Partisan Canvas",
         "role": "Graphic Designer",
         "story": "The Dali Museum proposed an expansion project, which would grant them $42M of taxpayer dollars that could instead be used to uplift public resources for the city. The Dali argued that this would boost the local economy and thus increase their economic contribution for those public resources but, when prompted, failed to provide proof of their existing economic contribution. And so, TPC needed to promote awareness and call upon the people of St. Pete to show up and oppose this project. I was given the opportunity to design a campaign launch flyer for TPC. As a result of the campaign launch, The Dali rescinded their proposal.",
@@ -194,7 +194,7 @@
     {
         "id": "parsp-library-website",
         "name": "Library Website",
-        "type": "web",
+        "types": ["Design", "Development"],
         "client": "PARSP",
         "role": "Web Designer, Web Developer, Content Manager",
         "story": "PARSP  is all about restoring general education previously taught in public schools with the concept of a free-roaming local library. I was tasked with revitalizing their existing UI with a fresh rebrand and a user experience that would allow locals to digitally reserve books, learn more about PARSP, and access relevant community resources.",
@@ -210,7 +210,7 @@
     {
         "id": "nec-education-brochure",
         "name": "Education Brochure",
-        "type": "graphic",
+        "types": ["Design"],
         "client": "Bisk",
         "role": "Graphic Designer",
         "story": "This company hosts a platform that provides aspiring individuals online education. I collaborated with another designer on this print design that would inform potential students of New England College all about their options and resources pertaining to their desired education.",
@@ -226,7 +226,7 @@
     {
         "id": "aita-event-banners",
         "name": "Event Banners",
-        "type": "graphic",
+        "types": ["Design"],
         "client": "The Art Institute of Tampa",
         "role": "Graphic Designer",
         "story": "This project was a result of a graduating class of seniors competing in a showcase of their design and typography skills. My design was chosen as the finalist, to be printed and used for future events at The Art Institutes.",
@@ -242,7 +242,7 @@
     {
         "id": "bpi-restaurant-rebrand",
         "name": "Restaurant Rebrand",
-        "type": "graphic",
+        "types": ["Design"],
         "client": "Buonasera Piccola Italia",
         "role": "Graphic Designer",
         "story": "This client, formerly known as Joe's Little Italy, was looking for a modern rebrand for their mom-and-pop family style restaurant. This was the branding and menu concept I designed for the business.",
@@ -258,7 +258,7 @@
     {
         "id": "dcn-event-posters",
         "name": "Event Posters",
-        "type": "graphic",
+        "types": ["Design"],
         "client": "Cooper-Hewitt National Design Museum",
         "role": "Graphic Designer",
         "story": "Design Culture Now is a lecture series hosted by the Cooper-Hewitt National Design Museum. This three-piece promotional set of posters is a personal take on the representation of the event. I researched typographic posters and created a structural crossword puzzle design.",

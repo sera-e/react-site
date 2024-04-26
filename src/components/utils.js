@@ -67,36 +67,6 @@ export const socials = () => {
     })
 }
 
-export const proCards = (proData) => proData.map((pro) => {
-    const { id, name, photos } = pro
-
-    const handleClick = (platform) => {
-        ReactGA.event({
-            category: 'Project Links',
-            action: 'Click',
-            label: platform,
-        })
-    }
-
-    return <li id={id} className='cards-item' key={`card ${id}`}>
-        <div className='procard'>
-            <Link onClick={handleClick} to={`#portfolio/${id}`}>
-                <div>
-                    <img className='card-image' src={require(`/public/projs/${id}/${photos[0]}`)} alt={name} />
-                </div>
-            </Link>
-            <div className='card-content'>
-                <Link onClick={handleClick} to={`#portfolio/${id}`}>
-                    <h3 className='card-title'>{name}</h3>
-                </Link>
-                <Link onClick={handleClick} className='btn card-btn' to={`#portfolio/${id}`}>
-                    Read More
-                </Link>
-            </div>
-        </div>
-    </li>
-})
-
 export const toggleMenu = () => {
     document.querySelector('.top').classList.toggle('open')
     document.querySelector('.site').classList.toggle('navopen')
