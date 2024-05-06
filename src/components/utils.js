@@ -59,8 +59,8 @@ export const socials = () => {
             })
         }
 
-        return <li key={icon} className='inline-block socials'>
-            <Link onClick={handleClick} to={url} target='_blank'>
+        return <li key={icon} className='inline-block socials' onClick={handleClick}>
+            <Link to={url} target='_blank'>
                 <i className={`fab fa-${icon}`} />
             </Link>
         </li>

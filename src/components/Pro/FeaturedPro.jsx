@@ -35,9 +35,11 @@ const FeaturedPro = ({ selectedProj }) => {
                 <div className='proj-content'>
                     <div className='proj-photos'>
                         <PhotoCarousel data={selectedProj} slideDeck={photos} showModal={showModal} />
-                        <Link onClick={handleClick} className='btn card-btn' to={!isHosted ? url : require(`/public/projs/${id}/${url}`)} target='_blank'>
-                            <span>View {urltype.toUpperCase()}</span>
-                        </Link>
+                        <div onClick={handleClick}>
+                            <Link className='btn card-btn' to={!isHosted ? url : require(`/public/projs/${id}/${url}`)} target='_blank'>
+                                <span>View {urltype.toUpperCase()}</span>
+                            </Link>
+                        </div>
                     </div>
                     <div className='proj-inner-content'>
                         <div>

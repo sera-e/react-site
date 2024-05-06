@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import Link from '../Router/Link'
-import ReactGA from 'react-ga4'
 import InnerLoader from '../Loader/innerloader'
 
 export const ProCards = ({ projects }) => {
@@ -38,29 +37,21 @@ export const ProCards = ({ projects }) => {
         setfilteredProjects(finalData)
     }, [projectTypes, projects])
 
-    const handleClick = (platform) => {
-        ReactGA.event({
-            category: 'Project Links',
-            action: 'Click',
-            label: platform,
-        })
-    }
-
     const cards = () => filteredProjects.map((pro) => {
         const { id, name, photos } = pro
 
         return <li id={id} className='cards-item' key={`card ${id}`}>
             <div className='procard'>
-                <Link onClick={handleClick} to={`#portfolio/${id}`}>
+                <Link to={`#portfolio/${id}`}>
                     <div>
                         <img className='card-image' src={require(`/public/projs/${id}/${photos[0]}`)} alt={name} />
                     </div>
                 </Link>
                 <div className='card-content'>
-                    <Link onClick={handleClick} to={`#portfolio/${id}`}>
+                    <Link to={`#portfolio/${id}`}>
                         <h3 className='card-title'>{name}</h3>
                     </Link>
-                    <Link onClick={handleClick} className='btn card-btn' to={`#portfolio/${id}`}>
+                    <Link className='btn card-btn' to={`#portfolio/${id}`}>
                         Read More
                     </Link>
                 </div>
