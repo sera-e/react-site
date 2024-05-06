@@ -55,4 +55,35 @@
             padding: 1.2rem;
         }
     }
+
+    .btn {
+        color: #CDE;
+        text-transform: uppercase;
+        border-radius: 4px;
+        font-weight: 400;
+        font-size: 1.6rem;
+        cursor: pointer;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: transparent;
+    }
+
+    @media (min-width: 560px) {
+
+        .btn {
+            display: none;
+        }
+    }
+
+    .btn:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .card-btn {
+        padding: 1.25rem 4rem;
+        width: fit-content;
+        margin: 0 0 1rem;
+        text-align: center;
+        font-weight: 600;
+        font-size: 1.9rem;
+    }
 }

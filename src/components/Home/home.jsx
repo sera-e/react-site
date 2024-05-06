@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import Loader from '../Loader/loader'
+import Link from '../Router/Link'
 import { Nav, Footer } from '../Nav'
 import { nav, socials } from '../utils'
 
@@ -10,34 +11,37 @@ class Home extends React.Component {
   }
 
   componentDidMount() {
-    setTimeout(() => {this.setState({ IsLoaded: true })}, 1000)
+    setTimeout(() => { this.setState({ IsLoaded: true }) }, 1000)
   }
 
   render() {
     const { IsLoaded } = this.state
 
     return <div className='wrap home'>
-    <Fragment>
-      <Nav IsLoading={!IsLoaded} IsHome={true} />
-      {!IsLoaded && <Loader />}
-      <main className={IsLoaded ? 'loading loaded' : 'loading'}>
-        <div className='card'>
-          <h2>SERA EBEN</h2>
-          <h4>Designer // Programmer</h4>
-          <hr />
-          <ul>
-            {socials()}
-          </ul>
-        </div>
-        <nav>
-          <ul>
-            {nav('home')}
-          </ul>
-        </nav>
-      </main>
-      <Footer />
-    </Fragment>
-  </div>
+      <Fragment>
+        <Nav IsLoading={!IsLoaded} IsHome={true} />
+        {!IsLoaded && <Loader />}
+        <main className={IsLoaded ? 'loading loaded' : 'loading'}>
+          <div className='card'>
+            <h2>SERA EBEN</h2>
+            <h4>Designer // Programmer</h4>
+            <hr />
+            <Link className='btn card-btn' to='#portfolio'>
+              Explore my work
+            </Link>
+            <ul>
+              {socials()}
+            </ul>
+          </div>
+          <nav>
+            <ul>
+              {nav('home')}
+            </ul>
+          </nav>
+        </main>
+        <Footer />
+      </Fragment>
+    </div>
   }
 }
 
