@@ -1,6 +1,7 @@
 [
     {
-        "id": "bh-local-deals",
+        "id": 16,
+        "projid": "bh-local-deals",
         "name": "Local Deals",
         "types": ["Design", "Development"],
         "client": "BenefitHub",
@@ -16,7 +17,8 @@
         "isHosted": false
     },
     {
-        "id": "bh-admin-settings",
+        "id": 15,
+        "projid": "bh-admin-settings",
         "name": "Admin Settings",
         "types": ["Design", "Development"],
         "client": "BenefitHub",
@@ -32,7 +34,8 @@
         "isHosted": false
     },
     {
-        "id": "bh-user-authentication",
+        "id": 14,
+        "projid": "bh-user-authentication",
         "name": "User Authentication",
         "types": ["Design", "Development"],
         "client": "BenefitHub",
@@ -48,7 +51,8 @@
         "isHosted": false
     },
     {
-        "id": "bh-site-wizard",
+        "id": 13,
+        "projid": "bh-site-wizard",
         "name": "Site Wizard",
         "types": ["Design"],
         "client": "BenefitHub",
@@ -64,7 +68,8 @@
         "isHosted": false
     },
     {
-        "id": "bh-ui-kit",
+        "id": 12,
+        "projid": "bh-ui-kit",
         "name": "UI Kit",
         "types": ["Design", "Development"],
         "client": "BenefitHub",
@@ -80,7 +85,8 @@
         "isHosted": false
     },
     {
-        "id": "bh-local-deals-module",
+        "id": 11,
+        "projid": "bh-local-deals-module",
         "name": "Local Deals Module",
         "types": ["Development"],
         "client": "BenefitHub",
@@ -96,7 +102,8 @@
         "isHosted": false
     },
     {
-        "id": "bh-resource-center",
+        "id": 10,
+        "projid": "bh-resource-center",
         "name": "Resource Center",
         "types": ["Design", "Development"],
         "client": "BenefitHub",
@@ -112,7 +119,8 @@
         "isHosted": false
     },
     {
-        "id": "bh-content-library",
+        "id": 9,
+        "projid": "bh-content-library",
         "name": "Content Library",
         "types": ["Design", "Development"],
         "client": "BenefitHub",
@@ -128,7 +136,8 @@
         "isHosted": false
     },
     {
-        "id": "bh-marketing-website",
+        "id": 8,
+        "projid": "bh-marketing-website",
         "name": "Marketing Website",
         "types": ["Design", "Development"],
         "client": "BenefitHub",
@@ -144,7 +153,8 @@
         "isHosted": false
     },
     {
-        "id": "sos-flyer",
+        "id": 7,
+        "projid": "sos-flyer",
         "name": "SOS Flyer",
         "types": ["Design"],
         "client": "Dream Defenders",
@@ -160,7 +170,8 @@
         "isHosted": false
     },
     {
-        "id": "bb-video-flyer",
+        "id": 6,
+        "projid": "bb-video-flyer",
         "name": "B&B Video Flyer",
         "types": ["Design"],
         "client": "Dream Defenders",
@@ -176,7 +187,8 @@
         "isHosted": false
     },
     {
-        "id": "tpc-dali-cta-flyer",
+        "id": 5,
+        "projid": "tpc-dali-cta-flyer",
         "name": "Call To Action Flyer",
         "types": ["Design"],
         "client": "Tri-Partisan Canvas",
@@ -192,7 +204,8 @@
         "isHosted": false
     },
     {
-        "id": "parsp-library-website",
+        "id": 4,
+        "projid": "parsp-library-website",
         "name": "Library Website",
         "types": ["Design", "Development"],
         "client": "PARSP",
@@ -208,7 +221,8 @@
         "isHosted": false
     },
     {
-        "id": "nec-education-brochure",
+        "id": 3,
+        "projid": "nec-education-brochure",
         "name": "Education Brochure",
         "types": ["Design"],
         "client": "Bisk",
@@ -224,7 +238,8 @@
         "isHosted": false
     },
     {
-        "id": "aita-event-banners",
+        "id": 2,
+        "projid": "aita-event-banners",
         "name": "Event Banners",
         "types": ["Design"],
         "client": "The Art Institute of Tampa",
@@ -240,7 +255,8 @@
         "isHosted": true
     },
     {
-        "id": "bpi-restaurant-rebrand",
+        "id": 1,
+        "projid": "bpi-restaurant-rebrand",
         "name": "Restaurant Rebrand",
         "types": ["Design"],
         "client": "Buonasera Piccola Italia",
@@ -256,7 +272,8 @@
         "isHosted": true
     },
     {
-        "id": "dcn-event-posters",
+        "id": 0,
+        "projid": "dcn-event-posters",
         "name": "Event Posters",
         "types": ["Design"],
         "client": "Cooper-Hewitt National Design Museum",
