@@ -24,10 +24,10 @@ const PhotoCarousel = ({ data, slideDeck, showModal }) => {
     }
 
     const slides = () => {
-        const { id, photodesc } = data
+        const { projid, photodesc } = data
 
-        return slideDeck.map((photo, i) => <Carousel.Item interval={4000} key={`photo ${id} ${i}`}>
-            <img src={require(`/public/projs/${id}/${photo}`)} alt={`${id} ${photo}`} />
+        return slideDeck.map((photo, i) => <Carousel.Item interval={4000} key={`photo ${projid} ${i}`}>
+            <img src={require(`/public/projs/${projid}/${photo}`)} alt={`${projid} ${photo}`} />
             {slideDeck.length > 1 && <Carousel.Caption>
                 {photodesc[i]}
             </Carousel.Caption>}

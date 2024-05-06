@@ -23,20 +23,20 @@ export const ProCards = ({ projects }) => {
     }, [projectType, projects])
 
     const cards = () => filteredProjects.map((pro) => {
-        const { id, name, photos } = pro
+        const { projid, name, photos } = pro
 
-        return <li id={id} className='cards-item' key={`card ${id}`}>
+        return <li id={projid} className='cards-item' key={`card ${projid}`}>
             <div className='procard'>
-                <Link to={`#portfolio/${id}`}>
+                <Link to={`#portfolio/${projid}`}>
                     <div>
-                        <img className='card-image' src={require(`/public/projs/${id}/${photos[0]}`)} alt={name} />
+                        <img className='card-image' src={require(`/public/projs/${projid}/${photos[0]}`)} alt={name} />
                     </div>
                 </Link>
                 <div className='card-content'>
-                    <Link to={`#portfolio/${id}`}>
+                    <Link to={`#portfolio/${projid}`}>
                         <h3 className='card-title'>{name}</h3>
                     </Link>
-                    <Link className='btn card-btn' to={`#portfolio/${id}`}>
+                    <Link className='btn card-btn' to={`#portfolio/${projid}`}>
                         Read More
                     </Link>
                 </div>

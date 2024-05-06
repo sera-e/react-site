@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 const Modal = ({ proj, index, showModal, isModalShown }) => {
     const [isLoaded, setIsLoaded] = useState(false)
-    const { id, photos, photodesc } = proj
+    const { projid, photos, photodesc } = proj
 
     useEffect(() => {
         setTimeout(() => { setIsLoaded(true) }, 100)
@@ -15,7 +15,7 @@ const Modal = ({ proj, index, showModal, isModalShown }) => {
 
     return <div className={`modal ${isLoaded ? 'show' : 'hide'}`}>
         <h3 className='caption'>{photodesc[index]}</h3>
-        <img src={require(`/public/projs/${id}/${photos[index]}`)} alt={`${id} ${photos[index]}`} />
+        <img src={require(`/public/projs/${projid}/${photos[index]}`)} alt={`${projid} ${photos[index]}`} />
         <button onClick={close} type='button'>
             <i className='fa-regular fa-times' />
             Close

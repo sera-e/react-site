@@ -27,7 +27,7 @@ const Pro = ({ portfolioId }) => {
   }, [])
 
   useEffect(() => {
-    const match = projects && projects.filter((proj) => portfolioId.split('/')[1] === proj.id)
+    const match = projects && projects.filter((proj) => portfolioId.split('/')[1] === proj.projid)
     setSelectedProj(match ? match[0] : null)
   }, [projects, portfolioId])
 
@@ -48,7 +48,7 @@ const Pro = ({ portfolioId }) => {
       <BackToTop />
       {projects && <main className={isLoaded ? 'loading loaded' : 'loading'}>
         {selectedProj
-          ? <FeaturedPro selectedProj={selectedProj} />
+          ? <FeaturedPro selectedProj={selectedProj} projects={projects} />
           : <ProCards projects={projects} />
         }
       </main>}

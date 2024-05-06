@@ -1,14 +1,20 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 import Link from '../Router/Link'
 import PhotoCarousel from './carousel'
 import Modal from './modal'
 import ReactGA from 'react-ga4'
 
-const FeaturedPro = ({ selectedProj }) => {
+const FeaturedPro = ({ selectedProj, projects }) => {
     const [isModalShown, setIsModalShown] = useState(false)
     const [photoIndex, setPhotoIndex] = useState(0)
+    const [prevNextProjIds, setPrevNextProjIds] = useState([])
+    const { id, projid, name, role, client, story, tools, hardskills, softskills, photos, url, urltype, isHosted = false } = selectedProj
 
-    const { id, name, role, client, story, tools, hardskills, softskills, photos, url, urltype, isHosted = false } = selectedProj
+    useEffect(() => {
+        const nextProjId = projects.filter((proj) => (id === 0 ? projects.length : id) - 1 === proj.id)
+        const prevProjId = projects.filter((proj) => (id === projects.length - 1 ? -1 : id) + 1 === proj.id)
+        setPrevNextProjIds([prevProjId[0].projid, nextProjId[0].projid])
+    }, [])
 
     const showModal = (boole, index) => {
         setIsModalShown(boole)
@@ -23,7 +29,7 @@ const FeaturedPro = ({ selectedProj }) => {
         })
     }
 
-    return <div className='featured-pro' id={id}>
+    return <div className='featured-pro' id={projid}>
         {isModalShown && <Modal proj={selectedProj} index={photoIndex} showModal={showModal} isModalShown={isModalShown} />}
         <Fragment>
             <h2>{name}</h2>
@@ -36,7 +42,7 @@ const FeaturedPro = ({ selectedProj }) => {
                     <div className='proj-photos'>
                         <PhotoCarousel data={selectedProj} slideDeck={photos} showModal={showModal} />
                         <div onClick={handleClick}>
-                            <Link className='btn card-btn' to={!isHosted ? url : require(`/public/projs/${id}/${url}`)} target='_blank'>
+                            <Link className='btn card-btn' to={!isHosted ? url : require(`/public/projs/${projid}/${url}`)} target='_blank'>
                                 <span>View {urltype.toUpperCase()}</span>
                             </Link>
                         </div>
@@ -66,6 +72,23 @@ const FeaturedPro = ({ selectedProj }) => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className='other-proj-links'>
+                <div>
+                    <Link className='btn proj-nav-prev' to={`#portfolio/${prevNextProjIds[0]}`}>
+                        <i className='fa-regular fa-arrow-left' />
+                        <span className='mobile'>Prev</span>
+                        <span className='desktop'>Prev Project</span>
+                    </Link>
+                    <Link className='btn proj-nav-next' to={`#portfolio/${prevNextProjIds[1]}`}>
+                        <span className='mobile'>Next</span>
+                        <span className='desktop'>Next Project</span>
+                        <i className='fa-regular fa-arrow-right' />
+                    </Link>
+                </div>
+                <Link className='btn proj-nav-portfolio' to='#portfolio'>
+                    Back to Portfolio
+                </Link>
             </div>
         </Fragment>
     </div>
