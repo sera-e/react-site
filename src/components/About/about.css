@@ -97,11 +97,18 @@
         @media (min-width: 990px) {
 
             img {
-                height: 28rem;
+                height: 32rem;
             }
 
             p {
                 padding: 0;
+            }
+        }
+
+        @media (min-width: 1200px) {
+
+            img {
+                height: 28rem;
             }
         }
     }
