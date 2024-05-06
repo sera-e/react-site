@@ -3,19 +3,23 @@ import ReactGA from 'react-ga4'
 
 const navLinks = [
     {
-        url: 'home',
+        url: '#home',
         name: 'Home'
     },
     {
-        url: 'about',
+        url: '#about',
         name: 'About'
     },
     {
-        url: 'portfolio',
+        url: '#portfolio',
         name: 'Portfolio'
     },
     {
-        url: 'contact',
+        url: 'https://drive.google.com/drive/folders/17zqHLL0oNNw2bwe4gb4vTe4oYwGPjgvp?usp=sharing',
+        name: 'Resume'
+    },
+    {
+        url: '#contact',
         name: 'Contact'
     }
 ]
@@ -42,7 +46,7 @@ export const nav = (currentpage) => {
         const { url, name } = navLink
 
         return <li key={name}>
-            <Link to={`#${url}`}>{name}</Link>
+            <Link to={url}>{name}</Link>
         </li>
     })
 }
