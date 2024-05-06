@@ -1,9 +1,15 @@
 import React, { useEffect, useState } from 'react'
+import $ from 'jquery';
 
 const Form = () => {
     const [submit, setSubmit] = useState(false)
 
     useEffect(() => {
+
+        const copy = 'moc.liamg@ofni.nebeares'
+        const e = copy.split('').reverse().join('')
+        $('#email').html('<a href="mailto:'+e+'?subject=Business Inquiry - Let\'s Discuss an Opportunity!">'+e+'</a>')
+
         setTimeout(() => {
             setSubmit(false)
             setFormData({
@@ -40,9 +46,14 @@ const Form = () => {
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
         })
     }
+
     return (
         <div className='contactFormWrapper'>
-            <div className='formheader'></div>
+            <div className='formheader'>
+                <p>
+                    Email: <span id='email'>hello@gmail.com</span>
+                </p>
+            </div>
             <div className='formcontact'>
                 <form onSubmit={handleSubmit} target='_self'>
                     <fieldset>

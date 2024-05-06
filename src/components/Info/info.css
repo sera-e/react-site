@@ -2,9 +2,23 @@
 
 .contact {
 
+    .formheader {
+        margin: 0 0 2rem;
+
+        a {
+            text-decoration: underline;
+            text-decoration-color: black;
+
+            &:hover, &:active {
+                text-decoration-color: white;
+            }
+        }
+    }
+
     h2 {
         text-align: center;
     }
+
     form {
         display: flex;
         flex-direction: column;
