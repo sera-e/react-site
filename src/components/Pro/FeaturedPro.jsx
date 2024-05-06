@@ -34,7 +34,7 @@ const FeaturedPro = ({ selectedProj, projects }) => {
         <Fragment>
             <h2>{name}</h2>
             <Link to='#portfolio' className='goback-btn'>
-                <i className='fa-regular fa-arrow-left' />
+                <i className='fa-light fa-arrow-left' />
                 <span>Go Back</span>
             </Link>
             <div className='proj-wrapper'>
@@ -76,14 +76,14 @@ const FeaturedPro = ({ selectedProj, projects }) => {
             <div className='other-proj-links'>
                 <div>
                     <Link className='btn proj-nav-prev' to={`#portfolio/${prevNextProjIds[0]}`}>
-                        <i className='fa-regular fa-arrow-left' />
+                        <i className='fa-light fa-arrow-left' />
                         <span className='mobile'>Prev</span>
                         <span className='desktop'>Prev Project</span>
                     </Link>
                     <Link className='btn proj-nav-next' to={`#portfolio/${prevNextProjIds[1]}`}>
                         <span className='mobile'>Next</span>
                         <span className='desktop'>Next Project</span>
-                        <i className='fa-regular fa-arrow-right' />
+                        <i className='fa-light fa-arrow-right' />
                     </Link>
                 </div>
                 <Link className='btn proj-nav-portfolio' to='#portfolio'>

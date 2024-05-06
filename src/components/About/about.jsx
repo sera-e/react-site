@@ -33,11 +33,11 @@ const About = () => {
             <div className='about-img'>
               <img src={require('./me.png')} alt={`me`} />
               <div className='resume-btns' onClick={handleClick}>
-                <Link className='btn card-btn' to='https://drive.google.com/file/d/1rjHertcbMDQEl0BX-ZOMzqM9xmScdue9' target='_blank'>
-                  Design Resume <i className='fa-regular fa-file-user' />
+                <Link className='btn card-btn' to='https://drive.google.com/drive/folders/17zqHLL0oNNw2bwe4gb4vTe4oYwGPjgvp' target='_blank'>
+                  Resume <i className='fa-light fa-file-lines' />
                 </Link>
-                <Link className='btn card-btn' to='https://docs.google.com/document/d/1jVhgV5iM3fHNR2dNnOsHP3ovK5ymPhe4wuDt6txHDHA' target='_blank'>
-                  ATS Resume <i className='fa-regular fa-file-lines' />
+                <Link className='btn card-btn' to='#portfolio'>
+                  Portfolio <i className='fa-light fa-folder-image' />
                 </Link>
               </div>
               {/* <div className='fa-icon-stack'>

@@ -20,7 +20,7 @@ const BackToTop = () => {
     }, [isClicked])
 
     return <div className={`backtotop ${isHidden ? 'hide' : 'show'}`} onClick={() => { setIsClicked(true) }}>
-        <i className='fa-regular fa-arrow-up' />
+        <i className='fa-light fa-arrow-up' />
     </div>
 }
 

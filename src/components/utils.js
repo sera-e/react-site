@@ -15,7 +15,7 @@ const navLinks = [
         name: 'Portfolio'
     },
     {
-        url: 'https://drive.google.com/drive/folders/17zqHLL0oNNw2bwe4gb4vTe4oYwGPjgvp?usp=sharing',
+        url: 'https://drive.google.com/drive/folders/17zqHLL0oNNw2bwe4gb4vTe4oYwGPjgvp',
         name: 'Resume'
     },
     {

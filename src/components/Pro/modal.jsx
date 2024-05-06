@@ -17,7 +17,7 @@ const Modal = ({ proj, index, showModal, isModalShown }) => {
         <h3 className='caption'>{photodesc[index]}</h3>
         <img src={require(`/public/projs/${projid}/${photos[index]}`)} alt={`${projid} ${photos[index]}`} />
         <button onClick={close} type='button'>
-            <i className='fa-regular fa-times' />
+            <i className='fa-light fa-times' />
             Close
         </button>
         <span className='modalbg' onClick={close} />

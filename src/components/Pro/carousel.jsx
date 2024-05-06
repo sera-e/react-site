@@ -36,7 +36,7 @@ const PhotoCarousel = ({ data, slideDeck, showModal }) => {
 
     return <div className='carousel-wrap'>
         <button className='expand' onClick={() => { showModal(true, index); handleClick() }} type='button'>
-            <i className='fa-regular fa-expand' key={`expand ${index}`} />
+            <i className='fa-light fa-expand' key={`expand ${index}`} />
         </button>
         <Carousel fade activeIndex={index} onSelect={handleSelect} className={slideDeck.length < 2 ? 'single-slide' : ''}>
             {slides()}
