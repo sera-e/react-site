@@ -4,20 +4,8 @@ import InnerLoader from '../Loader/innerloader'
 
 export const ProCards = ({ projects }) => {
     const [isLoaded, setIsLoaded] = useState(true)
-    const [projectTypes, setProjectTypes] = useState([])
+    const [projectType, setProjectType] = useState(null)
     const [filteredProjects, setfilteredProjects] = useState(projects)
-
-    const setProjType = (type) => {
-        setIsLoaded(false)
-        let projTypes = projectTypes.slice()
-
-        if (projectTypes.includes(type)) projTypes = projTypes.filter((t) => t !== type)
-        else projTypes.push(type)
-
-        projTypes.sort()
-
-        setProjectTypes(projTypes)
-    }
 
     useEffect(() => {
         setTimeout(() => {
@@ -26,16 +14,13 @@ export const ProCards = ({ projects }) => {
     }, [filteredProjects])
 
     useEffect(() => {
-        let finalData = projects.slice()
-        let filteredData = []
+        setIsLoaded(false)
+        let filteredData = projects.slice()
 
-        if (projectTypes.length) {
-            projectTypes.forEach(filterValue => filteredData.push(...projects.slice().filter(proj => proj.types.includes(filterValue))))
-            finalData = filteredData.filter((value, index, self) => index === self.findIndex(t => t.id === value.id))
-        }
+        if (projectType) filteredData = projects.slice().filter(proj => proj.types.includes(projectType))
 
-        setfilteredProjects(finalData)
-    }, [projectTypes, projects])
+        setfilteredProjects(filteredData)
+    }, [projectType, projects])
 
     const cards = () => filteredProjects.map((pro) => {
         const { id, name, photos } = pro
@@ -61,14 +46,14 @@ export const ProCards = ({ projects }) => {
 
     return <div>
         <h2>
-            {projectTypes.length > 1 ? projectTypes.join(' & ') : projectTypes} Portfolio
+            {projectType} Portfolio
         </h2>
         <div className='dual-filter'>
             <div>
-                <button className={`filter-pill ${projectTypes.includes('Design') ? 'selected' : ''}`} onClick={() => setProjType('Design')} type='button'>
+                <button className={`filter-pill ${projectType === 'Design' ? 'selected' : ''}`} onClick={() => projectType === 'Design' ? setProjectType(null) : setProjectType('Design')} type='button'>
                     Design
                 </button>
-                <button className={`filter-pill ${projectTypes.includes('Development') ? 'selected' : ''}`} onClick={() => setProjType('Development')} type='button'>
+                <button className={`filter-pill ${projectType === 'Development' ? 'selected' : ''}`} onClick={() => projectType === 'Development' ? setProjectType(null) : setProjectType('Development')} type='button'>
                     <span className='mobile'>Dev</span>
                     <span className='desktop'>Development</span>
                 </button>
