@@ -23,7 +23,7 @@ export const ProCards = ({ projects }) => {
     }, [projectType, projects])
 
     const cards = () => filteredProjects.map((pro) => {
-        const { projid, name, tilephoto } = pro
+        const { projid, name, tilephoto, types } = pro
 
         return <li id={projid} className='cards-item' key={`card ${projid}`}>
             <div className='procard'>
@@ -32,7 +32,13 @@ export const ProCards = ({ projects }) => {
                         <img className='card-image' src={require(`/public/projs/${projid}/${tilephoto}`)} alt={name} />
                     </div>
                     <div className='card-content'>
-                        <h3 className='card-title'>{name}</h3>
+                        <div className='fa-circle-container'>
+                            {types.includes('Design') && <i className='fa-solid fa-circle-small fa-circle-small-purple' />}
+                            {types.includes('Development') && <i className='fa-solid fa-circle-small fa-circle-small-blue' />}
+                        </div>
+                        <h3 className='card-title'>
+                            {name}
+                        </h3>
                         <button className='btn card-btn'>
                             Read More
                         </button>
@@ -49,11 +55,20 @@ export const ProCards = ({ projects }) => {
         <div className='dual-filter'>
             <div>
                 <button className={`filter-pill ${projectType === 'Design' ? 'selected' : ''}`} onClick={() => projectType === 'Design' ? setProjectType(null) : setProjectType('Design')} type='button'>
-                    Design
+                    <span>
+                        <i className='fa-solid fa-circle-small fa-circle-small-purple' />
+                        Design
+                    </span>
                 </button>
                 <button className={`filter-pill ${projectType === 'Development' ? 'selected' : ''}`} onClick={() => projectType === 'Development' ? setProjectType(null) : setProjectType('Development')} type='button'>
-                    <span className='mobile'>Dev</span>
-                    <span className='desktop'>Development</span>
+                    <span className='mobile'>
+                        <i className='fa-solid fa-circle-small fa-circle-small-blue' />
+                        Dev
+                    </span>
+                    <span className='desktop'>
+                        <i className='fa-solid fa-circle-small fa-circle-small-blue' />
+                        Development
+                    </span>
                 </button>
             </div>
         </div>
