@@ -220,13 +220,6 @@
     text-transform: capitalize;
     margin: 0;
     padding: 1rem 0 2rem;
-
-    &:hover,
-    &:active,
-    &:focus {
-      text-decoration: underline;
-      cursor: pointer;
-    }
   }
 
   .card-text {
@@ -379,13 +372,13 @@
       }
     }
 
-    >div {
+    > div {
       width: 100%;
     }
 
     @media (min-width: 990px) {
 
-      >div {
+      > div {
         width: 49%;
       }
     }
@@ -452,5 +445,15 @@
     padding: 1.45rem 2rem;
     margin-top: 2rem;
     text-align: center;
+  }
+
+  @media (min-width: 990px) {
+    .other-proj-links {
+      padding: 0 0 8rem;
+    }
+
+    .proj-nav-portfolio {
+      display: none;
+    }
   }
 }

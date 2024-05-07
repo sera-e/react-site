@@ -31,15 +31,13 @@ export const ProCards = ({ projects }) => {
                     <div>
                         <img className='card-image' src={require(`/public/projs/${projid}/${photos[0]}`)} alt={name} />
                     </div>
-                </Link>
-                <div className='card-content'>
-                    <Link to={`#portfolio/${projid}`}>
+                    <div className='card-content'>
                         <h3 className='card-title'>{name}</h3>
-                    </Link>
-                    <Link className='btn card-btn' to={`#portfolio/${projid}`}>
-                        Read More
-                    </Link>
-                </div>
+                        <div className='btn card-btn'>
+                            Read More
+                        </div>
+                    </div>
+                </Link>
             </div>
         </li>
     })
@@ -64,3 +62,5 @@ export const ProCards = ({ projects }) => {
 }
 
 export default ProCards
+
+// export default withRouter(connect()(ProCards))
