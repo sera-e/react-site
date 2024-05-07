@@ -1,27 +1,32 @@
-import React, { useEffect, useState } from 'react'
-import $ from 'jquery'
+import React, { useState } from 'react'
+import { connect } from 'react-redux'
+import { minContentHeight } from '../../../src/store/layout'
 
-const BackToTop = () => {
-    const [isClicked, setIsClicked] = useState(false)
-    const [isHidden, setIsHidden] = useState(false)
+const BackToTop = ({ minContentHeight }) => {
 
-    useEffect(() => {
-        setIsClicked(false)
-        $(window).on('load scroll', function () {
-            if ($(window).scrollTop() > 100) {
-                setIsHidden(false)
-            }
-        })
-    }, [isHidden])
+    const [visible, setVisible] = useState(false)
 
-    useEffect(() => {
-        window.scrollTo(0, 0, { behavior: 'smooth' })
-        setIsHidden(true)
-    }, [isClicked])
+    const toggleVisible = () => {
+        const scrolled = document.documentElement.scrollTop
+        if (scrolled > 300) {
+            setVisible(true)
+        }
+        else if (scrolled <= 300) {
+            setVisible(false)
+        }
+    }
 
-    return <div className={`backtotop ${isHidden ? 'hide' : 'show'}`} onClick={() => { setIsClicked(true) }}>
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+
+    window.addEventListener('scroll', toggleVisible)
+
+    return <div style={{ display: visible ? 'inline' : 'none' }} className='backtotop' onClick={scrollToTop} >
         <i className='fa-light fa-arrow-up' />
     </div>
 }
 
-export default BackToTop
+export default connect(
+    minContentHeight,
+)(BackToTop)
