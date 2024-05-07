@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import Link from '../Router/Link'
 import InnerLoader from '../Loader/innerloader'
 
 export const ProCards = ({ projects }) => {
@@ -27,7 +26,7 @@ export const ProCards = ({ projects }) => {
 
         return <li id={projid} className='cards-item' key={`card ${projid}`}>
             <div className='procard'>
-                <Link to={`#portfolio/${projid}`}>
+                <a href={`/#portfolio/${projid}`}>
                     <div>
                         <img className='card-image' src={require(`/public/projs/${projid}/${tilephoto}`)} alt={name} />
                     </div>
@@ -43,7 +42,7 @@ export const ProCards = ({ projects }) => {
                             Read More
                         </button>
                     </div>
-                </Link>
+                </a>
             </div>
         </li>
     })
