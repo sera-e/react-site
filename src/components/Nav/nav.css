@@ -41,7 +41,7 @@ nav ul li {
 }
 
 nav ul li a {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     width: 10rem;
 }
 
@@ -59,6 +59,7 @@ nav ul li a {
 
 .wrap nav ul li a {
     margin: 0 0.4rem;
+    padding: 1.45rem 0;
 }
 
 nav .close {
