@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Link from '../Router/Link'
 import InnerLoader from '../Loader/innerloader'
 
 export const ProCards = ({ projects }) => {
@@ -24,31 +25,25 @@ export const ProCards = ({ projects }) => {
     const cards = () => filteredProjects.map((pro) => {
         const { projid, name, tilephoto, types } = pro
 
-        return <li
-            id={projid}
-            className='cards-item'
-            key={`card ${projid}`}
-            onClick={(e) => {
-                e.preventDefault()
-                window.location.href=`/#portfolio/${projid}`
-                }}
-        >
+        return <li id={projid} className='cards-item' key={`card ${projid}`}>
             <div className='procard'>
-                <div>
-                    <img className='card-image' src={require(`/public/projs/${projid}/${tilephoto}`)} alt={name} />
-                </div>
-                <div className='card-content'>
-                    <div className='fa-circle-container'>
-                        {types.includes('Design') && <i className='fa-solid fa-circle-small fa-circle-small-purple' />}
-                        {types.includes('Development') && <i className='fa-solid fa-circle-small fa-circle-small-blue' />}
+                <Link to={`#portfolio/${projid}`}>
+                    <div>
+                        <img className='card-image' src={require(`/public/projs/${projid}/${tilephoto}`)} alt={name} />
                     </div>
-                    <h3 className='card-title'>
-                        {name}
-                    </h3>
-                    <a href className='btn card-btn'>
-                        Read More
-                    </a>
-                </div>
+                    <div className='card-content'>
+                        <div className='fa-circle-container'>
+                            {types.includes('Design') && <i className='fa-solid fa-circle-small fa-circle-small-purple' />}
+                            {types.includes('Development') && <i className='fa-solid fa-circle-small fa-circle-small-blue' />}
+                        </div>
+                        <h3 className='card-title'>
+                            {name}
+                        </h3>
+                        <button className='btn card-btn'>
+                            Read More
+                        </button>
+                    </div>
+                </Link>
             </div>
         </li>
     })
@@ -82,5 +77,3 @@ export const ProCards = ({ projects }) => {
 }
 
 export default ProCards
-
-// export default withRouter(connect()(ProCards))
