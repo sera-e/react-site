@@ -22,8 +22,8 @@ const BackToTop = ({ minContentHeight }) => {
 
     window.addEventListener('scroll', toggleVisible)
 
-    return <div style={{ display: visible ? 'inline' : 'none' }} className='backtotop' onClick={scrollToTop} >
-        <i className='fa-light fa-arrow-up' />
+    return <div style={{ display: visible ? 'inline' : 'none' }} className='backtotop' >
+        <i className='fa-light fa-arrow-up' onClick={scrollToTop} />
     </div>
 }
 
