@@ -62,6 +62,10 @@ img, button, a {
   transition: 0.4s ease;
 }
 
+#site > div {
+  z-index: 1;
+}
+
 /* base styles */
 *, *:after, *:before {
   -webkit-box-sizing: border-box;

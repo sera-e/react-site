@@ -33,9 +33,9 @@ export const ProCards = ({ projects }) => {
                     </div>
                     <div className='card-content'>
                         <h3 className='card-title'>{name}</h3>
-                        <div className='btn card-btn'>
+                        <button className='btn card-btn'>
                             Read More
-                        </div>
+                        </button>
                     </div>
                 </Link>
             </div>
