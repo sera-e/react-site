@@ -1,17 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.0fa65e4d.css",
-    "main.js": "/static/js/main.393bb282.js",
+    "main.js": "/static/js/main.c44ec259.js",
     "static/media/bpi.pdf": "/static/media/bpi.5e6fb9f5c51a7a7768d5.pdf",
     "static/media/aita.pdf": "/static/media/aita.7e1e1da2368fe485a313.pdf",
     "static/media/final1.png": "/static/media/final1.55d544ad18d95da9b7ee.png",
     "static/media/me.png": "/static/media/me.618ce35fb0cfecc8ab86.png",
     "static/media/nec-undergraduate-programs-brochure.pdf": "/static/media/nec-undergraduate-programs-brochure.a6077a590eedfd9fa97f.pdf",
-    "static/media/original.png": "/static/media/original.a508d2a06421d6989086.png",
+    "static/media/final.png": "/static/media/final.aaa1531e789007a3979b.png",
     "static/media/final3.png": "/static/media/final3.eb458f992ae11084b8ab.png",
     "static/media/fa-thin-100.ttf": "/static/media/fa-thin-100.54ac01ae3cde4955c094.ttf",
     "static/media/fa-duotone-900.ttf": "/static/media/fa-duotone-900.3f45c5c197f52d283b4a.ttf",
-    "static/media/final.png": "/static/media/final.6b43b3c9811db91ebe51.png",
     "static/media/dcn.pdf": "/static/media/dcn.1dc3a456997196922963.pdf",
     "static/media/fa-light-300.ttf": "/static/media/fa-light-300.f477f634214f5869db27.ttf",
     "static/media/fa-sharp-thin-100.ttf": "/static/media/fa-sharp-thin-100.893a57fa3e24fa2024b9.ttf",
@@ -20,6 +19,7 @@
     "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.42ce62dd5ccebc21cf2f.ttf",
     "static/media/mocks.png": "/static/media/mocks.35d9f922e27136598dfd.png",
     "static/media/final5.png": "/static/media/final5.c8bc285cc26b363192bb.png",
+    "static/media/featured.png": "/static/media/featured.835fab63a9f58b6ed881.png",
     "static/media/final4.png": "/static/media/final4.1b7a23c86875af6de9cf.png",
     "static/media/fa-thin-100.woff2": "/static/media/fa-thin-100.cc75bac992806cb353e2.woff2",
     "static/media/ir.png": "/static/media/ir.432a54d65bd0ed974010.png",
@@ -33,7 +33,7 @@
     "static/media/code.png": "/static/media/code.55b20cb343c3c473b743.png",
     "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.bb8a10b0705432f301de.ttf",
     "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.5e7b19421dd30c3feeea.woff2",
-    "static/media/bg.png": "/static/media/bg.47979b9c013bb801f5ff.png",
+    "static/media/original.png": "/static/media/original.318a9e051b6cbc8ce04c.png",
     "static/media/flowchart.png": "/static/media/flowchart.23396074670a476b2128.png",
     "static/media/old2.png": "/static/media/old2.88387aad7097224e3332.png",
     "static/media/goc.png": "/static/media/goc.0213c9269e459e3a4252.png",
@@ -42,10 +42,10 @@
     "index.html": "/index.html",
     "static/media/cursor.svg": "/static/media/cursor.5c6bab977cd561f4b66b.svg",
     "main.0fa65e4d.css.map": "/static/css/main.0fa65e4d.css.map",
-    "main.393bb282.js.map": "/static/js/main.393bb282.js.map"
+    "main.c44ec259.js.map": "/static/js/main.c44ec259.js.map"
   },
   "entrypoints": [
     "static/css/main.0fa65e4d.css",
-    "static/js/main.393bb282.js"
+    "static/js/main.c44ec259.js"
   ]
 }
