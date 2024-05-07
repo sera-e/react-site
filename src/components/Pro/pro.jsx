@@ -45,7 +45,7 @@ const Pro = ({ portfolioId }) => {
   return <div className={`wrap portfolio${selectedProj ? ' selected-proj' : ''}`}>
     <Fragment>
       <Nav />
-      <BackToTop />
+      {/* <BackToTop /> */}
       {projects && <main className={isLoaded ? 'loading loaded' : 'loading'}>
         {selectedProj
           ? <FeaturedPro selectedProj={selectedProj} projects={projects} />
