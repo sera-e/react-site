@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Link from '../Router/Link'
+import { Link } from 'react-router-dom'
 import InnerLoader from '../Loader/innerloader'
 
 export const ProCards = ({ projects }) => {

@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from 'react'
-import Link from '../Router/Link'
+import { Link } from 'react-router-dom'
 import PhotoCarousel from './carousel'
 import Modal from './modal'
 import ReactGA from 'react-ga4'

@@ -7,8 +7,7 @@ import { pathname } from '../../../src/store/layout'
 const fullURL = new RegExp(/^(ftp|http|https):\/\//)
 
 const getReferrer = (path = '') => {
-    const slug = path.replace('/app/', '')
-    return slug.replace(/\//g, '-').toLowerCase()
+    return path.replace(/\//g, '-').toLowerCase()
 }
 
 const AppLink = ({ to = '', newWindow = 'auto', children, label, theme, appPath, referrer, activeClassName, ...props }) => {
