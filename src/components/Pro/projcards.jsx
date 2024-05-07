@@ -61,7 +61,7 @@ export const ProCards = ({ projects }) => {
                     </span>
                 </button>
                 <button className={`filter-pill ${projectType === 'Development' ? 'selected' : ''}`} onClick={() => projectType === 'Development' ? setProjectType(null) : setProjectType('Development')} type='button'>
-                    <span className='mobile'>
+                    <span className='mobile devmobile'>
                         <i className='fa-solid fa-circle-small fa-circle-small-blue' />
                         Dev
                     </span>
