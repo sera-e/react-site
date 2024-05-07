@@ -8,13 +8,14 @@ const FeaturedPro = ({ selectedProj, projects }) => {
     const [isModalShown, setIsModalShown] = useState(false)
     const [photoIndex, setPhotoIndex] = useState(0)
     const [prevNextProjIds, setPrevNextProjIds] = useState([])
-    const { id, projid, name, role, client, story, tools, hardskills, softskills, photos, url, urltype, isHosted = false } = selectedProj
+    const { projid, name, role, client, story, tools, hardskills, softskills, photos, url, urltype, isHosted = false } = selectedProj
 
     useEffect(() => {
+        const { id } = selectedProj
         const nextProjId = projects.filter((proj) => (id === 0 ? projects.length : id) - 1 === proj.id)
         const prevProjId = projects.filter((proj) => (id === projects.length - 1 ? -1 : id) + 1 === proj.id)
         setPrevNextProjIds([prevProjId[0].projid, nextProjId[0].projid])
-    }, [])
+    }, [selectedProj, projects])
 
     const showModal = (boole, index) => {
         setIsModalShown(boole)
