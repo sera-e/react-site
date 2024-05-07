@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.be0b284d.css",
-    "main.js": "/static/js/main.5bf297e5.js",
+    "main.css": "/static/css/main.0fa65e4d.css",
+    "main.js": "/static/js/main.393bb282.js",
     "static/media/bpi.pdf": "/static/media/bpi.5e6fb9f5c51a7a7768d5.pdf",
     "static/media/aita.pdf": "/static/media/aita.7e1e1da2368fe485a313.pdf",
     "static/media/final1.png": "/static/media/final1.55d544ad18d95da9b7ee.png",
@@ -41,11 +41,11 @@
     "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.ba24db420a3bf1f590cb.woff2",
     "index.html": "/index.html",
     "static/media/cursor.svg": "/static/media/cursor.5c6bab977cd561f4b66b.svg",
-    "main.be0b284d.css.map": "/static/css/main.be0b284d.css.map",
-    "main.5bf297e5.js.map": "/static/js/main.5bf297e5.js.map"
+    "main.0fa65e4d.css.map": "/static/css/main.0fa65e4d.css.map",
+    "main.393bb282.js.map": "/static/js/main.393bb282.js.map"
   },
   "entrypoints": [
-    "static/css/main.be0b284d.css",
-    "static/js/main.5bf297e5.js"
+    "static/css/main.0fa65e4d.css",
+    "static/js/main.393bb282.js"
   ]
 }
