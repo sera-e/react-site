@@ -1,9 +1,3 @@
-@media (max-width: 559px) {
-    .site.navopen {
-        overflow: hidden;
-    }
-}
-
 nav {
     transition: none;
     min-height: 7rem;
@@ -119,7 +113,7 @@ nav .close {
 }
 
 .top.open .top-inner {
-    background: rgba(0, 0, 17, 0.9);
+    background: rgba(0, 0, 17, 0.99);
     height: 100vh;
     width: 100%;
     top: 0;
