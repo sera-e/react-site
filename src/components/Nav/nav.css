@@ -91,6 +91,7 @@ nav .close {
 
     p {
         font-weight: 500;
+        margin-top: -1px;
     }
 }
 
