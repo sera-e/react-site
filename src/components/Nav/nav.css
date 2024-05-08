@@ -203,17 +203,17 @@ footer {
 }
 
 .backtotop {
-    background: rgba(0, 0, 34, 0.9);
-    text-align: center;
-    position: fixed;
-    z-index: 1;
+    background: #000022e6;
+    bottom: 2rem;
     cursor: pointer;
     height: 4rem;
-    bottom: 3rem;
-    right: 2rem;
-    width: 4rem;
+    position: fixed;
+    left: 0;
+    text-align: center;
+    width: 100%;
 
     i {
-        padding: 1rem 1.25rem;
+        width: 100%;
+        padding: 1rem;
     }
 }
