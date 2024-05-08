@@ -464,7 +464,11 @@
 
   .proj-nav-prev,
   .proj-nav-next {
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
     padding: 1.375rem 2rem;
+    display: flex;
     width: fit-content;
   }
 
@@ -484,7 +488,7 @@
 
   @media (min-width: 990px) {
     .other-proj-links {
-      padding: 0 0 8rem;
+      padding: 0 0 4rem;
     }
 
     .proj-nav-portfolio {
