@@ -1,32 +1,46 @@
-import React, { useState } from 'react'
-import { connect } from 'react-redux'
-import { minContentHeight } from '../../../src/store/layout'
+import { useEffect, useState } from 'react'
 
-const BackToTop = ({ minContentHeight }) => {
-
-    const [visible, setVisible] = useState(false)
-
-    const toggleVisible = () => {
-        const scrolled = document.documentElement.scrollTop
-        if (scrolled > 300) {
-            setVisible(true)
-        }
-        else if (scrolled <= 300) {
-            setVisible(false)
-        }
-    }
-
-    const scrollToTop = () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' })
-    }
-
-    window.addEventListener('scroll', toggleVisible)
-
-    return <div style={{ display: visible ? 'inline' : 'none' }} className='backtotop' >
-        <i className='fa-light fa-arrow-up' onClick={scrollToTop} />
-    </div>
+const scrollOptions = {
+  top: 0,
+  left: 0,
+  behavior: 'smooth'
 }
 
-export default connect(
-    minContentHeight,
-)(BackToTop)
+const supportsNativeSmoothScroll = 'scrollBehavior' in document.documentElement.style
+
+const scrollToTop = () => supportsNativeSmoothScroll ? window.scrollTo(scrollOptions) : window.scrollTo(scrollOptions.left, scrollOptions.top)
+
+export default function BackToTop() {
+  const [showButton, setShowButton] = useState(false)
+
+  const onClick = () => {
+    const focusableElement = document.querySelector('button, a, input, select, textarea, [tabindex]:not([tabindex="-1"])')
+    
+    scrollToTop()
+
+    focusableElement.focus({
+      preventScroll: true,
+    })
+  }
+
+  const onScroll = () => {
+    if (!showButton && window.scrollY > 300) {
+      setShowButton(true)
+    } else {
+      setShowButton(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
+
+  return (
+    showButton && <button className='backtotop' onClick={onClick}>
+      <i className='fa-light fa-arrow-up' />
+      <span>Back to top</span>
+    </button>
+  )
+}
