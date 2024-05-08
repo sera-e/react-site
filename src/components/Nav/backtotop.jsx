@@ -24,7 +24,7 @@ export default function BackToTop() {
   }
 
   const onScroll = () => {
-    if (!showButton && window.scrollY > 0) {
+    if (!showButton && window.scrollY > 300) {
       setShowButton(true)
     } else {
       setShowButton(false)
@@ -36,11 +36,8 @@ export default function BackToTop() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-
-  return (
-    showButton && <button className='backtotop' onClick={onClick}>
+  return <button className='backtotop' onClick={onClick}>
       <span>Back to Top</span>
       <i className='fa-light fa-arrow-up' />
     </button>
-  )
 }

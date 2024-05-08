@@ -1,7 +1,6 @@
 import React, { Fragment, useEffect, useState } from 'react'
 import Loader from '../Loader/loader'
 import { Nav, Footer } from '../Nav'
-import BackToTop from '../Nav/backtotop'
 import Link from '../Router/Link'
 import ReactGA from 'react-ga4'
 
@@ -103,7 +102,6 @@ const About = () => {
           </div>
         </div>
       </main>
-      <BackToTop />
       <Footer />
     </Fragment>
   </div>

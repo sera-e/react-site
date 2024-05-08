@@ -1,7 +1,6 @@
 import React, { Fragment, useEffect, useState } from 'react'
 import Loader from '../Loader/loader'
 import { Nav, Footer } from '../Nav'
-import BackToTop from '../Nav/backtotop'
 import Form from './Form'
 
 const Info = () => {
@@ -22,7 +21,6 @@ const Info = () => {
           <Form />
         </div>
       </main>
-      <BackToTop />
       <Footer />
     </Fragment>
   </div>
