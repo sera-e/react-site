@@ -50,8 +50,8 @@ const Pro = ({ portfolioId }) => {
           ? <FeaturedPro selectedProj={selectedProj} projects={projects} />
           : <ProCards projects={projects} />
         }
+        <BackToTop />
       </main>}
-      <BackToTop />
       <Footer />
     </Fragment>
   </div>
