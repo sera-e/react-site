@@ -178,12 +178,12 @@
     flex-wrap: wrap;
     list-style: none;
     margin: 0;
-    padding: 0 0 4rem 0;
+    padding: 0 0 2rem;
   }
 
   @media (min-width: 760px) {
     .cards {
-      padding: 0 1rem 4rem 1rem;
+      padding: 0 1rem 3rem 1rem;
     }
   }
 
@@ -446,12 +446,12 @@
   }
 
   .other-proj-links  {
-    padding: 0 2rem 7rem;
+    padding: 0 2rem 2rem;
   }
 
   @media (min-width: 760px) {
     .other-proj-links {
-      padding: 0 2rem 8rem;
+      padding: 0 2rem 5rem;
     }
   }
 

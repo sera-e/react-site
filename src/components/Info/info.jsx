@@ -15,7 +15,6 @@ const Info = () => {
     <Fragment>
       <Nav IsLoading={!isLoaded} />
       {!isLoaded && <Loader />}
-      <BackToTop />
       <main className={isLoaded ? 'loading loaded' : 'loading'}>
         <div className='card'>
           <h2>Contact me</h2>
@@ -23,6 +22,7 @@ const Info = () => {
           <Form />
         </div>
       </main>
+      <BackToTop />
       <Footer />
     </Fragment>
   </div>

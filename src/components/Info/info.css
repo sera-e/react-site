@@ -67,6 +67,13 @@
         }
     }
 
+    @media (max-height: 560px) {
+
+        .card {
+            margin: 0 auto 5rem;
+        }
+    }
+
     .card {
         padding: 4rem;
     }

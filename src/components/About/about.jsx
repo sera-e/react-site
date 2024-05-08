@@ -24,7 +24,6 @@ const About = () => {
     <Fragment>
       <Nav IsLoading={!isLoaded} />
       {!isLoaded && <Loader />}
-      <BackToTop />
       <main className={isLoaded ? 'loading loaded' : 'loading'}>
         <div className='card'>
           <h2>About me</h2>
@@ -37,7 +36,7 @@ const About = () => {
                   View my Resume <i className='fa-light fa-file-lines' />
                 </Link>
                 <Link className='btn card-btn' to='#portfolio'>
-                  View my Portfolio <i className='fa-light fa-folder-image' />
+                  View my Work <i className='fa-light fa-folder-image' />
                 </Link>
               </div>
               {/* <div className='fa-icon-stack'>
@@ -104,6 +103,7 @@ const About = () => {
           </div>
         </div>
       </main>
+      <BackToTop />
       <Footer />
     </Fragment>
   </div>

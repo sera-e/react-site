@@ -203,25 +203,24 @@ footer {
 }
 
 .backtotop {
-    background: rgba(0, 0, 34, 0.9);
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
     text-align: center;
-    position: fixed;
+    display: flex;
     z-index: 1;
-    padding: 0;
+    padding: 2rem;
+    margin: 0 0 3rem;
     cursor: pointer;
-    height: 4rem;
-    bottom: 3rem;
-    right: 2rem;
-    width: 4rem;
+    height: 5rem;
 
     i {
-        padding: 1rem 1.25rem;
+        padding: 0;
         margin: 0;
     }
 
     span {
-        opacity: 0;
-        height: 0;
-        width: 0;
+        text-transform: uppercase;
+        padding: 0 1rem 0 0;
     }
 }
