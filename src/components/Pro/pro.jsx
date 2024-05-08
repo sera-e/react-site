@@ -2,7 +2,6 @@ import React, { Fragment, useEffect, useState } from 'react'
 import Loader from '../Loader/loader'
 import ProCards from './projcards'
 import { Nav, Footer } from '../Nav'
-import BackToTop from '../Nav/backtotop'
 import FeaturedPro from './FeaturedPro'
 import $ from 'jquery'
 
@@ -50,7 +49,6 @@ const Pro = ({ portfolioId }) => {
           ? <FeaturedPro selectedProj={selectedProj} projects={projects} />
           : <ProCards projects={projects} />
         }
-        <BackToTop />
       </main>}
       <Footer />
     </Fragment>
