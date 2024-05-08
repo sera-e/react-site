@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 
 const scrollOptions = {
   top: 0,
@@ -11,7 +11,7 @@ const supportsNativeSmoothScroll = 'scrollBehavior' in document.documentElement.
 const scrollToTop = () => supportsNativeSmoothScroll ? window.scrollTo(scrollOptions) : window.scrollTo(scrollOptions.left, scrollOptions.top)
 
 export default function BackToTop() {
-  const [showButton, setShowButton] = useState(false)
+  // const [showButton, setShowButton] = useState(false)
 
   const onClick = () => {
     const focusableElement = document.querySelector('button, a, input, select, textarea, [tabindex]:not([tabindex="-1"])')
@@ -19,21 +19,21 @@ export default function BackToTop() {
     scrollToTop()
 
     focusableElement.focus({
-      preventScroll: true,
+      preventScroll: true
     })
   }
 
-  const onScroll = () => {
-    if (!showButton && window.scrollY > 300) {
-      setShowButton(true)
-    } else {
-      setShowButton(false)
-    }
-  }
+  // const onScroll = () => {
+  //   if (!showButton && window.scrollY > 300) {
+  //     setShowButton(true)
+  //   } else {
+  //     setShowButton(false)
+  //   }
+  // }
 
   useEffect(() => {
-    window.addEventListener('scroll', onScroll, { passive: true })
-    return () => window.removeEventListener('scroll', onScroll)
+    // window.addEventListener('scroll', onScroll, { passive: true })
+    // return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
   return <button className='backtotop' onClick={onClick}>
