@@ -14,13 +14,13 @@ export default function BackToTop() {
   // const [showButton, setShowButton] = useState(false)
 
   const onClick = () => {
-    const focusableElement = document.querySelector('button, a, input, select, textarea, [tabindex]:not([tabindex="-1"])')
+    // const focusableElement = document.querySelector('button, a, input, select, textarea, [tabindex]:not([tabindex="-1"])')
     
     scrollToTop()
 
-    focusableElement.focus({
-      preventScroll: true
-    })
+    // focusableElement.focus({
+    //   preventScroll: true
+    // })
   }
 
   // const onScroll = () => {
