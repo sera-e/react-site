@@ -3,6 +3,7 @@ import Loader from '../Loader/loader'
 import Link from '../Router/Link'
 import { Nav, Footer } from '../Nav'
 import { nav, socials } from '../utils'
+import Ufo from '../svgs/ufo'
 
 class Home extends React.Component {
 
@@ -22,6 +23,7 @@ class Home extends React.Component {
         <Nav IsLoading={!IsLoaded} IsHome={true} />
         {!IsLoaded && <Loader />}
         <main className={IsLoaded ? 'loading loaded' : 'loading'}>
+          <Ufo />
           <div className='card'>
             <h2>SERA EBEN</h2>
             <h4>Designer // Programmer</h4>
