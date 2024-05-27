@@ -11,9 +11,22 @@
         }
     }
 
+    hr {
+        margin: 1.5rem 0 0rem;
+        opacity: 0;
+    }
+
     @media (min-width: 370px) {
         hr {
-            margin: 2rem 0 0.5rem;
+            margin: 1.5rem 0 0rem;
+            opacity: 0;
+        }
+    }
+
+    @media (min-width: 560px) {
+        hr {
+            margin: 2.4rem 0;
+            opacity: 0.2;
         }
     }
 
@@ -78,7 +91,8 @@
         font-size: 1.6rem;
         cursor: pointer;
         background: transparent;
-        /* border: 1px solid rgba(255, 255, 255, 0.2); */
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 10rem;
     }
 
     @media (min-width: 560px) {
@@ -96,7 +110,7 @@
     .card-btn {
         padding: 1.25rem 4rem;
         width: fit-content;
-        margin: 0 0 2rem;
+        margin: 0 0 3rem;
         text-align: center;
         font-weight: 600;
         font-size: 1.9rem;

@@ -12,20 +12,20 @@
     top: 0;
 
     svg {
-        max-height: 100vh;
+        max-height: 60rem;
         max-width: 100vw;
         max-width: 40rem;
         position: absolute;
         margin: auto;
         height: auto;
         width: 100vw;
-        top: 0rem;
+        top: 1rem;
     }
 
     @media (min-width: 560px) {
 
         svg {
-            top: 0rem;
+            top: -0.5rem;
         }
     }
 
@@ -33,7 +33,7 @@
 
         svg {
             max-width: 80rem;
-            top: -12rem;
+            top: -9rem;
         }
     }
 
@@ -41,7 +41,7 @@
 
         svg {
             max-width: 40rem;
-            top: 0rem;
+            top: -0.5rem;
         }
     }
 
