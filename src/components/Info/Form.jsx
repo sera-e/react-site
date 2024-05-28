@@ -51,7 +51,7 @@ const Form = () => {
         <div className='contactFormWrapper'>
             <div className='formheader'>
                 <p>
-                    Email: <span id='email'>hello</span>
+                    Email: <span id='email'>hello@gmail.com</span>
                 </p>
             </div>
             <div className='formcontact'>
