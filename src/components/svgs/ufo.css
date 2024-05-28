@@ -55,14 +55,14 @@
     path.stroke {
         stroke: cyan;
         fill: none;
-        animation: ufo 2s infinite linear;
+        animation: ufo 3s infinite linear;
         stroke-dashoffset: 0;
         stroke-dasharray: 20, 103.1;
         stroke-width: 0.1;
     }
 
     path.stroke1 {
-        animation-delay: -1.0s;
+        animation-delay: -1.5s;
     }
 
     @keyframes ufo {
