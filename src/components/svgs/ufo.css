@@ -32,8 +32,9 @@
     @media (min-width: 760px) {
 
         svg {
-            max-width: 80rem;
-            top: -9rem;
+            max-width: 140rem;
+            max-height: 80rem;
+            top: -8rem;
         }
     }
 
