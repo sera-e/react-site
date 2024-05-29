@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import { Nav, Footer } from '../Nav'
+import { Footer } from '../Nav'
 import Link from '../Router/Link'
 
 const Err = () => {
