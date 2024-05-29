@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { compose } from 'redux'
-import { BrowserRouter, Switch, withRouter } from 'react-router-dom'
+import { HashRouter, Switch, withRouter } from 'react-router-dom'
 
 import Home from '../Home'
 import About from '../About'
@@ -20,7 +20,7 @@ class Router extends Component {
 
         return <div key='page-router'>
             <h1>{`Sera Eben's website - ${String(segments.slice(0, 1))} page`}</h1>
-            <BrowserRouter basename={process.env.PUBLIC_URL}>
+            <HashRouter>
                 <Switch>
                     <Route exact path='/'>
                         <Home />
@@ -43,7 +43,7 @@ class Router extends Component {
                         <Err />
                     </Route>
                 </Switch>
-            </BrowserRouter>
+            </HashRouter>
         </div>
     }
 }
