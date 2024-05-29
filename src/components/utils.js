@@ -48,7 +48,7 @@ export const nav = (currentpage) => {
     return filteredNavLinks.map((navLink) => {
         const { url, name } = navLink
 
-        return <li key={name}>
+        return <li key={name} onClick={() => toggleMenu()}>
             <Link to={url} label={name}>{name}</Link>
         </li>
     })
