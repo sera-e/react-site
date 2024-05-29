@@ -11,6 +11,18 @@
         }
     }
 
+    h3 {
+      line-height: 2.8rem;
+      font-size: 2rem;
+    }
+    
+    @media (max-width: 240px) {
+      h3 {
+        line-height: 2.7rem;
+        font-size: 1.9rem;
+      }
+    }
+
     hr {
         margin: 1.5rem 0 0rem;
         opacity: 0;

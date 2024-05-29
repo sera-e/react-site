@@ -26,7 +26,7 @@ class Home extends React.Component {
           <Ufo />
           <div className='card'>
             <h2>SERA EBEN</h2>
-            <h4>Designer // Programmer</h4>
+            <h3>Designer // Programmer</h3>
             <hr />
             <Link className='btn card-btn' to='#portfolio' label='Explore my work'>
               Explore my work
