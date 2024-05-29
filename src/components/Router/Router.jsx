@@ -14,9 +14,10 @@ class Router extends Component {
 
     render() {
         const { location } = this.props
-        const { hash } = location
-        const segments = hash.replace(/^#\//,'').toLowerCase().split('/')
+        const { pathname } = location
+        const segments = pathname.toLowerCase().split('/')
         const Extended = segments.slice(0).join('/')
+        console.log('Extended', Extended)
 
         return <div key='page-router'>
             <h1>{`Sera Eben's website - ${String(segments.slice(0, 1))} page`}</h1>

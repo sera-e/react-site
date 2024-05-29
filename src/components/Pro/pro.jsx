@@ -27,7 +27,11 @@ const Pro = ({ portfolioId }) => {
   }, [])
 
   useEffect(() => {
-    const match = projects && projects.filter((proj) => portfolioId.split('/')[1] === proj.projid)
+    const match = projects && projects.filter((proj) => {
+      console.log('portfolioId', portfolioId.split('/')[2])
+      console.log('proj.projid', proj.projid)
+      return portfolioId.split('/')[2] === proj.projid
+    })
     setSelectedProj(match ? match[0] : null)
   }, [projects, portfolioId])
 
