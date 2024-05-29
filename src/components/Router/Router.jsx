@@ -21,7 +21,7 @@ class Router extends Component {
 
         return <div key='page-router'>
             <h1>{`Sera Eben's website - ${segments[1] ? String(segments[1]) : 'home'} page`}</h1>
-            <BrowserRouter basename={process.env.PUBLIC_URL}>
+            <BrowserRouter>
                 <Switch>
                     <Route exact path='/'>
                         <Home />
