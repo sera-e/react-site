@@ -8,7 +8,7 @@ const Form = () => {
 
         const copy = 'moc.liamg@ofni.nebeares'
         const e = copy.split('').reverse().join('')
-        $('#email').html('<a href="mailto:'+e+'?subject=Business Inquiry - Let\'s Discuss an Opportunity!">'+e+'</a>')
+        $('#email').html('<a href="mailto:'+e+'?subject=Business Inquiry - Let\'s Discuss an Opportunity!" aria-label="Email me to discuss a business opportunity!">'+e+'</a>')
 
         setTimeout(() => {
             setSubmit(false)

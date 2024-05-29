@@ -27,15 +27,18 @@ const navLinks = [
 const smLinksData = [
     {
         url: 'https://linkedin.com/in/serae',
-        icon: 'linkedin'
+        icon: 'linkedin',
+        name: 'LinkedIn'
     },
     {
         url: 'https://codepen.io/serae',
-        icon: 'codepen'
+        icon: 'codepen',
+        name: 'CodePen'
     },
     {
         url: 'https://github.com/sera-e',
-        icon: 'github-alt'
+        icon: 'github-alt',
+        name: 'GitHub'
     }
 ]
 
@@ -46,14 +49,14 @@ export const nav = (currentpage) => {
         const { url, name } = navLink
 
         return <li key={name}>
-            <Link to={url}>{name}</Link>
+            <Link to={url} label={name}>{name}</Link>
         </li>
     })
 }
 
 export const socials = () => {
     return smLinksData.map((smLink) => {
-        const { url, icon } = smLink
+        const { url, icon, name } = smLink
 
         const handleClick = (platform) => {
             ReactGA.event({
@@ -64,7 +67,7 @@ export const socials = () => {
         }
 
         return <li key={icon} className='inline-block socials' onClick={handleClick}>
-            <Link to={url} target='_blank'>
+            <Link to={url} label={name} target='_blank'>
                 <i className={`fab fa-${icon}`} />
             </Link>
         </li>
