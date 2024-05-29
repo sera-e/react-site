@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import $ from 'jquery';
+import $ from 'jquery'
 
 const Form = () => {
     const [submit, setSubmit] = useState(false)
