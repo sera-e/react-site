@@ -17,9 +17,10 @@ class Router extends Component {
         const { pathname } = location
         const segments = pathname.toLowerCase().split('/')
         const Extended = segments.slice(0).join('/')
+        console.log(segments[1])
 
         return <div key='page-router'>
-            <h1>{`Sera Eben's website - ${String(segments.slice(0, 1))} page`}</h1>
+            <h1>{`Sera Eben's website - ${segments[1] ? String(segments[1]) : 'home'} page`}</h1>
             <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <Switch>
                     <Route exact path='/'>
