@@ -27,7 +27,7 @@ export const ProCards = ({ projects }) => {
 
         return <li id={projid} className='cards-item' key={`card ${projid}`}>
             <div className='procard'>
-                <Link to={`#portfolio/${projid}`} label={`Go to ${name} portfolio project`}>
+                <Link to={`${projid}`} label={`Go to ${name} portfolio project`}>
                     <div>
                         <img className='card-image' src={require(`/public/projs/${projid}/${tilephoto}`)} alt={name} />
                     </div>
