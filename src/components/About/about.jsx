@@ -34,7 +34,7 @@ const About = () => {
                 <Link className='btn card-btn' to='https://drive.google.com/drive/folders/17zqHLL0oNNw2bwe4gb4vTe4oYwGPjgvp' label='View my Resume' target='_blank'>
                   View my Resume <i className='fa-light fa-file-lines' />
                 </Link>
-                <Link className='btn card-btn' to='portfolio' label='View my Work'>
+                <Link className='btn card-btn' to='#portfolio' label='View my Work'>
                   View my Work <i className='fa-light fa-folder-image' />
                 </Link>
               </div>
