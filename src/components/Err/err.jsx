@@ -1,24 +1,24 @@
 import React, { Fragment } from 'react'
 import { Nav, Footer } from '../Nav'
+import Link from '../Router/Link'
 
 const Err = () => {
 
   return <div className='wrap err'>
     <Fragment>
-      <Nav />
+      <span/>
       <main>
         <div className='card'>
           <h2>404 - Page Not Found</h2>
           <hr />
           <p>
-            Oops! Looks like you strayed too far.
+            Oh no, you look lost.
           </p>
-          <h5>
-              That's okay :)
-          </h5>
           <p>
-            Why don't you stick around a while in quiet contemplation?
+            That's okay :)
           </p>
+          <br />
+          <Link className='btn' to='/' label='Back to homepage'>Go Back to Homepage</Link>
         </div>
       </main>
       <Footer />

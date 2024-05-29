@@ -25,7 +25,21 @@
             top: 0rem;
         }
     }
+
     .card p {
         padding: 0 0 2rem 0;
+    }
+
+    .btn {
+        color: #CDE;
+        text-transform: uppercase;
+        border-radius: 4px;
+        font-weight: 400;
+        font-size: 1.6rem;
+        cursor: pointer;
+        background: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 10rem;
+        padding: 1.25rem 4rem;
     }
 }
