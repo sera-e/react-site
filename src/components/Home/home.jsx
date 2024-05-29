@@ -12,7 +12,7 @@ class Home extends React.Component {
   }
 
   componentDidMount() {
-    setTimeout(() => { this.setState({ IsLoaded: true }) }, 1000)
+    setTimeout(() => { this.setState({ IsLoaded: true }) }, 500)
   }
 
   render() {
