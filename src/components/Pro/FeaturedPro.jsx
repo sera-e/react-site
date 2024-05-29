@@ -76,12 +76,12 @@ const FeaturedPro = ({ selectedProj, projects }) => {
             </div>
             <div className='other-proj-links'>
                 <div>
-                    <Link className='btn proj-nav-prev' to={`#portfolio/${prevNextProjIds[0]}`} label='Go to the previous project in the portfolio list'>
+                    <Link className='btn proj-nav-prev' to={`portfolio/${prevNextProjIds[0]}`} label='Go to the previous project in the portfolio list'>
                         <i className='fa-light fa-arrow-left' />
                         <span className='mobile'>Prev</span>
                         <span className='desktop'>Prev Project</span>
                     </Link>
-                    <Link className='btn proj-nav-next' to={`#portfolio/${prevNextProjIds[1]}`} label='Go to the next project in the portfolio list'>
+                    <Link className='btn proj-nav-next' to={`portfolio/${prevNextProjIds[1]}`} label='Go to the next project in the portfolio list'>
                         <span className='mobile'>Next</span>
                         <span className='desktop'>Next Project</span>
                         <i className='fa-light fa-arrow-right' />
