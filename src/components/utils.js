@@ -1,6 +1,5 @@
 import Link from './Router/Link'
 import ReactGA from 'react-ga4'
-import $ from 'jquery'
 
 const navLinks = [
     {
@@ -76,5 +75,5 @@ export const socials = () => {
 }
 
 export const toggleMenu = () => {
-    $('.site').toggleClass('navopen')
+    document.querySelector('.site').classList.toggle('navopen')
 }
