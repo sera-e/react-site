@@ -3,15 +3,15 @@ import ReactGA from 'react-ga4'
 
 const navLinks = [
     {
-        url: 'home',
+        url: '#home',
         name: 'Home'
     },
     {
-        url: 'about',
+        url: '#about',
         name: 'About'
     },
     {
-        url: 'portfolio',
+        url: '#portfolio',
         name: 'Portfolio'
     },
     {
@@ -19,7 +19,7 @@ const navLinks = [
         name: 'Resume'
     },
     {
-        url: 'contact',
+        url: '#contact',
         name: 'Contact'
     }
 ]

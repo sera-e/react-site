@@ -34,7 +34,7 @@ const FeaturedPro = ({ selectedProj, projects }) => {
         {isModalShown && <Modal proj={selectedProj} index={photoIndex} showModal={showModal} isModalShown={isModalShown} />}
         <Fragment>
             <h2>{name}</h2>
-            <Link to='/portfolio' label='Go back to my portfolio' className='goback-btn'>
+            <Link to='#portfolio' label='Go back to my portfolio' className='goback-btn'>
                 <i className='fa-light fa-arrow-left' />
                 <span>Go Back</span>
             </Link>
@@ -76,18 +76,18 @@ const FeaturedPro = ({ selectedProj, projects }) => {
             </div>
             <div className='other-proj-links'>
                 <div>
-                    <Link className='btn proj-nav-prev' to={`${prevNextProjIds[0]}`} label='Go to the previous project in the portfolio list'>
+                    <Link className='btn proj-nav-prev' to={`#portfolio/${prevNextProjIds[0]}`} label='Go to the previous project in the portfolio list'>
                         <i className='fa-light fa-arrow-left' />
                         <span className='mobile'>Prev</span>
                         <span className='desktop'>Prev Project</span>
                     </Link>
-                    <Link className='btn proj-nav-next' to={`${prevNextProjIds[1]}`} label='Go to the next project in the portfolio list'>
+                    <Link className='btn proj-nav-next' to={`#portfolio/${prevNextProjIds[1]}`} label='Go to the next project in the portfolio list'>
                         <span className='mobile'>Next</span>
                         <span className='desktop'>Next Project</span>
                         <i className='fa-light fa-arrow-right' />
                     </Link>
                 </div>
-                <Link className='btn proj-nav-portfolio' to='/portfolio' label='Go back to my portfolio'>
+                <Link className='btn proj-nav-portfolio' to='#portfolio' label='Go back to my portfolio'>
                     Back to Portfolio
                 </Link>
             </div>

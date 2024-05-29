@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { compose } from 'redux'
-import { BrowserRouter, Switch, withRouter } from 'react-router-dom'
+import { HashRouter, Switch, withRouter } from 'react-router-dom'
 
 import Home from '../Home'
 import About from '../About'
@@ -14,14 +14,13 @@ class Router extends Component {
 
     render() {
         const { location } = this.props
-        const { pathname } = location
-        const segments = pathname.toLowerCase().split('/')
+        const { hash } = location
+        const segments = hash.replace(/^#\//,'').toLowerCase().split('/')
         const Extended = segments.slice(0).join('/')
-        console.log(segments[1])
 
         return <div key='page-router'>
-            <h1>{`Sera Eben's website - ${segments[1] ? String(segments[1]) : 'home'} page`}</h1>
-            <BrowserRouter>
+            <h1>{`Sera Eben's website - ${String(segments.slice(0, 1))} page`}</h1>
+            <HashRouter>
                 <Switch>
                     <Route exact path='/'>
                         <Home />
@@ -44,7 +43,7 @@ class Router extends Component {
                         <Err />
                     </Route>
                 </Switch>
-            </BrowserRouter>
+            </HashRouter>
         </div>
     }
 }
