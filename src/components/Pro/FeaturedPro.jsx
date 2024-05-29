@@ -34,7 +34,7 @@ const FeaturedPro = ({ selectedProj, projects }) => {
         {isModalShown && <Modal proj={selectedProj} index={photoIndex} showModal={showModal} isModalShown={isModalShown} />}
         <Fragment>
             <h2>{name}</h2>
-            <Link to='#portfolio' label='Go back to my portfolio' className='goback-btn'>
+            <Link to='portfolio' label='Go back to my portfolio' className='goback-btn'>
                 <i className='fa-light fa-arrow-left' />
                 <span>Go Back</span>
             </Link>
@@ -87,7 +87,7 @@ const FeaturedPro = ({ selectedProj, projects }) => {
                         <i className='fa-light fa-arrow-right' />
                     </Link>
                 </div>
-                <Link className='btn proj-nav-portfolio' to='#portfolio' label='Go back to my portfolio'>
+                <Link className='btn proj-nav-portfolio' to='portfolio' label='Go back to my portfolio'>
                     Back to Portfolio
                 </Link>
             </div>
